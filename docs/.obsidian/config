@@ -8,9 +8,11 @@
     "Backlinks": true,
     "Command palette": true,
     "Markdown format importer": true,
-    "Word count": true
+    "Word count": true,
+    "Custom CSS": false
   },
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
-  "attachmentFolderPath": "files"
+  "attachmentFolderPath": "files",
+  "foldHeading": true
 }

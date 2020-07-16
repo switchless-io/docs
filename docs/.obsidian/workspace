@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "subfolder/under a sub folder.md",
-            "mode": "source"
+            "file": "What is the purpose of switchless.md",
+            "mode": "preview"
           }
         }
       }
@@ -72,10 +72,10 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "What is the purpose of switchless.md",
     "subfolder/under a sub folder.md",
     "files/something reasonable.png",
     "files/full screenshot.png",
-    "files/Pasted image.png",
-    "index.md"
+    "files/Pasted image.png"
   ]
 }
