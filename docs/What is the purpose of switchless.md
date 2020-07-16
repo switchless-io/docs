@@ -3,6 +3,9 @@
 ![[files/something reasonable.png]]
 This is a screenshot. Lets see what happens here
 
+![asdf](files/something reasonable.png)
+![Alt text](/files/something reasonable.png)
+
 
 ``` javascript
 
