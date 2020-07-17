@@ -1,1 +1,75 @@
-site_name: My Docs
+site_name: Switchless Docs
+theme:
+    name: alabaster
+    custom_dir: 'docs/custom_theme2/'
+    sidebars: 
+        - about
+        - search
+extra:
+    sidebars:
+        - about
+        - navigation
+    homepage_sidebars:
+        - about
+        - navigation
+    # static_templates:
+    #     - 404.html
+
+    # include_search_page: false
+    # search_index_only: false
+
+    # highlightjs: true
+    # hljs_languages: []
+    # hljs_style: github
+
+    # navigation_depth: 2
+    # nav_style: primary
+
+    # shortcuts:
+    #     help: 191    # ?
+    #     next: 78     # n
+    #     previous: 80 # p
+    #     search: 83   # s
+
+# theme:
+#     name: readthedocs
+#     nav_style: dark
+# theme: 
+    # name: alabaster
+    # name: readthedocs
+    # include_toc: true
+    # extra_nav_links:
+    #     Fork me on GitHub: https://github.com/iamale/rock-cli
+    # show_powered_by: false
+
+
+# theme:
+#     name: null
+#     custom_dir: 'custom_theme'
+    # theme_dir: 'custom_theme'
+
+# nav:
+#     - Home: index.md
+#     - User Guide: guide.md
+#     - Developer Guide: dev.md
+#     - License: license.md
+
+# extra_css:
+#     - extra.css
+
+# extra:
+#   # logo: logo.png
+#   # logo_title: "Rocketbank logo"
+#   # include_toc: yes
+#   # extra_nav_links:
+#     Fork me on GitHub: https://github.com/iamale/rock-cli
+#     sidebars:
+#         - about
+#         - toc
+#         # - my-awesome-sidebar # corresponds to `$THEME_DIR/sidebars/my-awesome-sidebar.html`
+#         - related
+#         - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
