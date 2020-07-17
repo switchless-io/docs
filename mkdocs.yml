@@ -6,6 +6,7 @@ theme:
         - about
         - search
 extra:
+    logo: files/switchless_docs_logo.png
     sidebars:
         - about
         - navigation
