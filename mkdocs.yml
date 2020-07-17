@@ -1,6 +1,6 @@
 site_name: Switchless Docs
 theme:
-    name: alabaster
+    name: null
     custom_dir: 'docs/custom_theme2/'
     sidebars: 
         - about
