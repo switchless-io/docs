@@ -1,9 +1,11 @@
 # Bull
 
+
 ## About
 We use bull for queue up tasks. Two major reason why we use queues. 
-1) something is expected to be heavy and we dont want to block the event loop
-2) something is expected to fail and we want the option to retry it
+
+1. something is expected to be heavy and we dont want to block the event loop
+2. something is expected to fail and we want the option to retry it
 
 Eg of case 1 is something that heavy process such running some shell scripts or running puppeteer etc. 
 

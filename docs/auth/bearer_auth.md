@@ -8,7 +8,7 @@ The bearer token that we use is in fact a JWT token. The following are the featu
 - Ability to invalidate past tokens
 
 ## Setup 
-1) Install these packages: 
+**1) Install these packages:**
 ```js
 passport-http-bearer
 sails-hook-organics

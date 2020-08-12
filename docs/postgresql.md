@@ -10,7 +10,7 @@ Follow instrunctions [here](https://tableplus.com/blog/2018/04/postgresql-how-to
 
 ### Creating a copy of the production database in your local host
 
-**[Loom video](https://www.loom.com/share/84c95cc6243a4ea084957b8ce47c4648)**
+**[Loom video](https://www.loom.com/share/84c95cc6243a4ea084957b8ce47c4648)**   
 <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/84c95cc6243a4ea084957b8ce47c4648" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 **1) Take backup using table plus**
@@ -30,7 +30,10 @@ If you dont have those db users on your local postgres server, you need to cleam
 
 **3) Drop the db locally**
 
-You can do this using tableplus. 
+You can do this using tableplus or with terminal 
+```
+sudo -u alex.jv dropdb sanitiser_test
+```
 
 **4) Create the database locally**
 
