@@ -20,6 +20,9 @@ Once you are done, you can choose you organise it. you can choose to commit it i
 
 The obvious disadvantage for a system like this is that it is only suited for developer writters. Its going to be super difficult for a non developer to contribute. 
 
+## Our flavor of mkdocs 
+[Swithless flavor of mkdocs](https://github.com/switchless-io/mkdocs)
+
 ## Setup 
 
 - Create a git repo. 
