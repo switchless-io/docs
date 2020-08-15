@@ -1,6 +1,6 @@
 # Mk Docs
 
-This is what we use documenting things. 
+This is what we use to documenting things. 
 
 ## Requirements of a documentation system 
 - tooling should be familiar
@@ -25,9 +25,13 @@ The obvious disadvantage for a system like this is that it is only suited for de
 
 ## Setup 
 
-- Create a git repo. 
-- Integrate with read the docs. 
-- 
+The generator for switchless is available in switchless-cli. Run the switchless cli to install mkdocs with our flavor.
+
+`./node_modules/@switchless-io/cli/index.js` 
+
+choose `install`, choose `mkdocs` from the menu.
+
+If you are starting a new project, mkdocs in included in the `web-app` template.
 
 ### Integrate with read the docs 
 - advanced settings
