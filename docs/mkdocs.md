@@ -84,6 +84,7 @@ If you fancy paying for it, cloudflare access gives a lot more sophisticated acc
 #### CI/CD pipeline using Gitlab
 
 **Configure your AWS credentails as environment variables**
+
 Go to your repo on Gitlab. Go to `settings` --> `CI/CD` --> `Variables`
 Add these variables: 
 
@@ -94,6 +95,7 @@ Add these variables:
 These environment are special for Gitlab. Gitlab automatically recognises them as AWS credentials and will automatically configure the runner with the AWS credentials. You dont have to manually apply these credentials in the runner. This will prevent your credentials from getting leaked into the logs. 
 
 **Configure Gitlab config - .gitlab-ci.yml** 
+
 Create a file called `.gitlab-ci.yml` in your repo and add the following content to it. 
 ```
 image: ruby
