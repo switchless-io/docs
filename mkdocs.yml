@@ -13,6 +13,23 @@ extra:
     homepage_sidebars:
         - about
         - navigation
+nav:
+    - Getting started:
+        - Getting started: 'getting_started/index.md'
+        - Setup Web App: 'getting_started/setup_web_app.md'
+    - Auth:
+        - Bearer auth: 'auth/bearer_auth.md'
+    - Stack:
+        - Logging : 'logging.md'
+        - Mailgun: 'mailgun.md'
+        - Metabase: 'metabase.md'
+        - Mk Docs: 'mkdocs.md'
+        - Postgresql: 'postgresql.md'
+        - Sendgrid: 'sendgrid.md'
+        - Switchless cli : 'switchless-cli.md'
+        - Wordpress: 'wordpress.md'
+    - Sematic :
+        - Tables: 'semantic/tables.md'
     # static_templates:
     #     - 404.html
 
