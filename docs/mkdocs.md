@@ -33,6 +33,11 @@ choose `install`, choose `mkdocs` from the menu.
 
 If you are starting a new project, mkdocs in included in the `web-app` template.
 
+`sudo easy_install mkdocs` - installs mkdocs cli
+
+`mkdocs serve` - you can view the static files that you are working on currently on your local browser. `localhost:8000`
+
+
 ### Integrate with read the docs 
 - advanced settings
 	- defaut version - latest
@@ -42,6 +47,9 @@ If you are starting a new project, mkdocs in included in the `web-app` template.
 	- add your domain 
 		- canonical - tick this checkbox
 		- always use http - tick this checkbox 
+
+## Altnerate hosting
+host it on s3 with cloudflare
 
 ## Usage 
 - Write doc
