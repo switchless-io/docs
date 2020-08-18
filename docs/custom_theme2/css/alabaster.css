@@ -61,6 +61,7 @@ div.relations {
 }
 
 
+/*
 div.sphinxsidebar a {
     color: #444;
     text-decoration: none;
@@ -70,13 +71,13 @@ div.sphinxsidebar a {
 div.sphinxsidebar a:hover {
     border-bottom: 1px solid #999;
 }
-
-div.sphinxsidebar {
+*/
+/*div.sphinxsidebar {
     font-size: 14px;
     line-height: 1.5;
-}
+}*/
 
-div.sphinxsidebarwrapper {
+/*div.sphinxsidebarwrapper {
     padding: 18px 10px;
 }
 
@@ -161,13 +162,19 @@ div.sphinxsidebar hr {
     text-align: left;
     margin-left: 0;
     width: 50%;
-}
+}*/
 
 /* -- body styles ----------------------------------------------------------- */
 
 a {
     color: #004B6B;
     text-decoration: underline;
+}
+
+div.sphinxsidebar a {
+    /*color: #444;*/
+    text-decoration: none;
+    /*border-bottom: 1px dotted #999;*/
 }
 
 a:hover {

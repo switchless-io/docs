@@ -8,13 +8,24 @@
     <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ config.site_name }}</title>
 
     <link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">
+    <link rel="stylesheet" href="{{ base_url }}/semantic/semantic.min.css" type="text/css">
     <link rel="stylesheet" href="{{ base_url }}/css/alabaster.css" type="text/css">
-    <link rel="stylesheet" href="{{ base_url }}/css/alabaster-overrides.css" type="text/css">
+    <!-- <link rel="stylesheet" href="{{ base_url }}/css/alabaster-overrides.css" type="text/css"> -->
 
     {% for path in extra_css %}
       <link href="{{ path }}" rel="stylesheet">
     {% endfor %}
 
+    <script src="{{ base_url }}/js/jquery.min.js"></script>
+    <script src="{{ base_url }}/semantic/semantic.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.ui.accordion').accordion();
+        var path = window.location.pathname;
+        $('a[href="'+path+'"]').parents('div.item').find('a.title').accordion('open');
+        $('a[href="'+path+'"]').parents('li.item').addClass('active')
+      })
+    </script>
     {% for path in extra_javascript %}
       <script src="{{ path }}"></script>
     {% endfor %}

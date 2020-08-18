@@ -16,6 +16,7 @@
 
 {% macro nav_tree(nav) -%}
   <ul style="font-size: 17px; line-height: 160%;">
+  <!-- <div class="ui vertical accordion menu"> -->
   {% for nav_item in nav %}
     {% if not nav_item.children %}
       <li>
@@ -32,13 +33,44 @@
     {% endif %}
   {% endfor %}
   </ul>
+  <!-- </div> -->
+{%- endmacro %}
+
+{% macro nav_tree2(nav) -%}
+  <!-- <div class="ui vertical accordion menu"> -->
+  {% for nav_item in nav %}
+    {% if not nav_item.children %}
+      <li class='item'>
+        <a href="/{{ nav_item.url }}" >{{ nav_item.title }}</a>
+      </li>
+      <!-- {% if nav_item == page %}
+        {{ toc_tree(page.toc) }}
+      {% endif %} -->
+    {% else %}
+      <div class="item">
+        <a class="title">
+          <i class="dropdown icon"></i>
+          {{ nav_item.title }}
+        </a>
+        <div class="content">
+          <ul class="ui list">
+            {{ nav_tree2(nav_item.children) }}
+          </ul>
+        </div>
+      </div>
+      
+    {% endif %}
+  {% endfor %}
+  </ul>
+  <!-- </div> -->
 {%- endmacro %}
 
 <h3>Navigation</h3>
 
 <nav>
-  {{ nav_tree(nav) }}
-
+  <div class="ui vertical accordion menu">
+  {{ nav_tree2(nav) }}
+  </div>
   {% if theme.extra_nav_links %}
     <hr>
     <ul>
