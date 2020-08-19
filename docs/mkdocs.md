@@ -27,19 +27,52 @@ The obvious disadvantage for a system like this is that it is only suited for de
 
 The generator for switchless is available in switchless-cli. Run the switchless cli to install mkdocs with our flavor.
 
+**Pre-requesites:**
+`sudo easy_install mkdocs` - installs mkdocs cli
+
+### Setup documentation seperately 
+
+```shell
+# create a folder 
+mkdir asyncauto_handbook
+
+# setup up the folder. 
+cd asyncauto_handbook
+
+# Initialise git
+git init
+
+# Initialise npm and install switchless cli
+npm init
+npm install --save-dev @switchless-io/cli@latest
+
+# Run the cli and install the latest theme of mkdocs 
+./node_modules/@switchless-io/cli/index.js
+# choose --> install --> mkdocs
+
+# Lift the server
+mkdocs serve
+
+# create a remote repo and push data to repo
+git commit -m "mkdocs setup"
+git remote add origin https://github.com/your_name/your_repo.git
+git push -u origin master
+```
+
+### Setup documentation in your existing node project
+
 `./node_modules/@switchless-io/cli/index.js` 
 
 choose `install`, choose `mkdocs` from the menu.
 
+### Setup documentation in a new switchless app
 If you are starting a new project, mkdocs in included in the `web-app` template.
-
-`sudo easy_install mkdocs` - installs mkdocs cli
 
 `mkdocs serve` - you can view the static files that you are working on currently on your local browser. `localhost:8000`
 
 ## Hosting
 
-### Public hosting 
+### Public hosting using readthedocs
 We generally prefer [readthedocs.org](https://readthedocs.org) for hosting public documentations. They have some additional features regarding versioning of documentations. 
 
 **To deploy via readthedocs:**
@@ -48,6 +81,7 @@ We generally prefer [readthedocs.org](https://readthedocs.org) for hosting publi
 - connect your github repos to readthedocs
 - click `import repository`
 - point the cloudflare DNS to the newly created doc 
+`Cname handbook.asyncauto.com --> asyncauto-handbook.readthedocs.io`
 
 **Use the following settings**
 
@@ -55,16 +89,20 @@ We generally prefer [readthedocs.org](https://readthedocs.org) for hosting publi
 	- defaut version - latest
 	- default branch - master
 	- single version - tick this checkbox 
+  - documentation type - mkdocs
 - domains 
 	- add your domain 
 		- canonical - tick this checkbox
 		- always use http - tick this checkbox 
 
-### Private hosting 
+### Public hosting using s3
 Use cloudflare and s3 to privately host your static files
 
 Refer to this - [How to host a static website using AWS S3 and Cloudflare](https://miketabor.com/how-to-host-a-static-website-using-aws-s3-and-cloudflare/) to setup your static site. 
 
+### Private hosting using aws s3
+
+Perform the steps in the previous section
 **Protection from cross domain access**
 ![s3 does not allow cross domain access](files/s3-does-not-allow-cross-domain-access.png)
 Because of how s3 works, your bucket name should be the name of the domain where you host your static site. S3 will not allow any other domain to point to your s3 bucket. 
