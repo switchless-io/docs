@@ -30,6 +30,10 @@ nav:
         - Wordpress: 'wordpress.md'
     - Sematic :
         - Tables: 'semantic/tables.md'
+    - How to:
+        - Change Favicon: 'how_to/change_favicon.md'
+        - Clear broswer cache: 'how_to/clear_cache_browser.md'
+        - Clear cloudflare cache: 'how_to/clear_cache_cloudflare.md'
     # static_templates:
     #     - 404.html
 
