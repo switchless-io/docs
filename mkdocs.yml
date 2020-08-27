@@ -21,6 +21,7 @@ nav:
         - Bearer auth: 'auth/bearer_auth.md'
     - Stack:
         - Logging : 'logging.md'
+        - Blueprint API : 'stack/blueprint_apis.md'
         - Mailgun: 'mailgun.md'
         - Metabase: 'metabase.md'
         - Mk Docs: 'mkdocs.md'
