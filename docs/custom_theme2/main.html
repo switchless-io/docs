@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{ base_url }}/semantic/semantic.min.css" type="text/css">
     <link rel="stylesheet" href="{{ base_url }}/css/alabaster.css" type="text/css">
     <!-- <link rel="stylesheet" href="{{ base_url }}/css/alabaster-overrides.css" type="text/css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
 
     {% for path in extra_css %}
       <link href="{{ path }}" rel="stylesheet">
@@ -26,8 +27,9 @@
         $('a[href="'+path+'"]').parents('li.item').addClass('active')
       })
     </script>
+    <!-- extra=====javascript -->
     {% for path in extra_javascript %}
-      <script src="{{ path }}"></script>
+      <!-- <script src="{{ path }}"></script> -->
     {% endfor %}
 
     {% if config.google_analytics %}
@@ -42,6 +44,7 @@
       </script>
     {% endif %}
 
+
     <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
 
     {% block extrahead %}{% endblock %}
@@ -53,6 +56,13 @@
     <div class="documentwrapper">
       <div class="bodywrapper">
         <div class="body" role="main">
+          <div class="ui basic right aligned segment">
+            <div class="ui icon input">
+              <input id='searchbox3' class="prompt" type="text" placeholder="Search">
+              <i class="search icon"></i>
+            </div>
+            <div class="results"></div>
+          </div>
           {% block content %}
             {{ page.content }}
             {% if page.is_homepage and theme.homepage_nav %}
@@ -73,6 +83,7 @@
             {% include "sidebars/%s.html" % sidebar %}
           {% endfor %}
         {% endif %}
+
       </div>
     </div>
     <div class="clearer"></div>
@@ -95,5 +106,14 @@
   MkDocs version      : {{ mkdocs_version }}
   Docs Build Date UTC : {{ build_date_utc }}
   -->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <script type="text/javascript"> docsearch({
+    apiKey: 'f61ca5114bd7e235983138fb0c35f799',
+    indexName: 'switchless',
+    inputSelector: '#searchbox3',
+    debug: false // Set debug to true if you want to inspect the dropdown
+    });
+  </script>
 </body>
 </html>
