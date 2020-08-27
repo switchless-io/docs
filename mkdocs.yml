@@ -34,6 +34,8 @@ nav:
         - Change Favicon: 'how_to/change_favicon.md'
         - Clear broswer cache: 'how_to/clear_cache_browser.md'
         - Clear cloudflare cache: 'how_to/clear_cache_cloudflare.md'
+        - Use blueprint APIs: 'how_to/use_blueprint_apis.md'
+        - Inject data into database with collection runner: 'how_to/use_postman_runner_inject_data_into_database.md'
     # static_templates:
     #     - 404.html
 
