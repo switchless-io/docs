@@ -29,8 +29,9 @@ nav:
         - Sendgrid: 'sendgrid.md'
         - Switchless cli : 'switchless-cli.md'
         - Wordpress: 'wordpress.md'
-    - Sematic :
-        - Tables: 'semantic/tables.md'
+    - Patterns:
+        - Tables: 'patterns/tables.md'
+        - Steps and stages: 'patterns/steps_and_stages.md'
     - How to:
         - Change Favicon: 'how_to/change_favicon.md'
         - Clear broswer cache: 'how_to/clear_cache_browser.md'
