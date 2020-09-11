@@ -32,6 +32,7 @@ nav:
     - Patterns:
         - Tables: 'patterns/tables.md'
         - Steps and stages: 'patterns/steps_and_stages.md'
+        - Auto deploy to dev: 'patterns/auto_deploy_to_dev.md'
     - How to:
         - Change Favicon: 'how_to/change_favicon.md'
         - Clear broswer cache: 'how_to/clear_cache_browser.md'
