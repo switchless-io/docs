@@ -28,6 +28,7 @@ nav:
         - Postgresql: 'postgresql.md'
         - Sendgrid: 'sendgrid.md'
         - Switchless cli : 'switchless-cli.md'
+        - Sentry : 'stack/sentry.md'
         - Wordpress: 'wordpress.md'
     - Patterns:
         - Tables: 'patterns/tables.md'
