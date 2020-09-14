@@ -6,8 +6,8 @@
  
  Steps:  
 
-1. create a config file .ebextensions/upload_limit.config  
-2. code to increase file limit  
+-  create a config file .ebextensions/upload_limit.config  
+-  code to increase file limit  
 ```
 files:  
   /etc/nginx/conf.d/upload.conf:
@@ -18,5 +18,5 @@ files:
       # config for file upload  
       client_max_body_size 10M;
 ```
-3. commit the code.  
-4. deploy  
+-  commit the code.  
+-  deploy  
