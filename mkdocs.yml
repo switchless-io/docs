@@ -33,13 +33,17 @@ nav:
     - Patterns:
         - Tables: 'patterns/tables.md'
         - Steps and stages: 'patterns/steps_and_stages.md'
-        - Auto deploy to dev: 'patterns/auto_deploy_to_dev.md'
+        - Auto deploy to dev: 'patterns/auto_deploy_to_dev.md'  
+        - HTTP requests from backend: 'patterns/making_http_request_with_request_library.md'  
+        - Error Handling in async.auto(): 'patterns/error_handling_asyncauto.md'  
     - How to:
         - Change Favicon: 'how_to/change_favicon.md'
         - Clear broswer cache: 'how_to/clear_cache_browser.md'
         - Clear cloudflare cache: 'how_to/clear_cache_cloudflare.md'
         - Use blueprint APIs: 'how_to/use_blueprint_apis.md'
         - Inject data into database with collection runner: 'how_to/use_postman_runner_inject_data_into_database.md'
+        - Kill something running in a port: 'how_to/kill_something_running_in_a_port.md'
+        - Make local server remotely accessible: 'how_to/make_local_server_remotely_accesible.md'
         - Kill something running in a port: 'how_to/kill_something_running_in_a_port.md'
     # static_templates:
     #     - 404.html
