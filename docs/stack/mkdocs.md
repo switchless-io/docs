@@ -78,10 +78,9 @@ We generally prefer [readthedocs.org](https://readthedocs.org) for hosting publi
 **To deploy via readthedocs:**
 
 - signup for an account on readthedocs
+- point the cloudflare DNS to the newly created doc `Cname handbook.asyncauto.com --> cloudflare-to-cloudflare.readthedocs.io`
 - connect your github repos to readthedocs
 - click `import repository`
-- point the cloudflare DNS to the newly created doc 
-`Cname handbook.asyncauto.com --> asyncauto-handbook.readthedocs.io`
 
 **Use the following settings**
 
@@ -89,11 +88,17 @@ We generally prefer [readthedocs.org](https://readthedocs.org) for hosting publi
 	- defaut version - latest
 	- default branch - master
 	- single version - tick this checkbox 
-  - documentation type - mkdocs
+  - documentation type - mkdocs (default is sphinx, you need to change this)
 - domains 
 	- add your domain 
 		- canonical - tick this checkbox
 		- always use http - tick this checkbox 
+
+#### Expected issues:
+
+1. If you dont point the dns to `cloudflare-to-cloudflare.readthedocs.io` before setting up the project, you will experience some DNS propogation delays. 
+2. Immediately after you setup your custom domain, you will get an ssl error. It takes a while for readthedocs to issue you an ssl certificate. Browser bar will show `Not Secure` for some time.
+
 
 ### Public hosting using s3
 Use cloudflare and s3 to privately host your static files

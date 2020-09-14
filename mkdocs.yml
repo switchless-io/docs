@@ -20,17 +20,20 @@ nav:
     - Auth:
         - Bearer auth: 'auth/bearer_auth.md'
     - Stack:
-        - Logging : 'logging.md'
+        - Logging : 'stack/logging.md'
         - Blueprint API : 'stack/blueprint_apis.md'
-        - Mailgun: 'mailgun.md'
-        - Metabase: 'metabase.md'
-        - Mk Docs: 'mkdocs.md'
-        - Postgresql: 'postgresql.md'
-        - Sendgrid: 'sendgrid.md'
-        - Switchless cli : 'switchless-cli.md'
-        - Wordpress: 'wordpress.md'
-    - Sematic :
-        - Tables: 'semantic/tables.md'
+        - Mailgun: 'stack/mailgun.md'
+        - Metabase: 'stack/metabase.md'
+        - Mk Docs: 'stack/mkdocs.md'
+        - Postgresql: 'stack/postgresql.md'
+        # - Sendgrid: 'stack/sendgrid.md'
+        - Switchless cli : 'stack/switchless-cli.md'
+        - Sentry : 'stack/sentry.md'
+        - Wordpress: 'stack/wordpress.md'
+    - Patterns:
+        - Tables: 'patterns/tables.md'
+        - Steps and stages: 'patterns/steps_and_stages.md'
+        - Auto deploy to dev: 'patterns/auto_deploy_to_dev.md'
     - How to:
         - Change Favicon: 'how_to/change_favicon.md'
         - Clear broswer cache: 'how_to/clear_cache_browser.md'
