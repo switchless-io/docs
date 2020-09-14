@@ -45,6 +45,8 @@ nav:
         - Kill something running in a port: 'how_to/kill_something_running_in_a_port.md'
         - Make local server remotely accessible: 'how_to/make_local_server_remotely_accesible.md'
         - Kill something running in a port: 'how_to/kill_something_running_in_a_port.md'
+        - Change file upload limit in Nginx: 'how_to/increase_file_upload_limit_nginx.md'
+
     # static_templates:
     #     - 404.html
 
