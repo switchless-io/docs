@@ -36,6 +36,7 @@ nav:
         - Auto deploy to dev: 'patterns/auto_deploy_to_dev.md'  
         - HTTP requests from backend: 'patterns/making_http_request_with_request_library.md'  
         - Error Handling in async.auto(): 'patterns/error_handling_asyncauto.md'  
+        - Asset Pipeline: 'patterns/asset_pipeline.md'  
     - How to:
         - Change Favicon: 'how_to/change_favicon.md'
         - Clear broswer cache: 'how_to/clear_cache_browser.md'
