@@ -1,12 +1,12 @@
 # Auto Saving Forms
 
-To auto save forms, 
-- When user starts creating an object through a form, create a draft entry of the the form in database
-    - Redirect the user to the edit page of this draft object
-- On user editing the page, trigger an ajax call to save the form in DB
-    - There are couple of triggers to save the form
-        - Periodically - example, every 10 seconds
-        - On event - example, when the user moves to the next field
+To auto save forms,  
+- When user starts creating an object through a form, create a draft entry of the the form in database  
+    - Redirect the user to the edit page of this draft object  
+- On user editing the page, trigger an ajax call to save the form in DB  
+    - There are couple of triggers to save the form  
+        - Periodically - example, every 10 seconds  
+        - On event - example, when the user moves to the next field  
 
 ```
 
