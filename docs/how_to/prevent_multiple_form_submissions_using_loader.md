@@ -1,7 +1,7 @@
 # Prevent multiple form submissions by using loader on buttons
 
 When an HTML form is getting submitted, there's a chance that the same request is sent multiple times on multiple clicks on submit button. Prevent this by disabling the button on the first valid form submission.  
-![loader](files/Pasted image 1.png)  
+![loader](/files/Pasted image 1.png)  
 - If you are using semantic library for form validation, make sure the disable class is added only if the form is valid  
 
 
