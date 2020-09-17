@@ -36,7 +36,8 @@ nav:
         - Auto deploy to dev: 'patterns/auto_deploy_to_dev.md'  
         - HTTP requests from backend: 'patterns/making_http_request_with_request_library.md'  
         - Error Handling in async.auto(): 'patterns/error_handling_asyncauto.md'  
-        - Asset Pipeline: 'patterns/asset_pipeline.md'  
+        - Asset Pipeline: 'patterns/asset_pipeline.md'
+        - Auto Saving Forms: 'patterns/auto_saving_forms.md'
     - How to:
         - Change Favicon: 'how_to/change_favicon.md'
         - Clear broswer cache: 'how_to/clear_cache_browser.md'
@@ -46,6 +47,7 @@ nav:
         - Kill something running in a port: 'how_to/kill_something_running_in_a_port.md'
         - Make local server remotely accessible: 'how_to/make_local_server_remotely_accesible.md'
         - Change file upload limit in Nginx: 'how_to/increase_file_upload_limit_nginx.md'
+        - Prevent multiple form submissions by using loader on buttons: 'how_to/prevent_multiple_form_submissions_using_loader.md'
 
     # static_templates:
     #     - 404.html
