@@ -13,6 +13,8 @@ extra:
     homepage_sidebars:
         - about
         - navigation
+plugins:
+    - roamlinks
 nav:
     - Getting started:
         - Getting started: 'getting_started/index.md'

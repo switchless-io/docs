@@ -8,6 +8,10 @@ The term steps and stages can be interchangibly used. We internally use the term
 
 ![CleanShot 2020-08-28 at 15.25.10](/Users/alex/ec2code/switchless/docs/docs/files/steps_in_getting_started_mralbert.png)
 
+[[CleanShot 2020-08-28 at 15.25.10]]
+
+![[assets_images.png]]
+
 ### Eg - Stages in GSTR3b filing - Mr Albert
 
 ![CleanShot 2020-08-28 at 15.26.52](/Users/alex/ec2code/switchless/docs/docs/files/stages_in_gstr3b.png)
