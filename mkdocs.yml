@@ -32,6 +32,7 @@ nav:
         - Switchless cli : 'stack/switchless-cli.md'
         - Sentry : 'stack/sentry.md'
         - Wordpress: 'stack/wordpress.md'
+        - MeiliSearch: 'stack/meilisearch.md'
     - Patterns:
         - Tables: 'patterns/tables.md'
         - Steps and stages: 'patterns/steps_and_stages.md'
