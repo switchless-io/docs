@@ -5,7 +5,7 @@ Keywords:[[how to]]
 2. Install pgadmin - https://www.pgadmin.org/download/  
 3. If you open postgres, you can see that there's a server created already.  
 
-![](Pasted image 2.png)
+![](/files/Pasted image 2.png)
 Note that, under the server you can see existing databases.  
 
 5. How to create a new database:  

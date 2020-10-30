@@ -17,5 +17,5 @@ Sailjs comes with blueprint APIs. These blueprint APIs help us default CRUD APIs
 
 **Relevant how-tos:**
 
-- [How to use blueprint apis](/how_to/use_blueprint_apis/)
-- [How to use postman runner to inject sample data into database](/how_to/use_postman_runner_inject_data_into_database/)
+- [[How to use blueprint APIs]]
+- [[How to use postman collection runner to inject data into database]]

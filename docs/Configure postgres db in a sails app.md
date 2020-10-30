@@ -1,7 +1,7 @@
 # Configure postgres db in a sails app
 Keywords:[[how to]]
 
-Step 1: [Create a local db with pgAdmin](Create%20Local%20DB%20Server%20with%20PGAdmin)  
+Step 1: [[Create a local db with pgAdmin]]
 
 Step 2: Install postgres in sails and set a default datastore  
 Install postgres adapter>  
