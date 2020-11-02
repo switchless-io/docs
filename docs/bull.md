@@ -11,6 +11,8 @@ Eg of case 1 is something that heavy process such running some shell scripts or 
 
 Eg of case 2 is a request to be made to a 3rd part that is expected to have a downtime or processing a webhook from a 3rd party system. 
 
+Install bull via switchless cli - https://www.loom.com/share/7da3df9b1df045eba43b5fc66bb0cb70
+Basic bull usage walkthrough - https://www.loom.com/share/265833e77edc4651a35240c700f3c68e
 
 ## Setup
 Use the [switchless cli](https://switchless.io/getting-started/) to setup bull. Our standard setup includes a UI for visualising the state of the queue. 
