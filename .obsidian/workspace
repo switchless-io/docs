@@ -1,0 +1,119 @@
+{
+  "main": {
+    "id": "84159d6e09ac9a35",
+    "type": "split",
+    "children": [
+      {
+        "id": "0382a9639ed13253",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled 12.md",
+            "mode": "source"
+          }
+        },
+        "group": "2890e4fa589812eb"
+      },
+      {
+        "id": "b7fc6aa56a9be3a0",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled 12.md",
+            "mode": "preview"
+          }
+        },
+        "group": "2890e4fa589812eb"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "694fd1579fa0181c",
+    "type": "split",
+    "children": [
+      {
+        "id": "d12bedc79307edd1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fdfb5f1b70321a39",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a90250a08316963a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": ""
+              }
+            }
+          },
+          {
+            "id": "e725d7c2b16964c6",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "aee64b9f6c4d2b63",
+    "type": "split",
+    "children": [
+      {
+        "id": "063c2419b61d82f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6b872f9c5ff3ac2b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Untitled 12.md"
+              }
+            }
+          },
+          {
+            "id": "8a485f453ec382ba",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "Untitled 12.md",
+    "Untitled 13.md",
+    "daily/2020-10-31.md",
+    "Switchless documentation planning.md",
+    "switchless youtube channel.md",
+    "daily/2020-10-30.md",
+    "Switchless indian context npm package.md",
+    "Table in Semantic ui.md",
+    "Test NPM packages locally.md",
+    "About me.md"
+  ]
+}
