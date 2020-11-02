@@ -17,7 +17,7 @@
     "custom-css": true
   },
   "fileSortOrder": "byModifiedTime",
-  "attachmentFolderPath": "files",
+  "attachmentFolderPath": "docs/files",
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "hotkeys": {
@@ -167,5 +167,7 @@
     ]
   },
   "defaultViewMode": "preview",
-  "enabledPlugins": []
+  "enabledPlugins": [],
+  "newFileLocation": "folder",
+  "newFileFolderPath": "docs"
 }
