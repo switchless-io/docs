@@ -3,7 +3,7 @@
 linked notes: 
 
 - [[Blueprint APIs]]
-- [[bull]]
+- [[docs/bull]]
 - [[logging]]
 - [[mailgun]]
 - [[sentry]]
