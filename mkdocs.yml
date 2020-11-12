@@ -1,4 +1,5 @@
 site_name: Switchless Docs
+google_analytics: ['G-96NVTY62SR', 'Switchless.io']
 theme:
     name: null
     custom_dir: 'docs/custom_theme2/'
