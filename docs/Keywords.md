@@ -7,7 +7,7 @@ All the articles in the documentation is tagged with some of these keywords. Thi
 - [[how to]]
 - [[patterns]]
 - [[ui pattern]]
-- [[docs/keywords/semantic]]
+- [[semantic]]
 - [[dropdown]]
 - [[form]]
 - [[publishing]]

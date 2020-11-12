@@ -14,6 +14,14 @@ Linked notes:
 - [[How to use blueprint APIs]]
 - [[How to use postman collection runner to inject data into database]]
 - [[Install plugins in Mkdocs]]
-- [[Ngrok - Making your local server remotely accessible]]
+- [[Making your local server remotely accessible]]
 - [[Prevent multiple form submissions by using loader on buttons]]
 - [[Refresh AWS Access Keys]]
+- [[Create a copy of the production database in your localhost]]
+- [[Create read only user for metabase]]
+- [[How to setup metabase]]
+- [[How to setup sentry]]
+- [[Setup wordpress multi site]]
+
+
+

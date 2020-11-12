@@ -1,7 +1,7 @@
 # Making your local server remotely accessible
-Keywords:[[how to]]
-Stack: [[ngrok]]
+Keywords:[[how to]], [[ngrok]]
 
+ 
 - Install ngork from https://dashboard.ngrok.com/get-started  
 - copy .ngrok folder to your user directory  
 - Lift your sails app  
