@@ -7,6 +7,8 @@ We made a bunch of choices regarding various parts of a web stack. Of couse ther
 
 Someday you will overgrow these default choices. You can come back and thank us then. 
 
+[[Pagination]]
+
 ## Who is this tech stack for?
 This tech stack is designed for a `company of one`. If you are building a product company all by yourself, you dont have a lot of time to waste. You are writing code, talking to customer, handling operations, managing consultants. This tech stack is specifically designed for the constaints of a single person team. 
 

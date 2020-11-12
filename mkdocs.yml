@@ -17,40 +17,23 @@ plugins:
     - roamlinks
 nav:
     - Getting started:
-        - Getting started: 'getting_started/index.md'
-        - Setup Web App: 'getting_started/setup_web_app.md'
-    - Auth:
-        - Bearer auth: 'auth/bearer_auth.md'
+        - Getting started: ''
+        - Setup Web App: 'Setup Web App'
+    - Keywords: 'Keywords'
     - Stack:
-        - Logging : 'stack/logging.md'
-        - Blueprint API : 'stack/blueprint_apis.md'
-        - Mailgun: 'stack/mailgun.md'
-        - Metabase: 'stack/metabase.md'
-        - Mk Docs: 'stack/mkdocs.md'
-        - Postgresql: 'stack/postgresql.md'
+        - Logging : 'logging.md'
+        - Blueprint API : 'Blueprint APIs'
+        - Mailgun: 'mailgun'
+        - Metabase: 'metabase'
+        - Mk Docs: 'mkdocs'
+        - Postgresql: 'postgresql'
         # - Sendgrid: 'stack/sendgrid.md'
-        - Switchless cli : 'stack/switchless-cli.md'
-        - Sentry : 'stack/sentry.md'
-        - Wordpress: 'stack/wordpress.md'
-        - MeiliSearch: 'stack/meilisearch.md'
-    - Patterns:
-        - Tables: 'patterns/tables.md'
-        - Steps and stages: 'patterns/steps_and_stages.md'
-        - Auto deploy to dev: 'patterns/auto_deploy_to_dev.md'  
-        - HTTP requests from backend: 'patterns/making_http_request_with_request_library.md'  
-        - Error Handling in async.auto(): 'patterns/error_handling_asyncauto.md'  
-        - Asset Pipeline: 'patterns/asset_pipeline.md'
-        - Auto Saving Forms: 'patterns/auto_saving_forms.md'
-    - How to:
-        - Change Favicon: 'how_to/change_favicon.md'
-        - Clear broswer cache: 'how_to/clear_cache_browser.md'
-        - Clear cloudflare cache: 'how_to/clear_cache_cloudflare.md'
-        - Use blueprint APIs: 'how_to/use_blueprint_apis.md'
-        - Inject data into database with collection runner: 'how_to/use_postman_runner_inject_data_into_database.md'
-        - Kill something running in a port: 'how_to/kill_something_running_in_a_port.md'
-        - Make local server remotely accessible: 'how_to/make_local_server_remotely_accesible.md'
-        - Change file upload limit in Nginx: 'how_to/increase_file_upload_limit_nginx.md'
-        - Prevent multiple form submissions by using loader on buttons: 'how_to/prevent_multiple_form_submissions_using_loader.md'
+        - Switchless cli : 'switchless-cli'
+        - Sentry : 'sentry'
+        - Wordpress: 'wordpress'
+        - MeiliSearch: 'meilisearch'
+    - How to: 'keywords/how to'
+    - Patterns: 'keywords/patterns'
 
     # static_templates:
     #     - 404.html

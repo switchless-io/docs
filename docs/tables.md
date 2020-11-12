@@ -31,7 +31,28 @@ This one is non stackable but if the view port is small, then the right side of 
 
 ### Non stackable with horizonal scroll
 
+Add this to table element - `style="display: block;overflow-x:scroll;"`
 
+```
+<table class="ui celled unstackable collapsing table" style="display: block;overflow-x:scroll;">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Site</th>
+            <th>Device id</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-id=''>
+            <td>name</td>
+            <td>type</td>
+            <td>site</td>
+            <td>Device id</td>
+        </tr>
+    </tbody>
+</table>
+```
 
 
 

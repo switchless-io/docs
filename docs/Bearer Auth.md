@@ -1,4 +1,6 @@
 # Bearer Auth
+keywords: [[patterns]]
+
 We use this for user based access to backend apis. This auth can be applied to both blueprint APIs and well as custom APIs. 
 
 The bearer token that we use is in fact a JWT token. The following are the features supposed by Bearer JWT Auth: 
