@@ -8,3 +8,6 @@ linked notes:
 - [[Making a POST request]]
 - [[Confirm]]
 - [[Green check and red cross]]
+- [[Popup pattern 1]]
+- [[Filter by start date, end date]]
+- [[Right floated button]]

@@ -54,13 +54,11 @@ keywords: [[ui pattern]]
 
 ```
 listInvoices:function(req,res){
-	var locals={};
+
 	var filters = {}
 	var limit = req.query.limit?parseInt(req.query.limit): 100;
 	var page = req.query.page?parseInt(req.query.page):1;
 	var skip = limit * (page-1);
-	locals.page = page;
-	locals.limit = limit;
 
 
 	async.auto({
@@ -78,8 +76,12 @@ listInvoices:function(req,res){
 
 		if(err)
 			throw err;
-		locals.pages = Math.ceil(parseFloat(results.getInvoiceCount/limit)? parseFloat(results.getInvoiceCount/limit) : 1);
-		locals.invoices=results.getInvoices;
+		var locals={
+			page:page,
+			limit:limit,
+			pages: Math.ceil(parseFloat(results.getInvoiceCount/limit)? parseFloat(results.getInvoiceCount/limit) : 1),
+			invoices:results.getInvoices,
+		};
 		res.view('list_invoices',locals);
 	})
 }
