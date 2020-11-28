@@ -11,3 +11,7 @@ linked notes:
 - [[Steps and stages]]
 - [[tables]]
 - [[Bearer Auth]]
+- [[Download file]]
+- [[Export data as csv,excel,json]]
+- [[Write excel file]]
+- [[Upload file]]

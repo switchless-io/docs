@@ -11,3 +11,4 @@ linked notes:
 - [[Popup pattern 1]]
 - [[Filter by start date, end date]]
 - [[Right floated button]]
+- [[Right floated icon download dropdown]]
