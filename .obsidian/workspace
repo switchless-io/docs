@@ -4,29 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0382a9639ed13253",
+        "id": "0e02c487e02b66d9",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/Untitledasdf.md",
+            "file": "docs/Most used EB commands.md",
             "mode": "source"
           }
-        },
-        "group": "2890e4fa589812eb"
-      },
-      {
-        "id": "b7fc6aa56a9be3a0",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "docs/Untitledasdf.md",
-            "mode": "preview"
-          }
-        },
-        "group": "2890e4fa589812eb"
+        }
       }
     ],
     "direction": "vertical"
@@ -53,7 +40,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "opin"
+                "query": "elastic ",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
               }
             }
           },
@@ -65,7 +57,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +78,12 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Untitledasdf.md"
+                "file": "docs/Most used EB commands.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           },
@@ -105,15 +103,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "docs/Untitled.md",
-    "docs/Pagination.md",
-    "docs/index.md",
-    "Untitled.md",
-    "Untitled 12.md",
-    "Untitled 13.md",
-    "daily/2020-10-31.md",
-    "Switchless documentation planning.md",
-    "switchless youtube channel.md",
-    "daily/2020-10-30.md"
+    "docs/Most used EB commands.md",
+    "docs/Set up ElasticBeanstalk Locally.md",
+    "docs/keywords/how to.md",
+    "docs/keywords/obsidian.md",
+    "docs/keywords/publishing.md",
+    "docs/keywords/setup.md",
+    "docs/keywords/ui pattern.md",
+    "docs/How to clear cache in cloudflare.md",
+    "docs/keywords/form.md",
+    "docs/keywords/meta.md"
   ]
 }
