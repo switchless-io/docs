@@ -22,6 +22,9 @@ Linked notes:
 - [[How to setup metabase]]
 - [[How to setup sentry]]
 - [[Setup wordpress multi site]]
+- [[How to use dirname]]
+- [[Install NPM packages from local directory]]
+- [[JSON schema validation]]
 
 
 

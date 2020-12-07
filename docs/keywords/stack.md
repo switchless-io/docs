@@ -16,3 +16,6 @@ The switchless stack consist of the following components.
 - [[mkdocs]] - how we publish and maintain documentation
 - [[metabase]] - BI tool 
 - [[meilisearch]] - search plugin
+- npm modules
+	- [[FS]] - working with files
+	- [[ajv]] - schema validation
