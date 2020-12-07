@@ -1,8 +1,8 @@
 # install NPM packages from local directory
-keywords: [[how to]], [[npm]]
-
-author: [[Alex]]
-
+--- 
+- keywords: [[how to]], [[npm]]
+- author: [[Alex]]
+--- 
 ```shell
 npm install --save ../path/to/mymodule
 ```
