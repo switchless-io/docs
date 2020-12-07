@@ -1,6 +1,8 @@
 # Click button on the screen in bulk
-keywords: [[ui]],[[patterns]]
-
+---
+- keywords: [[ui]],[[patterns]]
+- author: [[Alex]]
+---
 ```
 $('#create_all_invoices').click(function(){
 	$(this).addClass('disabled');

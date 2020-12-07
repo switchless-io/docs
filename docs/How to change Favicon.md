@@ -1,5 +1,8 @@
 # How to change Favicon
-Keywords:[[how to]]
+---
+- Keywords:[[how to]]
+- author: [[alex]]
+---
 ## What is a favicon?
 
 The little icon that you see in a broswer tab. But default, a switchless project will have the sailjs icon as favicon.

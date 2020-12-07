@@ -1,6 +1,8 @@
 # Fully loaded tabs with its own url
-keywords: [[tabs]],[[ui pattern]]
-
+---
+- keywords: [[tabs]],[[ui pattern]]
+- author: [[Alex]]
+---
 ```
 <%
 	// on the top of the page

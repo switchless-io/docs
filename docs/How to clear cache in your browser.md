@@ -1,5 +1,8 @@
 # How to clear cache in your browser?
-Keywords:[[how to]]
+---
+- Keywords:[[how to]]
+- author: [[alex]]
+---
 
 Open `Developer tools` in your browser - `options + command + i`
 

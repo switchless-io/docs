@@ -1,6 +1,8 @@
 # Setup wordpress multi site
-keywords: [[how to]], [[wordpress]]
-
+---
+- keywords: [[how to]], [[wordpress]]
+- author: [[Alex]]
+---
 ## Stack
 - Wordpress
 - Mysql

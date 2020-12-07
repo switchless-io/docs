@@ -1,6 +1,8 @@
 # Tables
-Keywords:[[patterns]]
-
+---
+- Keywords:[[patterns]]
+- author: [[alex]]
+---
 This document describes the most common table patterns that we use. 
 This is over and on top of [formantic ui tables](https://fomantic-ui.com/collections/table.html)
 

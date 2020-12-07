@@ -1,6 +1,8 @@
 # How to create AWS access keys
-Keywords: [[aws]]
-
+---
+- Keywords: [[aws]]
+- author: [[Anzal]]
+---
 Go to AWS console>IAM>users
 1. Choose an existing user or create a new one
 2. Under 'Permissions' add what's needed

@@ -1,7 +1,8 @@
 # Download file
-
-keywords: [[patterns]]
-
+---
+- keywords: [[patterns]]
+- author: [[Alex]]
+--- 
 
 ## Install sails hook upload
 `npm install sails-hook-uploads --save`

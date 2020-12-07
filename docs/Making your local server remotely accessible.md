@@ -1,6 +1,8 @@
 # Making your local server remotely accessible
-Keywords:[[how to]], [[ngrok]]
-
+---
+- Keywords:[[how to]], [[ngrok]]
+- author: [[Alex]]
+---
  
 - Install ngork from https://dashboard.ngrok.com/get-started  
 - copy .ngrok folder to your user directory  

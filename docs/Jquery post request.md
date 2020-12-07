@@ -1,6 +1,8 @@
 # Jquery post request
-keywords: [[jquery]], [[ui pattern]]
-
+---
+- keywords: [[jquery]], [[ui pattern]]
+- author: [[Alex]]
+---
 ```
 $.post("/gstin/<%=req.gstin.value%>/import/create_invoice/expense", body, function(result,status){
 	console.log('status = '+status);// this runs only on sucess

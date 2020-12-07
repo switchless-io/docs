@@ -1,7 +1,8 @@
 # Right floated button
-keyword: [[ui pattern]], [[button]]
-
-
+---
+- keyword: [[ui pattern]], [[button]]
+- author: [[Alex]]
+---
 
 ![[CleanShot 2020-11-27 at 11.53.42.png]]
 

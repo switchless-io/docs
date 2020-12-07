@@ -1,6 +1,8 @@
 # Confirm
-keywords: [[ui pattern]]
-
+---
+- keywords: [[ui pattern]]
+- author: [[Alex]]
+---
 ```
 
 var r = confirm("Delete this permanently ?");

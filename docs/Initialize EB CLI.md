@@ -1,7 +1,8 @@
 # Initialize EB CLI
-
-Keywords: [[aws]][[elastic beanstalk]]
-
+---
+- Keywords: [[aws]][[elastic beanstalk]]
+- author: [[Anzal]]
+---
 1. Run `eb init` in the directory with code
 2. Enter region, aws-access-id and secret
 ![[Pasted image 20201201101315.png]]

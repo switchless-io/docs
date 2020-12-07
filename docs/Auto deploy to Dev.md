@@ -1,6 +1,8 @@
 # Auto deploy to Dev
-Keywords:[[patterns]]
-
+---
+- Keywords:[[patterns]]
+- author: [[alex]]
+---
 It helps to keep deploying latest code to dev on a specific branch to dev server. It helps others test your code. 
 
 Create folder - `.gitlab` and in that folder create file - `eb_config.yml` with the following content

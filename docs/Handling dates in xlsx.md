@@ -1,7 +1,8 @@
 # Handling dates in xlsx
-
-keywords: [[npm xlsx]], [[how to]]
-
+---
+- keywords: [[npm xlsx]], [[how to]]
+- author: [[Alex]]
+---
 
 ```
 var wb = XLSX.readFile(".tmp/uploads/"+file_name.split('_').join('.'),{cellDates: true });

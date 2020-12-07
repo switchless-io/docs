@@ -1,6 +1,8 @@
 # Obsidian to Mkdocs conversion
-keywords: [[publishing]], [[obsidian]], [[mkdocs]]
-
+---
+- keywords: [[publishing]], [[obsidian]], [[mkdocs]]
+- author: [[alex]]
+---
 use this plugin: 
 
 - [Roamlinks plugin](https://github.com/Jackiexiao/mkdocs-roamlinks-plugin)

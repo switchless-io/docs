@@ -1,6 +1,8 @@
 # loader on form submit
-keywords: [[form]], [[ui pattern]]
-
+--- 
+- keywords: [[form]], [[ui pattern]]
+- author: [[Alex]]
+--- 
 ```
 $('.ui.form').form({
 	fields:{

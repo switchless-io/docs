@@ -1,6 +1,8 @@
 # Auto Saving Forms
-Keywords:[[patterns]]
-
+---
+- Keywords:[[patterns]]
+- author: [[alex]]
+--- 
 To auto save forms,  
 - When user starts creating an object through a form, create a draft entry of the the form in database  
     - Redirect the user to the edit page of this draft object  

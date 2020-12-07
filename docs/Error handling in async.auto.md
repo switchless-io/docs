@@ -1,6 +1,8 @@
 # Error handling in async.auto
-Keywords:[[patterns]]
-
+---
+- Keywords:[[patterns]]
+- author: [[alex]]
+---
 - Suppress error, not acting on it or just console.logging has lot's of unknow consequences.  
 - We won't able to identify any errors that is genuinely effecting the business/product functionalities. examples:
         - we assumed a function created an user but it threw a unique email id error. Due to suppression we showed a wrong message to the customer that he account is activated  

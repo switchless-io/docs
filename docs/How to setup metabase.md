@@ -1,6 +1,8 @@
 # Setup metabase 
-keywords: [[how to]], [[setup]], [[metabase]]
-
+---
+- keywords: [[how to]], [[setup]], [[metabase]]
+- author: [[Alex]]
+--- 
 The process for setting up metabase follows our standard method for deploying any open source subsystem. Dockerise it and make sure the ec2 machine is disposable at any given point of time. 
 
 ## Instructions to setup 

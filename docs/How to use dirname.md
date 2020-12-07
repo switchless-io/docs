@@ -1,9 +1,8 @@
 # How to use __dirname
-
-keywords: [[how to]], [[FS]]
-
-author: [[Alex]]
-
+---
+- keywords: [[how to]], [[FS]]
+- author: [[Alex]]
+---
 to know when to use `__dirname` vs `process.cwd()` refer to the article below
 
 - https://www.digitalocean.com/community/tutorials/nodejs-how-to-use__dirname

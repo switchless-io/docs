@@ -1,7 +1,8 @@
 # ajv
-keywords: [[stack]], [[npm module]], [[JSON schema validation]]
-
-author: [[Alex]]
+---
+- keywords: [[stack]], [[npm module]], [[JSON schema validation]]
+- author: [[Alex]]
+---
 
 ```javascript
 var Ajv = require('ajv'); 

@@ -1,6 +1,8 @@
 # Popup pattern 1
-keywords: [[ui pattern]]
-
+---
+- keywords: [[ui pattern]]
+- author:[[Alex]]
+---
 ![[Pasted image 20201127103052.png]]
 
 HTML popups are very useful. We have used that in [[Highlyreco]] and [[Mr Albert]]. 

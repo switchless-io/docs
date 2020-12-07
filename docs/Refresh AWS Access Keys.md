@@ -1,6 +1,8 @@
 ## Refresh AWS Access Keys
-Keywords:[[how to]]
-
+---
+- Keywords:[[how to]]
+- author: [[alex]]
+---
 1. Go to AWS console> Open IAM
 2. Select 'users' from the side tab
 3. select the user for which you want to refresh the credentials

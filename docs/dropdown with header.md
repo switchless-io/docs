@@ -1,6 +1,8 @@
 # Dropdown with header
-keywords: [[form]], [[dropdown]], [[ui pattern]]
-
+---
+- keywords: [[form]], [[dropdown]], [[ui pattern]]
+- author: [[alex]]
+---
 ## How it looks like: 
 ![[Pasted image 20201103172517.png]]
 

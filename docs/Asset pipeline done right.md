@@ -1,6 +1,8 @@
 # Asset pipeline done right
-Keywords:[[patterns]]
-
+---
+- Keywords:[[patterns]]
+- author: [[alex]]
+---
 Sails out of the box supports a framework to handle assets. It comes with a folder structure and pipeline configuration that loads those files from assets folders to sails runtime for browser consumption.
 
 The top level folder should **not contain anything more than** these folders and files.

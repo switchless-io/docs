@@ -1,6 +1,8 @@
 # Right floated download dropdown
-keywords: [[ui pattern]]
-
+---
+- keywords: [[ui pattern]]
+- author: [[Alex]]
+---
 ![[CleanShot 2020-11-28 at 17.02.57.png]]
 ```
 <div class="ui right floated basic icon dropdown button">

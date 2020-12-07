@@ -1,6 +1,8 @@
 # How to setup sentry
-keywords: [[how to]],[[sentry]], [[setup]]
-
+---
+- keywords: [[how to]],[[sentry]], [[setup]]
+- author: [[Alex]]
+---
 
 ## Setup sentry
 

@@ -1,6 +1,8 @@
 ## Create Local DB Server with PGAdmin  
-Keywords:[[how to]]
-
+---
+- Keywords:[[how to]]
+- author: [[alex]]
+---
 1. Install postgres. Make sure this is running whenever you want to use the db.  
 2. Install pgadmin - https://www.pgadmin.org/download/  
 3. If you open postgres, you can see that there's a server created already.  

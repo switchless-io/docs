@@ -1,6 +1,8 @@
 # How to clear cache in cloudflare?
-Keywords:[[how to]]
-
+---
+- Keywords:[[how to]]
+- author: [[alex]]
+--- 
 Login and navigate to your domain on cloudflare.
 
 Navigate to `caching` --> `configuration`
