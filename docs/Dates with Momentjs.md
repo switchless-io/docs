@@ -25,7 +25,8 @@ Yes. It'll come out exactly as expected:
 
 
 ## Beginning / end of a period oprations
-```//Start of day
+```
+//Start of day
 date2.startOf('day')
 // date1: Moment<2020-12-08T10:30:16+05:30>
 // date2: Moment<2020-12-08T00:00:00+05:30>
