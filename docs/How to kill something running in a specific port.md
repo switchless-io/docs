@@ -17,7 +17,7 @@
 In this case kill the port from terminal and try again:
 
 command to kill a port(1337 here) in mac is this:  
-`sudo lsof -t -i tcp:1337 | xargs kill`  
+`sudo lsof -t -i tcp:1337 | xargs kill -9`  
   
 For windows and linux machines, refer this thread: https://stackoverflow.com/questions/3855127/find-and-kill-process-locking-port-3000-on-mac
 
