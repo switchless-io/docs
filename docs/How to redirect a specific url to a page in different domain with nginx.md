@@ -1,5 +1,8 @@
 # How to redirect a specific url to a page in different domain with nginx
+---
 Keywords: [[nginx]],[[how to]]
+Author:[[Anzal]]
+---
 
 Edit the file .ebextensions/nginx_for_prod.config:
 
