@@ -12,3 +12,4 @@ linked notes:
 - [[Filter by start date, end date]]
 - [[Right floated button]]
 - [[Right floated icon download dropdown]]
+- [[Checkbox in a form]]
