@@ -1,0 +1,3 @@
+# new note:
+
+keyword: [[patter]]

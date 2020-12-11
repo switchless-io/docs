@@ -26,6 +26,6 @@ Linked notes:
 - [[Install NPM packages from local directory]]
 - [[JSON schema validation]]
 - [[How to redirect a specific url to a page in different domain with nginx]]
-
+- [[Install private gitrepo as dependancy]]
 
 
