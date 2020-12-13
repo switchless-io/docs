@@ -7,6 +7,8 @@
 - [[How to setup metabase]]
 - [[How to setup sentry]]
 - [[Set up ElasticBeanstalk Locally]]
+- [[Setup wordpress multi site]]
+
 
 ## Patterns
 - [[Asset pipeline done right]]
@@ -23,9 +25,25 @@
 - [[Write excel file]]
 - [[Upload file]]
 - [[Dates with Momentjs]]
+- [[Handling dates in xlsx]]
+- [[What is the difference between pattern and how to]]
+- [[publishing]]
+- [[form]]
 
 
 
+## UI Patterns
+- [[dropdown with header]]
+- [[List page Filter]]
+- [[Pagination]]
+- [[Making a POST request]]
+- [[Confirm]]
+- [[Green check and red cross]]
+- [[Popup pattern 1]]
+- [[Filter by start date, end date]]
+- [[Right floated button]]
+- [[Right floated icon download dropdown]]
+- [[Checkbox in a form]]
 
 ## Day to day actions
 - [[Configure postgres db in a sails app]]

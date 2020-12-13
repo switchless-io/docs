@@ -8,6 +8,11 @@ A choice of tech stack selected for a single person company
 
 
 ## The stack
-- [[Libraries and Tools]]
+- [[Stack components]]
 - [[Abilities of switchless]] 
 - [[How to get things done with switchless]]
+
+
+
+__[[How to contribute to this doc]]__
+
