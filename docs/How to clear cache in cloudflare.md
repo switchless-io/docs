@@ -1,6 +1,6 @@
 # How to clear cache in cloudflare?
 ---
-- Keywords:[[how to]]
+- Keywords:[[How to get things done with switchless]]
 - author: [[alex]]
 --- 
 Login and navigate to your domain on cloudflare.

@@ -1,6 +1,6 @@
 # install NPM packages from local directory
 --- 
-- keywords: [[how to]], [[npm]]
+- keywords: [[How to get things done with switchless]], [[npm]]
 - author: [[Alex]]
 --- 
 ```shell

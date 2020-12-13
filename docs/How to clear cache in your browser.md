@@ -1,6 +1,6 @@
 # How to clear cache in your browser?
 ---
-- Keywords:[[how to]]
+- Keywords:[[How to get things done with switchless]]
 - author: [[alex]]
 ---
 

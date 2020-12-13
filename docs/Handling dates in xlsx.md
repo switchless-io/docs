@@ -1,6 +1,6 @@
 # Handling dates in xlsx
 ---
-- keywords: [[npm xlsx]], [[how to]]
+- keywords: [[npm xlsx]], [[How to get things done with switchless]]
 - author: [[Alex]]
 ---
 

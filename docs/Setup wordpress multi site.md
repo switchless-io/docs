@@ -1,6 +1,6 @@
 # Setup wordpress multi site
 ---
-- keywords: [[how to]], [[wordpress]]
+- keywords: [[How to get things done with switchless]], [[wordpress]]
 - author: [[Alex]]
 ---
 ## Stack

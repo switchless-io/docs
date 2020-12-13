@@ -1,6 +1,6 @@
 # Prevent multiple form submissions by using loader on buttons
 ---
-- Keywords:[[how to]]
+- Keywords:[[How to get things done with switchless]]
 - author: [[alex]]
 ---
 When an HTML form is getting submitted, there's a chance that the same request is sent multiple times on multiple clicks on submit button. Prevent this by disabling the button on the first valid form submission.  

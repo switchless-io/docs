@@ -1,6 +1,6 @@
 # How to redirect a specific url to a page in different domain with nginx
 ---
-Keywords: [[nginx]],[[how to]]
+Keywords: [[nginx]],[[How to get things done with switchless]]
 Author:[[Anzal]]
 ---
 
@@ -8,7 +8,7 @@ Edit the file .ebextensions/nginx_for_prod.config:
 
 **Add a location handling config entry:**
 set the proxy_pass to the url of the domain
-```
+```javascript
 location /deals {
 	proxy_pass https://wishup-holiday-season-deals.mailchimpsites.com/;
 }

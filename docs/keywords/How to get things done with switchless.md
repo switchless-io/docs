@@ -1,9 +1,33 @@
-# How to
-This keyword is used to tag all articles that describe a how to
+# How to get things done with switchless
+
+> Use these in combination to solve bigger problems
 
 
-Linked notes:
+## How to setup your infrastructure
+- [[How to setup metabase]]
+- [[How to setup sentry]]
+- [[Set up ElasticBeanstalk Locally]]
 
+## Patterns
+- [[Asset pipeline done right]]
+- [[Auto deploy to Dev]]
+- [[Auto Saving Forms]]
+- [[Error handling in async.auto]]
+- [[Filtering emails shot from staging environment]]
+- [[Making HTTP requests using 'request' library]]
+- [[Steps and stages]]
+- [[tables]]
+- [[Bearer Auth]]
+- [[Download file]]
+- [[Export data as csv,excel,json]]
+- [[Write excel file]]
+- [[Upload file]]
+- [[Dates with Momentjs]]
+
+
+
+
+## Day to day actions
 - [[Configure postgres db in a sails app]]
 - [[Create Local DB Server with PGAdmin]]
 - [[How to change Favicon]]

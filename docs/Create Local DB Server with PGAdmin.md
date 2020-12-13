@@ -1,6 +1,6 @@
 ## Create Local DB Server with PGAdmin  
 ---
-- Keywords:[[how to]]
+- Keywords:[[How to get things done with switchless]]
 - author: [[alex]]
 ---
 1. Install postgres. Make sure this is running whenever you want to use the db.  

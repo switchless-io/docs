@@ -1,6 +1,6 @@
 ## Refresh AWS Access Keys
 ---
-- Keywords:[[how to]]
+- Keywords:[[How to get things done with switchless]]
 - author: [[alex]]
 ---
 1. Go to AWS console> Open IAM
