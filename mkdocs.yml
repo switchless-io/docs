@@ -17,24 +17,7 @@ extra:
 plugins:
     - roamlinks
 nav:
-    - Getting started:
-        - Getting started: ''
-        - Setup Web App: 'Setup Web App'
-    - Keywords: 'Keywords'
-    - Stack:
-        - Logging : 'logging.md'
-        - Blueprint API : 'Blueprint APIs'
-        - Mailgun: 'mailgun'
-        - Metabase: 'metabase'
-        - Mk Docs: 'mkdocs'
-        - Postgresql: 'postgresql'
-        # - Sendgrid: 'stack/sendgrid.md'
-        - Switchless cli : 'switchless-cli'
-        - Sentry : 'sentry'
-        - Wordpress: 'wordpress'
-        - MeiliSearch: 'meilisearch'
-    - How to: 'keywords/how to'
-    - Patterns: 'keywords/patterns'
+    - Start Here: 'Switchless'
 
     # static_templates:
     #     - 404.html
