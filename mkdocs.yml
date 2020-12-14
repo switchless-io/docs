@@ -13,6 +13,7 @@ extra:
         - navigation
     homepage_sidebars:
         - about
+        - navigation
 plugins:
     - roamlinks
 
