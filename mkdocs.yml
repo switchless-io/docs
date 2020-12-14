@@ -16,8 +16,7 @@ extra:
         - navigation
 plugins:
     - roamlinks
-nav:
-    - Start Here: 'index'
+
 
     # static_templates:
     #     - 404.html
