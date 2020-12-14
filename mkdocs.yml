@@ -17,7 +17,7 @@ extra:
 plugins:
     - roamlinks
 nav:
-    - Start Here: 'Switchless'
+    - Start Here: 'index'
 
     # static_templates:
     #     - 404.html
