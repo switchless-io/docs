@@ -23,7 +23,7 @@
 - [[Download file]]
 - [[Export data as csv,excel,json]]
 - [[Write excel file]]
-- [[Upload file]]
+- [[Upload a file]]
 - [[Dates with Momentjs]]
 - [[Handling dates in xlsx]]
 - [[What is the difference between pattern and how to]]
@@ -69,5 +69,7 @@
 - [[JSON schema validation]]
 - [[How to redirect a specific url to a page in different domain with nginx]]
 - [[Install private gitrepo as dependancy]]
+- [[Upload a file]]
+- [[List page Filter]]
 
 

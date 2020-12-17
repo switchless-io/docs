@@ -31,7 +31,7 @@ uploads:{
 }
 ```
 
-If you are uploading files to S3, then you will need to use `skipper-s3` instead. Ref to [[Upload file]]. 
+If you are uploading files to S3, then you will need to use `skipper-s3` instead. Ref to [[Upload a file]]. 
 
 ## ref: 
 - https://sailsjs.com/documentation/reference/response-res/res-attachment
