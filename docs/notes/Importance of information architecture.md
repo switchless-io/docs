@@ -1,8 +1,8 @@
 # Importance of Information architecture
 ---
 - author: [[Alex]]
----
 
+---
 ## Example
 
 Here is a particular element from [[Mr Albert]]. This is html render of an invoice object.  
