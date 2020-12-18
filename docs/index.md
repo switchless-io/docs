@@ -5,6 +5,7 @@ A choice of tech stack selected for a single person company
 ## The Philosophy
 - [[This is an opinionated stack ]]
 - [[This stack is designed for a company of one]]
+- [[Importance of information architecture]]
 
 
 ## The stack
