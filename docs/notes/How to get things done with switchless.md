@@ -8,71 +8,88 @@
 - [[How to setup sentry]]
 - [[Set up ElasticBeanstalk Locally]]
 - [[Setup wordpress multi site]]
+- [[Install plugins in Mkdocs]]
+- [[Refresh AWS Access Keys]]
 
 
 ## Patterns
 - [[Asset pipeline done right]]
-- [[Auto deploy to Dev]]
-- [[Auto Saving Forms]]
 - [[Error handling in async.auto]]
-- [[Filtering emails shot from staging environment]]
 - [[Making HTTP requests using 'request' library]]
 - [[Steps and stages]]
 - [[tables]]
 - [[Bearer Auth]]
-- [[Download file]]
-- [[Export data as csv,excel,json]]
-- [[Write excel file]]
-- [[Upload a file]]
 - [[Dates with Momentjs]]
 - [[Handling dates in xlsx]]
 - [[What is the difference between pattern and how to]]
 - [[publishing]]
-- [[form]]
+
+
+## Files
+- [[Export data as csv,excel,json]]
+- [[Write excel file]]
+- [[Upload a file]]
+- [[Download file]]
+
+
 
 
 
 
 ## UI Patterns
-- [[dropdown with header]]
-- [[List page Filter]]
 - [[Pagination]]
 - [[Making a POST request]]
-- [[Confirm]]
 - [[Green check and red cross]]
 - [[Popup pattern 1]]
-- [[Filter by start date, end date]]
 - [[Right floated button]]
 - [[Right floated icon download dropdown]]
+
+
+## Forms
+- [[List page Filter]]
+- [[dropdown with header]]
+- [[Filter by start date, end date]]
 - [[Checkbox in a form]]
-- [[Passing vairables into a partial]]
+- [[Confirm]]
+- [[Prevent multiple form submissions by using loader on buttons]]
+- [[Auto Saving Forms]]
+- [[Upload a file]]
 
 
-## Day to day actions
+
+
+## Database
 - [[Configure postgres db in a sails app]]
 - [[Create Local DB Server with PGAdmin]]
-- [[How to change Favicon]]
+- [[How to set the sequence ID of a table to specific number]]
+- [[Create a copy of the production database in your localhost]]
+
+## Nginx
 - [[How to change file upload size limit in Nginx]]
+- [[How to redirect a specific url to a page in different domain with nginx]]
+
+
+
+
+## Development Environment
+- [[How to kill something running in a specific port]]
+- [[Making your local server remotely accessible]]
+- [[Filtering emails shot from staging environment]]
+
+
+## Deployment
+- [[Auto deploy to Dev]]
+
+
+## Others
+- [[How to change Favicon]]
 - [[How to clear cache in cloudflare]]
 - [[How to clear cache in your browser]]
-- [[How to kill something running in a specific port]]
 - [[How to use blueprint APIs]]
 - [[How to use postman collection runner to inject data into database]]
-- [[Install plugins in Mkdocs]]
-- [[Making your local server remotely accessible]]
-- [[Prevent multiple form submissions by using loader on buttons]]
-- [[Refresh AWS Access Keys]]
-- [[Create a copy of the production database in your localhost]]
 - [[Create read only user for metabase]]
-- [[How to setup metabase]]
-- [[How to setup sentry]]
-- [[Setup wordpress multi site]]
 - [[How to use dirname]]
 - [[Install NPM packages from local directory]]
 - [[JSON schema validation]]
-- [[How to redirect a specific url to a page in different domain with nginx]]
 - [[Install private gitrepo as dependancy]]
-- [[Upload a file]]
-- [[List page Filter]]
-
-
+- [[Passing vairables into a partial]]

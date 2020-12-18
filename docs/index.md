@@ -10,7 +10,6 @@ A choice of tech stack selected for a single person company
 
 ## The stack
 - [[Stack components]]
-- [[Abilities of switchless]] 
 - [[How to get things done with switchless]]
 
 
