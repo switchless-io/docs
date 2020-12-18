@@ -32,6 +32,7 @@
 
 
 
+
 ## UI Patterns
 - [[dropdown with header]]
 - [[List page Filter]]
@@ -44,6 +45,8 @@
 - [[Right floated button]]
 - [[Right floated icon download dropdown]]
 - [[Checkbox in a form]]
+- [[Passing vairables into a partial]]
+
 
 ## Day to day actions
 - [[Configure postgres db in a sails app]]

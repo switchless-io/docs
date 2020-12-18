@@ -4,6 +4,7 @@ The switchless stack consist of the following components.
 
 - [[sails]] - web framework
 	- [[Blueprint APIs]] - API framework
+	- [[EJS]] - templating language
 - [[bull]] - queue management
 - [[logging]]
 - [[mailgun]] - transactional emails
