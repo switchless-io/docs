@@ -94,3 +94,4 @@
 - [[Install private gitrepo as dependancy]]
 - [[Passing vairables into a partial]]
 - [[Implement Rate Limiting]]
+- [[Mobile friendly filter using accordian]]
