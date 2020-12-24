@@ -3,9 +3,9 @@
 - author: [[Alex]]
 
 ---
-We are big fans of html forms and the way semantic styles them. Ref [semantic form documentation](https://semantic-ui.com/collections/form.html). 
+We are big fans of html forms and the way semantic styles them. Ref [semantic form documentation](https://semantic-ui.com/collections/form.html) for basic form patterns. 
 
-There are some common patterns that we use over and over again:
+There are some advanced patterns that we use over and over again:
 - [[Loader on form submit]]
 - [[Checkbox in a form]]
 - [[Prevent multiple form submissions by using loader on buttons]]
