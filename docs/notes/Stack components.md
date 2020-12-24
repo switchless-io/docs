@@ -20,6 +20,8 @@ The switchless stack consist of the following components.
 - [[rtd]]
 - [[ngrok]]
 - [[obsidian]] 
+- [[form]]
+- [[charts]]
 - [[npm]]
 	- [[npm xlsx]]
 	- [[FS]] - working with files
