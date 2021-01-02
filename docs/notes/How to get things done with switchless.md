@@ -75,10 +75,16 @@
 - [[How to kill something running in a specific port]]
 - [[Making your local server remotely accessible]]
 - [[Filtering emails shot from staging environment]]
+- [[How to ignore a file already commited to a repo]]
 
 
 ## Deployment
 - [[Auto deploy to Dev]]
+
+## Export data
+- install sails hook - [[Download file]]
+- setup UI - [[Right floated icon download dropdown]]
+- setup controller - [[Export data as csv,excel,json]]
 
 
 ## Others

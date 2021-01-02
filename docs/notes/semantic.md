@@ -9,3 +9,7 @@ http://semantic-ui.com/
 
 Linked notes:
 - [[create forms UX]]
+- [[Streched rows]]
+- [[pricing cards]]
+- [[pricing sliders]]
+- [[colored section in landing pages]]

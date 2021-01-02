@@ -2,6 +2,11 @@
 This is a list of backlog
 
 ## Notes backlog
+- [ ] [[Bull]]
+	- [ ] [[Setup bull using switchless cli]]
+	- [ ] [[cron jobs with bull]]
+- [ ] [[npm xlsx]]
+	- [ ] [[how to download excel/csv using npm xlsx]]
 - [ ] [[Breadcrumb]]
 - [ ] [[popup]]
 - [ ] [[Login with OTP]]
