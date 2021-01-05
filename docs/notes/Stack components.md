@@ -22,8 +22,11 @@ The switchless stack consist of the following components.
 - [[obsidian]] 
 - [[form]]
 - [[charts]]
+- [[cloudflare]]
+- [[AWS]]
 - [[npm]]
 	- [[npm xlsx]]
 	- [[FS]] - working with files
 	- [[ajv]] - schema validation
+	- [[hjson]] - hjson
 	
