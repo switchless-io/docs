@@ -1,6 +1,6 @@
 # How to setup sentry
 ---
-- keywords: ,[[sentry]], [[setup]]
+- keywords: ,[[sentry]], #setup
 - author: #alex
 ---
 
