@@ -1,6 +1,6 @@
 # Checkbox in a form
 ---
-Keywords: [[checkbox]],#pattern
+Keywords: #pattern
 Author: #anzal
 
 ---

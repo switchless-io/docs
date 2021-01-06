@@ -1,6 +1,6 @@
 # Fully loaded tabs with its own url
 ---
-- keywords: [[tabs]],#pattern
+- keywords: #pattern
 - author: #alex
 ---
 ```

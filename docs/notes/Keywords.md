@@ -8,8 +8,6 @@ All the articles in the documentation is tagged with some of these keywords. Thi
 - #pattern - patterns that we frequently use
 - [[semantic]]
 - [[dropdown]]
-- [[form]]
-- [[publishing]]
 - [[obsidian]]
 - #npm-module - Notes that introduces you to an NPM module, used along with #stack
 - #stack - Notes that introduces you to a stack

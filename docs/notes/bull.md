@@ -98,5 +98,8 @@ Add `autoAttachChildProcesses` to configurations.
 ```
 VS code by default only setups debug for the main process. If you dont run this, the logic will not work when using the debug console on VS code. However if you run `npm start` via the terminal, it will work fine without making this change. Just that you will not be able to use the VS code debugger. 
 
+## Cron tab format
+[[cron tab format]]
+
 ## Ref: 
 - [Bull official reference](https://github.com/OptimalBits/bull/blob/develop/REFERENCE.md)

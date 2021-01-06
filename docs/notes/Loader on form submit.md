@@ -1,6 +1,6 @@
 # loader on form submit
 --- 
-- keywords: [[form]], #pattern
+- keywords: #pattern
 - author: #alex
 --- 
 ```

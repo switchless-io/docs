@@ -1,6 +1,6 @@
 # How to use __dirname
 ---
-- keywords: , [[FS]]
+- keywords: #pattern 
 - author: #alex
 ---
 to know when to use `__dirname` vs `process.cwd()` refer to the article below

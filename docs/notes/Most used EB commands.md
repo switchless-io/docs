@@ -1,6 +1,6 @@
 # Most used EB commands
 ---
-- keywords:[[reference]]
+- keywords:
 - author: #anzal
 ---
 1. eb list - list available environments

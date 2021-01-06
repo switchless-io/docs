@@ -1,6 +1,6 @@
 # Jquery post request
 ---
-- keywords: [[jquery]], #pattern
+- keywords: #pattern
 - author: #alex
 ---
 ```

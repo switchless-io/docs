@@ -1,6 +1,6 @@
 # Dropdown with header
 ---
-- keywords: [[form]], [[dropdown]], #pattern
+- keywords: #pattern
 - author: #alex
 ---
 ## How it looks like: 
