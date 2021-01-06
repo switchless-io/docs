@@ -1,6 +1,6 @@
 # FS
 ---
-- keyword : [[stack]], [[npm module]]
+- keyword : , [[npm module]]
 - author: #alex
 ---
 This is an npm module that we use working with file systems. 

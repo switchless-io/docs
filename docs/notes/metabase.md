@@ -1,5 +1,5 @@
 # Metabase
-Keywords:[[stack]]
+Keywords:
 
 Metabase is the perfect BI(Business Intelligence) tool to get insights from your data. 
 

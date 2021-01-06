@@ -1,5 +1,5 @@
 # Logging
-Keywords:[[stack]]
+Keywords:
 
 
 This is our standard pipeline for logging. 

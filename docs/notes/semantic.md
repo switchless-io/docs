@@ -1,5 +1,5 @@
 # Semantic
-keywords: [[stack]]
+keywords: 
 
 We use semantic as our UI framework. To be specific, we acutally use the community fork of semantic - fomantic as it has more features that we commonly use.
 

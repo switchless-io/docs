@@ -1,5 +1,5 @@
 # Mk Docs
-Keywords:[[stack]]
+Keywords:
 
 This is what we use to documenting things - both public documentation such as this and private documentations such in internal handbooks.
 

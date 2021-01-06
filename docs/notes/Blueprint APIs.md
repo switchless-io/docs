@@ -1,5 +1,5 @@
 # Blueprint APIs 
-Keywords:[[stack]]
+Keywords:
 
 Sailjs comes with blueprint APIs. These blueprint APIs help us default CRUD APIs out of the box. Relevant links from Sailsjs documentations: 
 

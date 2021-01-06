@@ -1,6 +1,6 @@
 # JSON schema validation
 ---
-- keyword: [[stack]]
+- keyword: 
 - Author: #alex
 ---
 ## Reference: 

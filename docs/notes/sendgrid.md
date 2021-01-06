@@ -1,2 +1,2 @@
 # Sendgrid
-Keywords:[[stack]]
+Keywords:

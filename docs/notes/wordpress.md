@@ -1,5 +1,5 @@
 # Wordpress
-Keywords:[[stack]]
+Keywords:
 
 For marketing pages, we usually pick between these options: 
 - wordpress 

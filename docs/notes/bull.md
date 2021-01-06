@@ -1,5 +1,5 @@
 # Bull
-keywords: [[stack]]
+keywords: 
 
 ## About
 We use bull for queue up tasks. Two major reason why we use queues. 

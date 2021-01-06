@@ -1,5 +1,5 @@
 # Ngrok
-keywords: [[stack]]
+keywords: 
 
 Ngrok is a tool that we use for creating a public link that can be used to reference a server running on local host. 
 
