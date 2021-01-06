@@ -1,6 +1,5 @@
 # Handling dates in xlsx
 ---
-- keywords: [[npm xlsx]], 
 - author: #alex
 ---
 

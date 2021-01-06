@@ -1,6 +1,6 @@
 # Creating a copy of the production database in your local host
 ---
-- keywords: [[postgresql]], 
+- keywords: #postgresql, 
 - author: #alex
 ---
 **[Loom video](https://www.loom.com/share/84c95cc6243a4ea084957b8ce47c4648)**   

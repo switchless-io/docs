@@ -1,6 +1,6 @@
 # Making your local server remotely accessible
 ---
-- Keywords:, [[ngrok]]
+- Keywords: #pattern, [[ngrok]]
 - author: #alex
 ---
  

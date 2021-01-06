@@ -1,6 +1,6 @@
 # How to clear cache in cloudflare?
 ---
-- Keywords:
+- Keywords: #pattern
 - author: #alex
 --- 
 Login and navigate to your domain on cloudflare.

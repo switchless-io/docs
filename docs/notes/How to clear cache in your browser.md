@@ -1,6 +1,6 @@
 # How to clear cache in your browser?
 ---
-- Keywords:
+- Keywords: #pattern
 - author: #alex
 ---
 

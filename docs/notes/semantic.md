@@ -7,7 +7,7 @@ Ref:
 https://fomantic-ui.com/
 http://semantic-ui.com/
 
-Linked notes:
+## Related notes:
 - [[create forms UX]]
 - [[Streched rows]]
 - [[pricing cards]]

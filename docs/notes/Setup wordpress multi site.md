@@ -1,6 +1,6 @@
 # Setup wordpress multi site
 ---
-- keywords: , [[wordpress]]
+- keywords: #pattern
 - author: #alex
 ---
 ## Stack

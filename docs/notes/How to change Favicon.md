@@ -1,6 +1,6 @@
 # How to change Favicon
 ---
-- Keywords:
+- Keywords: #pattern
 - author: #alex
 ---
 ## What is a favicon?

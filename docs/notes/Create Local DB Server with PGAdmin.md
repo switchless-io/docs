@@ -1,6 +1,6 @@
 ## Create Local DB Server with PGAdmin  
 ---
-- Keywords:
+- Keywords: #pattern
 - author: #alex
 ---
 1. Install postgres. Make sure this is running whenever you want to use the db.  

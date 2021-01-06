@@ -11,6 +11,8 @@ All the articles in the documentation is tagged with some of these keywords. Thi
 - [[form]]
 - [[publishing]]
 - [[obsidian]]
+- #npm-module - Notes that introduces you to an NPM module, used along with #stack
+- #stack - Notes that introduces you to a stack
 - [[How to contribute to this doc]]
 - #setup - Notes related to setting up various things
 

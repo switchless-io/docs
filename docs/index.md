@@ -8,6 +8,13 @@ A choice of tech stack selected for a single person company
 - [[Importance of information architecture]]
 
 
+## This stack allows you to
+- [[Authenticate users]]
+- [[Send and recieve emails]]
+- [[Send messages]]
+- [[Search function]]
+- [[logging]]
+
 ## The stack
 - [[Stack components]]
 - [[How to get things done with switchless]]

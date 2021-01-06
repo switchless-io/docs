@@ -1,6 +1,6 @@
 # ajv
 ---
-- keywords: , [[npm module]], [[JSON schema validation]]
+- keywords: #npm-module, #stack
 - author: #alex
 ---
 
