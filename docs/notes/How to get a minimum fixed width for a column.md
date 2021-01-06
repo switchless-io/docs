@@ -1,6 +1,6 @@
 # How to get a minimum fixed width for a column
 ---
-- keywords: [[How to get things done with switchless]], [[table]], [[ui]]
-- author: [[Alex]]
+- keywords: , [[table]], [[ui]]
+- author: #alex
 --- 
 `<td class="three wide fixed single line"><%= i.invoice_number%></td>`

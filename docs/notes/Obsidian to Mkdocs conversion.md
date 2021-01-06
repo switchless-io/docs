@@ -1,7 +1,7 @@
 # Obsidian to Mkdocs conversion
 ---
 - keywords: [[publishing]], [[obsidian]], [[mkdocs]]
-- author: [[alex]]
+- author: #alex
 ---
 use this plugin: 
 

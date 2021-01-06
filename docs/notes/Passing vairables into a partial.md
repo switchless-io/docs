@@ -1,6 +1,6 @@
 # Passing variables into a partial
 ---
-- author: [[Alex]]
+- author: #alex
 
 --- 
 

@@ -1,7 +1,7 @@
 # Confirm
 ---
 - keywords: [[ui pattern]]
-- author: [[Alex]]
+- author: #alex
 ---
 ```
 

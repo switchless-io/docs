@@ -1,7 +1,7 @@
 # How to setup sentry
 ---
-- keywords: [[How to get things done with switchless]],[[sentry]], [[setup]]
-- author: [[Alex]]
+- keywords: ,[[sentry]], [[setup]]
+- author: #alex
 ---
 
 ## Setup sentry

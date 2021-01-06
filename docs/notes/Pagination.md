@@ -1,7 +1,7 @@
 # Pagination
 ---
 - keywords: [[ui pattern]]
-- author: [[Alex]]
+- author: #alex
 ---
 **pagination menu looks like this: **
 ![[Pasted image 20201102161833.png]]

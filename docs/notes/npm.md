@@ -1,6 +1,6 @@
 # NPM
 ---
-- author: [[Alex]]
+- author: #alex
 
 ---
 

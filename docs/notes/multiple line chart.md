@@ -1,6 +1,6 @@
 # Multiple line chart
 ---
-- author: [[Alex]]
+- author: #alex
 
 ---
 ## Example

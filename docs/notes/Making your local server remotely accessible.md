@@ -1,7 +1,7 @@
 # Making your local server remotely accessible
 ---
-- Keywords:[[How to get things done with switchless]], [[ngrok]]
-- author: [[Alex]]
+- Keywords:, [[ngrok]]
+- author: #alex
 ---
  
 - Install ngork from https://dashboard.ngrok.com/get-started  

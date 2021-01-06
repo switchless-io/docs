@@ -1,7 +1,7 @@
 # How to clear cache in your browser?
 ---
-- Keywords:[[How to get things done with switchless]]
-- author: [[alex]]
+- Keywords:
+- author: #alex
 ---
 
 Open `Developer tools` in your browser - `options + command + i`

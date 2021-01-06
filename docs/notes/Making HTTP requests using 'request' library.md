@@ -1,7 +1,7 @@
 # Making HTTP requests using 'request' library
 ---
 - Keywords:[[patterns]]
-- author: [[alex]]
+- author: #alex
 ---
 Scenarios where we need to use request library:  
 - We might need to make API calls from backend  

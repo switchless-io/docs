@@ -1,7 +1,7 @@
 # Jquery post request
 ---
 - keywords: [[jquery]], [[ui pattern]]
-- author: [[Alex]]
+- author: #alex
 ---
 ```
 $.post("/gstin/<%=req.gstin.value%>/import/create_invoice/expense", body, function(result,status){

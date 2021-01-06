@@ -1,7 +1,7 @@
 # How to change Favicon
 ---
-- Keywords:[[How to get things done with switchless]]
-- author: [[alex]]
+- Keywords:
+- author: #alex
 ---
 ## What is a favicon?
 

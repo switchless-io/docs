@@ -1,7 +1,7 @@
 # Install private gitrepo as dependancy
 ---
 - tags: #how_to, #npm, #gitlab
-- author: [[Alex]]
+- author: #alex
 
 ---
 

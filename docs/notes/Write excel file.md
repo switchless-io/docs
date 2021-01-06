@@ -1,7 +1,7 @@
 # Write excel file
 ---
 - keywords: [[npm xlsx]], [[patterns]]
-- author: [[Alex]]
+- author: #alex
 ---
 Here is how you write an excel file. 
 

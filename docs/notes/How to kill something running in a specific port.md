@@ -1,7 +1,7 @@
 # How to kill something running in a specific port?
 ---
-- Keywords:[[How to get things done with switchless]]
-- author: [[alex]]
+- Keywords:
+- author: #alex
 ---
 
 **While starting the app, you might get an error similar to this:**  

@@ -1,7 +1,7 @@
 # Handling dates in xlsx
 ---
-- keywords: [[npm xlsx]], [[How to get things done with switchless]]
-- author: [[Alex]]
+- keywords: [[npm xlsx]], 
+- author: #alex
 ---
 
 ```

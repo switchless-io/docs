@@ -1,6 +1,6 @@
 # Single line chart
 ---
-- author: [[Alex]]
+- author: #alex
 
 ---
 

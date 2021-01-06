@@ -1,6 +1,6 @@
 # How to redirect a specific url to a page in different domain with nginx
 ---
-Keywords: [[nginx]],[[How to get things done with switchless]]
+Keywords: [[nginx]],
 Author:[[Anzal]]
 ---
 
