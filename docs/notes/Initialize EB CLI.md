@@ -1,6 +1,6 @@
 # Initialize EB CLI
 ---
-- Keywords: [[aws]][[elastic beanstalk]]
+- Keywords: #aws[[elastic beanstalk]]
 - author: #anzal
 ---
 1. Run `eb init` in the directory with code

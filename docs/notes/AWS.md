@@ -1,4 +1,6 @@
 # AWS
+author: #alex 
+
 aka amazon web services
 
 
@@ -17,7 +19,7 @@ aka amazon web services
 
 
 ## config for Elastic search 
-```
+```javascript
 {
   "Version": "2012-10-17",
   "Statement": [

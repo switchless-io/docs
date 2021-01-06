@@ -1,6 +1,6 @@
 # How to create AWS access keys
 ---
-- Keywords: [[aws]]
+- Keywords: #aws
 - author: #anzal
 ---
 Go to AWS console>IAM>users
