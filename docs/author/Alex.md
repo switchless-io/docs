@@ -6,6 +6,5 @@ keywords: [[people]]
 - https://www.linkedin.com/in/alexjv
 - http://echoalex.com/
 
-List of notes written & maintained by Alex
-
-- 
+## Notes contributed by Alex:
+Search for #alex.  All notes contributed by Alex are tagged #alex.

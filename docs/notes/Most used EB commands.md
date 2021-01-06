@@ -1,7 +1,7 @@
 # Most used EB commands
 ---
 - keywords:[[reference]]
-- author: [[Anzal]]
+- author: #anzal
 ---
 1. eb list - list available environments
 2. eb use {env-name} - select an environment

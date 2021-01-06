@@ -4,8 +4,6 @@ aka amazon web services
 
 ## setup 
 - [[setup a single instance]]
-
-
 - [[AWS amzon linux 2 migration]]
 - [[Refresh AWS Access Keys]]
 - [[How to create AWS access keys]]
