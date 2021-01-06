@@ -1,6 +1,6 @@
 # Export data as csv/xls/json
 ---
-- keywords: [[patterns]]
+- keywords: #pattern
 - author: #alex
 ---
 use this ui pattern - [[Right floated icon download dropdown]]

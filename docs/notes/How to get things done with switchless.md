@@ -44,6 +44,9 @@
 - [[Right floated button]]
 - [[Right floated icon download dropdown]]
 
+## Front end automations 
+- [[Click buttons on the screen in bulk]]
+
 
 ## Forms
 - [[List page Filter]]

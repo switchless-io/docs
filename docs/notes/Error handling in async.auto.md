@@ -1,6 +1,6 @@
 # Error handling in async.auto
 ---
-- Keywords:[[patterns]]
+- Keywords:#pattern
 - author: #alex
 ---
 - Suppress error, not acting on it or just console.logging has lot's of unknow consequences.  

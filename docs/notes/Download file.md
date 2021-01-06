@@ -1,6 +1,6 @@
 # Download file
 ---
-- keywords: [[patterns]]
+- keywords: #pattern
 - author: #alex
 --- 
 

@@ -1,6 +1,6 @@
 # Auto deploy to Dev
 ---
-- Keywords:[[patterns]]
+- Keywords:#pattern
 - author: #alex
 ---
 It helps to keep deploying latest code to dev on a specific branch to dev server. It helps others test your code. 

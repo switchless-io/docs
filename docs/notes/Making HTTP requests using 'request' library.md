@@ -1,6 +1,6 @@
 # Making HTTP requests using 'request' library
 ---
-- Keywords:[[patterns]]
+- Keywords:#pattern
 - author: #alex
 ---
 Scenarios where we need to use request library:  

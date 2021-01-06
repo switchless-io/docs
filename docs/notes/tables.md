@@ -1,6 +1,6 @@
 # Tables
 ---
-- Keywords:[[patterns]]
+- Keywords:#pattern
 - author: #alex
 ---
 This document describes the most common table patterns that we use. 

@@ -1,6 +1,6 @@
 # Auto Saving Forms
 ---
-- Keywords:[[patterns]]
+- Keywords:#pattern
 - author: #alex
 --- 
 To auto save forms,  

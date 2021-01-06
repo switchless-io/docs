@@ -1,6 +1,6 @@
 # Steps and stages 
 ---
-- Keywords:[[patterns]]
+- Keywords:#pattern
 - author: #alex
 ---
 The term steps and stages can be interchangibly used. We internally use the term steps when the overall process is a short one and typically gets completed in a single user session. The terminology stages are used to represent intermediate steps in a long running process that takes days/weeks or months to complete. 

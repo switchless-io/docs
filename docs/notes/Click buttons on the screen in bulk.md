@@ -1,6 +1,6 @@
 # Click button on the screen in bulk
 ---
-- keywords: [[ui]],[[patterns]]
+- keywords: [[ui]],#pattern
 - author: #alex
 ---
 ```

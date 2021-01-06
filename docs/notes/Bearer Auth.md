@@ -1,6 +1,6 @@
 # Bearer Auth
 ---
-- keywords: [[patterns]]
+- keywords: #pattern
 - author: #alex
 ---
 We use this for user based access to backend apis. This auth can be applied to both blueprint APIs and well as custom APIs. 
