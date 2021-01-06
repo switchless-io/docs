@@ -1,6 +1,6 @@
 # Right floated download dropdown
 ---
-- keywords: [[ui pattern]]
+- keywords: #pattern
 - author: #alex
 ---
 ![[CleanShot 2020-11-28 at 17.02.57.png]]

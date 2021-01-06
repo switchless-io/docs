@@ -1,6 +1,6 @@
 # Pagination
 ---
-- keywords: [[ui pattern]]
+- keywords: #pattern
 - author: #alex
 ---
 **pagination menu looks like this: **

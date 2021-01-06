@@ -1,6 +1,6 @@
 # Right floated button
 ---
-- keyword: [[ui pattern]], [[button]]
+- keyword: #pattern, [[button]]
 - author: #alex
 ---
 

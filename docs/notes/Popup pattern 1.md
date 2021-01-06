@@ -1,6 +1,6 @@
 # Popup pattern 1
 ---
-- keywords: [[ui pattern]]
+- keywords: #pattern
 - author:#alex
 ---
 ![[Pasted image 20201127103052.png]]

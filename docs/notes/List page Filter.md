@@ -1,6 +1,6 @@
 # List page Filters
 ---
-- keywords: [[ui pattern]],
+- keywords: #pattern,
 - author: #alex
 ---
 ![[Pasted image 20201111163643.png]]

@@ -1,6 +1,6 @@
 # Filter by start date/end date
 ---
-- keywords: [[ui pattern]], [[form]], [[waterline pattern]]
+- keywords: #pattern, [[form]], [[waterline pattern]]
 - author: #alex
 --- 
 ![[CleanShot 2020-11-27 at 10.39.56.png]]

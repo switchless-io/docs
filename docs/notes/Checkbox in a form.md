@@ -1,6 +1,6 @@
 # Checkbox in a form
 ---
-Keywords: [[checkbox]],[[ui pattern]]
+Keywords: [[checkbox]],#pattern
 Author: #anzal
 
 ---

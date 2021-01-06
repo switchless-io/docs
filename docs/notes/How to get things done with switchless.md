@@ -32,10 +32,6 @@
 - [[Download file]]
 
 
-
-
-
-
 ## UI Patterns
 - [[Pagination]]
 - [[Making a POST request]]
@@ -43,6 +39,11 @@
 - [[Popup pattern 1]]
 - [[Right floated button]]
 - [[Right floated icon download dropdown]]
+- [[Fully loaded tabs with its own url]]
+- [[Jquery post request]]
+- [[Loader on form submit]]
+
+
 
 ## Front end automations 
 - [[Click buttons on the screen in bulk]]

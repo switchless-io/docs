@@ -1,6 +1,6 @@
 # Making a POST request
 ---
-- keywords: [[ui pattern]]
+- keywords: #pattern
 - author: #alex
 ---
 
