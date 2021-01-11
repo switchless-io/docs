@@ -18,6 +18,7 @@ A choice of tech stack selected for a single person company
 ## The stack
 - [[Stack components]]
 - [[How to get things done with switchless]]
+- [[Mac OS setup]]
 
 
 
