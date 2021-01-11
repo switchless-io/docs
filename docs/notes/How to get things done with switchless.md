@@ -94,3 +94,7 @@
 - [[Install private gitrepo as dependancy]]
 - [[Passing vairables into a partial]]
 - [[Implement Rate Limiting]]
+
+
+## Object/Array Manipulation
+- [[Iterating through an array like object]]
