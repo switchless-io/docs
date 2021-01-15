@@ -9,7 +9,7 @@ This is a list of backlog
 	- [ ] [[how to download excel/csv using npm xlsx]]
 - [ ] [[Breadcrumb]]
 - [ ] [[popup]]
-- [ ] [[Login with OTP]]
+- [ ] [[Login with mobile OTP]]
 - [ ] [[Messages]]
 - [ ] [[meilisearch]]
 - [ ] [[AWS amzon linux 2 migration]]

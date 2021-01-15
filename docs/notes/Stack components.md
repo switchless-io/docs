@@ -27,6 +27,8 @@ The switchless stack consist of the following components.
 - [[cloudflare]]
 - [[AWS]]
 - [[nginx]]
+- 3rd party services
+	- [[2factor.in]]
 - [[npm]]
 	- [[npm xlsx]]
 	- [[FS]] - working with files

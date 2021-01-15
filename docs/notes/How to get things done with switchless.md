@@ -94,6 +94,8 @@
 - [[verify email]]
 	- [[verify email with OTP]]
 	- [[verify email with JWT token]]
+- [[Verify phone number with OTP]]
+- [[Login with mobile OTP]]
 
 ## Others
 - [[How to change Favicon]]
