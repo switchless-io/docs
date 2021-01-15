@@ -90,6 +90,10 @@
 - setup UI - [[Right floated icon download dropdown]]
 - setup controller - [[Export data as csv,excel,json]]
 
+## Verify email/phone
+- [[verify email]]
+	- [[verify email with OTP]]
+	- [[verify email with JWT token]]
 
 ## Others
 - [[How to change Favicon]]

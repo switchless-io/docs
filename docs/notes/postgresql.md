@@ -9,3 +9,6 @@ This is our preferred database. We like it because it is a relational database a
 ## Notes related to this: 
 - [[Create a copy of the production database in your localhost]]
 - [[Create read only user for metabase]]
+- Sequence
+	- [[Get current value of sequence]]
+	- [[Set value of a sequence]]
