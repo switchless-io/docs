@@ -34,4 +34,5 @@ The switchless stack consist of the following components.
 	- [[FS]] - working with files
 	- [[ajv]] - schema validation
 	- [[hjson]] - hjson
+- [[terminal]]
 	
