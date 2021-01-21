@@ -58,6 +58,7 @@
 - [[Prevent multiple form submissions by using loader on buttons]]
 - [[Auto Saving Forms]]
 - [[Upload a file]]
+- [[Filter with custom query]]
 
 
 
