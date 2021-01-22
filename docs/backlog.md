@@ -5,6 +5,7 @@ This is a list of backlog
 - [ ] [[Bull]]
 	- [ ] [[Setup bull using switchless cli]]
 	- [ ] [[cron jobs with bull]]
+	- [ ] support for multiple queue via bull controller
 - [ ] [[npm xlsx]]
 	- [ ] [[how to download excel/csv using npm xlsx]]
 - [ ] [[Breadcrumb]]
