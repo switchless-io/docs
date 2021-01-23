@@ -2,6 +2,9 @@
 This is a list of backlog
 
 ## Notes backlog
+
+- [ ] Loggly setup
+- [ ] Log setup with elastic search and kibana 
 - [ ] [[Bull]]
 	- [ ] [[Setup bull using switchless cli]]
 	- [ ] [[cron jobs with bull]]
