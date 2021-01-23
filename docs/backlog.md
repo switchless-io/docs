@@ -19,6 +19,7 @@ This is a list of backlog
 - [ ] [[meilisearch]]
 - [ ] [[AWS amzon linux 2 migration]]
 - [ ] [[Uptimerobot]]
+- [ ] [[Filebeat]]
 
 
 ## Other tasks backlog
