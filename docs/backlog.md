@@ -4,6 +4,7 @@ This is a list of backlog
 ## Notes backlog
 
 - [ ] Loggly setup
+- [ ] Winston and loggly needs upgrade
 - [ ] Log setup with elastic search and kibana 
 - [ ] [[Bull]]
 	- [ ] [[Setup bull using switchless cli]]
@@ -17,6 +18,7 @@ This is a list of backlog
 - [ ] [[Messages]]
 - [ ] [[meilisearch]]
 - [ ] [[AWS amzon linux 2 migration]]
+- [ ] [[Uptimerobot]]
 
 
 ## Other tasks backlog
