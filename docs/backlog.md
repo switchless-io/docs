@@ -20,6 +20,8 @@ This is a list of backlog
 - [ ] [[AWS amzon linux 2 migration]]
 - [ ] [[Uptimerobot]]
 - [ ] [[Filebeat]]
+- [ ] Create objects using blueprint api
+- [ ] update objects using blueprint api - ref - mralbert codebase - process_data_sales_invoices.ejs
 
 
 ## Other tasks backlog
