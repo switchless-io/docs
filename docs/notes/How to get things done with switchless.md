@@ -23,6 +23,7 @@
 - [[Handling dates in xlsx]]
 - [[What is the difference between pattern and how to]]
 - [[export and import data using tableplus]]
+- [[filter by a field]]
 
 
 ## Files
