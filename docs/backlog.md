@@ -22,6 +22,7 @@ This is a list of backlog
 - [ ] [[Filebeat]]
 - [ ] Create objects using blueprint api
 - [ ] update objects using blueprint api - ref - mralbert codebase - process_data_sales_invoices.ejs
+- [ ] [[Transform query objects to filter object]]
 
 
 ## Other tasks backlog
