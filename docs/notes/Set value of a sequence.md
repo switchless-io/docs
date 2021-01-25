@@ -5,5 +5,5 @@
 ---
 
 ```sql
-ALTER SEQUENCE serial RESTART WITH 105;
+ALTER SEQUENCE user_id_seq RESTART WITH 34;
 ```
