@@ -6,7 +6,7 @@
 
 ## Best way
 ```sql
-SELECT last_value FROM your_sequence_name;
+SELECT last_value FROM your_sequence_name;user_id_seq
 ```
 
 ## Not recommended
