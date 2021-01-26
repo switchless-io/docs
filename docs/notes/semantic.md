@@ -17,6 +17,7 @@ http://semantic-ui.com/
 
 ### Grids
 - [[Centered content]]
+- [[mobile specific html]]
 
 ### Buttons
 - [[Right floated button]]
