@@ -11,6 +11,8 @@ The term steps and stages can be interchangibly used. We internally use the term
 
 ![CleanShot 2020-08-28 at 15.25.10](/Users/alex/ec2code/switchless/docs/docs/files/steps_in_getting_started_mralbert.png)
 
+[[steps_in_getting_started_mralbert.png]]
+
 [[CleanShot 2020-08-28 at 15.25.10]]
 
 ![[assets_images.png]]

@@ -13,3 +13,7 @@ http://semantic-ui.com/
 - [[pricing cards]]
 - [[pricing sliders]]
 - [[colored section in landing pages]]
+
+
+### Grids
+- [[Centered content]]
