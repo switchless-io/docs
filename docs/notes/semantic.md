@@ -22,4 +22,11 @@ http://semantic-ui.com/
 - [[Right floated button]]
 - [[Prevent multiple form submissions by using loader on buttons]]
 - [[Click buttons on the screen in bulk]]
-- 
+
+
+
+### device breakpoints 
+- mobile - 768px
+- tablet - 992px
+- computer - 1200px
+- large screen - >1200px
