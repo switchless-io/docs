@@ -17,3 +17,9 @@ http://semantic-ui.com/
 
 ### Grids
 - [[Centered content]]
+
+### Buttons
+- [[Right floated button]]
+- [[Prevent multiple form submissions by using loader on buttons]]
+- [[Click buttons on the screen in bulk]]
+- 
