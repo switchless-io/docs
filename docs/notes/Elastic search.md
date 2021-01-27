@@ -9,6 +9,7 @@
 
 [[Setup Elasticsearch]]
 [[Setup kibana]]
+- kinesis role needs to be added to all access. - https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/fgac.html#fgac-mapping
 [[Setup kinesis]]
 
 
