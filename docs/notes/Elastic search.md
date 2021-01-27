@@ -8,6 +8,9 @@
 ## Logging setup 
 
 [[Setup Elasticsearch]]
+- setup using fine grained access control
+- setup a master username and password
+- Add firehose role to kibana - https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/fgac.html#fgac-mapping
 [[Setup kibana]]
 - kinesis role needs to be added to all access. - https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/fgac.html#fgac-mapping
 [[Setup kinesis]]
