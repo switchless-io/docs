@@ -113,3 +113,6 @@
 - [[Passing vairables into a partial]]
 - [[Implement Rate Limiting]]
 - [[Mobile friendly filter using accordian]]
+
+## CSS tricks
+- [[css tricks]]
