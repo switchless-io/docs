@@ -47,3 +47,8 @@ Debug:
 
 - use the test to see if you are able to send data to Elastic search. 
 	- Amazon Elasticsearch Service Logs
+
+
+kinesis agent logs are at `/var/log/aws-kinesis-agent/aws-kinesis-agent.log`
+
+ref - working with agents - https://docs.aws.amazon.com/firehose/latest/dev/writing-with-agents.html
