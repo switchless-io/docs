@@ -116,3 +116,7 @@
 
 ## CSS tricks
 - [[css tricks]]
+
+## India formats 
+- [[India number format]]
+- [[India date format]]
