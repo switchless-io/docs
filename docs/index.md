@@ -19,6 +19,7 @@ A choice of tech stack selected for a single person company
 - [[Stack components]]
 - [[How to get things done with switchless]]
 - [[Mac OS setup]]
+- [[Error code]]
 
 
 
