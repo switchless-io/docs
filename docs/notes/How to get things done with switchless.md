@@ -49,6 +49,10 @@
 ## Front end automations 
 - [[Click buttons on the screen in bulk]]
 
+## Ajax
+- [[Update a blueprint object with Ajax]]
+- [[Create a blueprint object with Ajax]]
+
 
 ## Forms
 - [[List page Filter]]
