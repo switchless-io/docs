@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+    <!-- Site Properties -->
+    <title>Switchless</title>
+
+    <link rel="stylesheet" href="/assets/sematic/semantic.min.css">
+    <style type="text/css">
+
+      .hidden.menu {
+        display: none;
+      }
+
+      .masthead.segment {
+        min-height: 500px;
+        padding: 1em 0em;
+      }
+      .masthead .logo.item img {
+        margin-right: 1em;
+      }
+      .masthead .ui.menu .ui.button {
+        margin-left: 0.5em;
+      }
+      .masthead h1.ui.header {
+        margin-top: 4em;
+        margin-bottom: 0em;
+        font-size: 3em;
+        /*color:#3f3c3d;*/
+        text-shadow: 0.04em 0.04em 0.04em rgba(0,0,0,0.25);
+        font-weight: normal;
+      }
+      .masthead h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+      }
+
+      .ui.vertical.stripe {
+        padding: 5em 0em;
+      }
+      .ui.vertical.stripe h3 {
+        font-size: 2em;
+      }
+      .ui.vertical.stripe .button + h3,
+      .ui.vertical.stripe p + h3 {
+        margin-top: 3em;
+      }
+      .ui.vertical.stripe .floated.image {
+        clear: both;
+      }
+      .ui.vertical.stripe p {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe ul {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe li {
+        line-height: 1.4285em;
+      }
+      .ui.vertical.stripe .horizontal.divider {
+        margin: 3em 0em;
+      }
+
+      .quote.stripe.segment {
+        padding: 0em;
+      }
+      .quote.stripe.segment .grid .column {
+        padding-top: 5em;
+        padding-bottom: 5em;
+      }
+
+      .footer.segment {
+        padding: 5em 0em;
+      }
+
+      .secondary.pointing.menu .toc.item {
+        display: none;
+      }
+
+      @media only screen and (max-width: 700px) {
+        /*.ui.fixed.menu {
+          display: none !important;
+        }*/
+        .secondary.pointing.menu .item,
+        .secondary.pointing.menu .menu {
+          display: none;
+        }
+        .secondary.pointing.menu .toc.item {
+          display: block;
+        }
+        .masthead.segment {
+          min-height: 350px;
+
+        }
+        .masthead h1.ui.header {
+          font-size: 2em;
+          margin-top: 1.5em;
+        }
+        .masthead h2 {
+          margin-top: 0.5em;
+          font-size: 1.5em;
+        }
+        .segment h2{
+          color: #00296b;
+        }
+      }
+
+
+    </style>
+      <script src="/assets/jquery.min.js"></script>
+      <script src="/assets/sematic/semantic.min.js"></script>
+    <script>
+    $(document)
+      .ready(function() {
+
+
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item')
+        ;
+        $('.ui.accordion').accordion();
+        $('img').addClass('ui').addClass('image');
+      })
+    ;
+    </script>
+
+  </head>
+  <body>
+    
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+      <a class="item" href='/'>About</a>
+      <!-- <a class="item" href='/about/'>About</a> -->
+      <a class="item" href='/Design%20patterns/'>Design patterns</a>
+      <a class="item" href='/notes/Stack%20components/'>Stack</a>
+    </div>
+    <!-- Page Contents -->
+    <div class="pusher">
+      <div class="ui large top fixed secondary pointing menu" style="background: rgba(255,255,255,1)">
+        <div class="ui container" style="font-size: 16px">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          <div class='center menu'>
+            <a class="item" href='/'>About</a>
+            <!-- <a class="item" href='/about/'>About</a> -->
+            <a class="item" href='/Design%20patterns/'>Design patterns</a>
+            <a class="item" href='/notes/Stack%20components/'>Stack</a>
+
+          </div>
+          
+        </div>
+      </div>
+      <!-- <div class="ui inverted vertical center aligned segment" style='background: #7cacda;'>
+        <div class="ui container">
+          <div class="ui large secondary inverted pointing menu">
+            <a class="toc item">
+              <i class="sidebar icon"></i>
+            </a>
+            <div class="right item">
+              <a class="ui inverted button" href='/login'>Log in</a>
+              &nbsp;
+              <a class="ui inverted button" href="/getting_started">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      Switchless
+      TEST
+      <br>
+<br>
+<br>
+<div class='ui container'>
+	
+	<div class='ui centered stackable grid'>
+		<div class='three wide computer only column'>
+			<img src="/assets/switchless_docs_logo.png" class='ui image'>
+		</div>
+		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
+			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
+				<h1>Setup wordpress multi site</h1>
+<hr>
+<ul>
+<li>keywords: #pattern</li>
+<li>author: #alex</li>
+</ul>
+<hr>
+<h2>Stack</h2>
+<ul>
+<li>Wordpress</li>
+<li>Mysql</li>
+<li>Docker</li>
+<li>S3</li>
+<li>Amazon linux</li>
+<li>Elastic beanstalk</li>
+</ul>
+<h2>Setup s3</h2>
+<p>We are setting up a stateless wordpress server. Wordpress installs plugins which are stored as files on the server. If you want to make the server stateless and the machine easily disposable/replacable, you need to persist the files outside the server. We are going to use S3 for that.</p>
+<ol>
+<li>Setup s3 bucket.</li>
+<li>Set the access to public
+<img src="files/s3-make-public.png" alt=""></li>
+<li>Change bucket policy to this</li>
+</ol>
+<pre><code>{
+    &quot;Version&quot;: &quot;2008-10-17&quot;,
+    &quot;Statement&quot;: [
+        {
+            &quot;Sid&quot;: &quot;beanstalk&quot;,
+            &quot;Effect&quot;: &quot;Allow&quot;,
+            &quot;Principal&quot;: {
+                &quot;AWS&quot;: &quot;arn:aws:iam::&lt;account&gt;:role/aws-elasticbeanstalk-ec2-role&quot;
+            },
+            &quot;Action&quot;: [
+                &quot;s3:Get*&quot;,
+                &quot;s3:List*&quot;,
+                &quot;s3:PutObject&quot;
+            ],
+            &quot;Resource&quot;: [
+                &quot;arn:aws:s3:::&lt;bucket&gt;/*&quot;,
+                &quot;arn:aws:s3:::&lt;bucket&gt;&quot;
+            ]
+        }
+    ]
+}
+</code></pre>
+<ul>
+<li>change <code>&lt;bucket&gt;</code> to your bucket name</li>
+<li>change <code>&lt;account&gt;</code> to your 12 digit account id</li>
+</ul>
+<h2>Setup Mysql DB</h2>
+<p>wordpress needs a mysql db. Go to RDS and setup a mysql db.</p>
+<ol>
+<li>
+<p>Setup a free tier db. That should be good enough for you to start with.
+<img src="files/mysql-free-tier.png" alt=""></p>
+</li>
+<li>
+<p>set the username and password</p>
+</li>
+<li>
+<p>wait for the mysql db to launch
+<img src="files/db-public-access.png" alt=""></p>
+</li>
+<li>
+<p>change security group to public</p>
+</li>
+</ol>
+<p>See if you are able to connect to it using table plus</p>
+<h2>Setup beanstalk</h2>
+<p>Create an environment on beanstalk</p>
+<p><strong>1) Choose the environment platform as docker</strong>
+<img src="files/wordpress-choose-platform.png" alt="Choose platfrom" title="Choose platform"></p>
+<p><strong>2) Disable proxy server</strong></p>
+<p><img src="files/eb-config-software.png" alt="">
+<img src="files/disable-proxy-server.png" alt="">
+From the configs, disable the proxy server.</p>
+<p><strong>3) Config DNS on cloudflare</strong>
+Go to cloudflare and point the dns to the beanstalk url.</p>
+<p><strong>4) Configure env variables</strong>
+<img src="files/wp-beanstalk-config.png" alt=""></p>
+<pre><code>WORDPRESS_CONFIG_EXTRA:&quot;define('FS_METHOD', 'direct'); define( 'WP_ALLOW_MULTISITE', true );&quot;
+
+WORDPRESS_DB_HOST:&quot;my_db_host&quot;,
+
+WORDPRESS_DB_NAME:&quot;asynauto_wp_multisite&quot;,
+
+WORDPRESS_DB_PASSWORD:&quot;my_db_pwd&quot;,
+
+WORDPRESS_DB_USER:&quot;my_db_user&quot;,
+
+S3_ASSET_BUCKET:&quot;my_bucket_name&quot;,
+</code></pre>
+<p>Get the beanstalk url and map it to the domain name you defined in the environment variable. In the above example, we used asyncauto.network. Replace that with your primary wordpress domain.</p>
+<h3>Setup wordpress</h3>
+<ol>
+<li>clone the multisite open source repo - https://github.com/asyncauto/wordpress-multisite</li>
+<li>replace <code>my-s3-bucket</code> in <code>.ebextensions/wp.config</code> with your bucket you have created</li>
+<li>commit the code.</li>
+<li>setup eb-cli and deploy the code.</li>
+</ol>
+<h3>Setup Wordpress Part:1</h3>
+<ol>
+<li>
+<p>goto asyncauto.network and signup.</p>
+</li>
+<li>
+<p>goto network setup
+<img src="files/wordpress-network-update.png" alt=""></p>
+</li>
+<li>
+<p>choose sub-domains and install
+<img src="files/choose-sub-domain.png" alt=""></p>
+</li>
+</ol>
+<h2>Setup beanstalk Part:2</h2>
+<p>Replace this environment variable and apply the configuration</p>
+<p>WORDPRESS_CONFIG_EXTRA</p>
+<pre><code>define('FS_METHOD', 'direct');
+define( 'WP_ALLOW_MULTISITE', true );
+define('MULTISITE', true); 
+define('SUBDOMAIN_INSTALL', true); 
+define('DOMAIN_CURRENT_SITE', 'asyncauto.network');
+define('PATH_CURRENT_SITE', '/'); 
+define('SITE_ID_CURRENT_SITE', 1); 
+define('BLOG_ID_CURRENT_SITE', 1);
+define('COOKIE_DOMAIN', $_SERVER['HTTP_HOST']);
+
+</code></pre>
+<h2>Creating a new blog site</h2>
+<p>wordpress asks you to create blanket redirect of subdomains to the main site. That might not be practical if you intent to setup other services on some subdomains.</p>
+<p>So when you create a new sub site, say <code>test.asyncauto.network</code>, then go to cloudflare and create a C Name DNS entry for <code>test.asyncauto.network</code> to point to <code>asyncauto.network</code>. Now you will be able to access the subsite on <code>test.asyncauto.network</code>.</p>
+<p><code>parsemonkey.com</code> is a subsite of <code>asyncauto.network</code>.To make that work, you need to point CName DNS <code>parsemonkey.com</code> to <code>asyncauto.network</code> on cloudflare. You will also need to change the setting on wordpress</p>
+<p><img src="files/wp-custom-domain-subsite.png" alt=""></p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	if(window.location.pathname.indexOf('/blog/')>-1){
+		$('a[href="/blog/"]').addClass('active');
+	}
+</script>
+    </div>
+
+
+
+
+    <!--
+        Client-side Templates
+        ========================
+
+        HTML templates are important prerequisites of modern, rich client applications.
+        To work their magic, frameworks like React, Vue.js, Angular, Ember, and Backbone
+        require that you load these templates client-side.
+
+        By default, your Gruntfile is configured to automatically load and precompile
+        client-side JST templates in your `assets/templates` folder, then
+        include them here automatically (between TEMPLATES and TEMPLATES END).
+
+        To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Import templates from other directories
+            + Use a different view engine (handlebars, dust, pug/jade, etc.)
+            + Internationalize your client-side templates using a server-side
+              stringfile before they're served.
+    -->
+
+    <!--TEMPLATES-->
+    <!--TEMPLATES END-->
+
+
+    <!--
+        Server-side View Locals
+        ========================
+
+        Sometimes, it's convenient to get access to your server-side view locals from
+        client-side JavaScript.  This can improve page load times, remove the need for
+        extra AJAX requests, and make your client-side code easier to understand and
+        to maintain.  Sails provides a simple mechanism for accessing dynamic view
+        locals: the "exposeLocalsToBrowser()" view partial.
+
+        For more information on using this built-in feature, see:
+        https://sailsjs.com/docs/concepts/views/locals#?escaping-untrusted-data-using-exposelocalstobrowser
+
+    -->
+
+
+    <!--
+
+      Client-side Javascript
+      ========================
+
+      You can always bring in JS files manually with `script` tags, or asynchronously
+      on the client using a solution like AMD (RequireJS).  Or, if you like, you can
+      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+      By default, files in your `assets/js` folder are included here
+      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
+      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
+      and concatenated into a single file.
+
+      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+      For example, here are a few things you could do:
+
+          + Change the order of your scripts
+          + Import scripts from other directories
+          + Use a different preprocessor, like TypeScript
+
+    -->
+
+
+    <script src="/assets/sails.io.js"></script>
+    <script src="/assets/jquery.min.js"></script>
+    <script src="/assets/sematic/semantic.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var path = window.location.pathname;
+        console.log(path.split('/'));
+        
+        $('a[href="'+path+'"]').addClass('active');
+        $('.dropdown').dropdown();
+        // if(path.split('/')[1]=='features')
+        //   $('#features').addClass('active');
+        // $('.click-sidebar').click(function(){
+        //   $('.ui.sidebar').sidebar('toggle');
+        // })
+        // $('.inline.dropdown').dropdown();
+      });
+    </script>
+  </body>
+</html>

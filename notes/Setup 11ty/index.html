@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+    <!-- Site Properties -->
+    <title>Switchless</title>
+
+    <link rel="stylesheet" href="/assets/sematic/semantic.min.css">
+    <style type="text/css">
+
+      .hidden.menu {
+        display: none;
+      }
+
+      .masthead.segment {
+        min-height: 500px;
+        padding: 1em 0em;
+      }
+      .masthead .logo.item img {
+        margin-right: 1em;
+      }
+      .masthead .ui.menu .ui.button {
+        margin-left: 0.5em;
+      }
+      .masthead h1.ui.header {
+        margin-top: 4em;
+        margin-bottom: 0em;
+        font-size: 3em;
+        /*color:#3f3c3d;*/
+        text-shadow: 0.04em 0.04em 0.04em rgba(0,0,0,0.25);
+        font-weight: normal;
+      }
+      .masthead h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+      }
+
+      .ui.vertical.stripe {
+        padding: 5em 0em;
+      }
+      .ui.vertical.stripe h3 {
+        font-size: 2em;
+      }
+      .ui.vertical.stripe .button + h3,
+      .ui.vertical.stripe p + h3 {
+        margin-top: 3em;
+      }
+      .ui.vertical.stripe .floated.image {
+        clear: both;
+      }
+      .ui.vertical.stripe p {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe ul {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe li {
+        line-height: 1.4285em;
+      }
+      .ui.vertical.stripe .horizontal.divider {
+        margin: 3em 0em;
+      }
+
+      .quote.stripe.segment {
+        padding: 0em;
+      }
+      .quote.stripe.segment .grid .column {
+        padding-top: 5em;
+        padding-bottom: 5em;
+      }
+
+      .footer.segment {
+        padding: 5em 0em;
+      }
+
+      .secondary.pointing.menu .toc.item {
+        display: none;
+      }
+
+      @media only screen and (max-width: 700px) {
+        /*.ui.fixed.menu {
+          display: none !important;
+        }*/
+        .secondary.pointing.menu .item,
+        .secondary.pointing.menu .menu {
+          display: none;
+        }
+        .secondary.pointing.menu .toc.item {
+          display: block;
+        }
+        .masthead.segment {
+          min-height: 350px;
+
+        }
+        .masthead h1.ui.header {
+          font-size: 2em;
+          margin-top: 1.5em;
+        }
+        .masthead h2 {
+          margin-top: 0.5em;
+          font-size: 1.5em;
+        }
+        .segment h2{
+          color: #00296b;
+        }
+      }
+
+
+    </style>
+      <script src="/assets/jquery.min.js"></script>
+      <script src="/assets/sematic/semantic.min.js"></script>
+    <script>
+    $(document)
+      .ready(function() {
+
+
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item')
+        ;
+        $('.ui.accordion').accordion();
+        $('img').addClass('ui').addClass('image');
+      })
+    ;
+    </script>
+
+  </head>
+  <body>
+    
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+      <a class="item" href='/'>About</a>
+      <!-- <a class="item" href='/about/'>About</a> -->
+      <a class="item" href='/Design%20patterns/'>Design patterns</a>
+      <a class="item" href='/notes/Stack%20components/'>Stack</a>
+    </div>
+    <!-- Page Contents -->
+    <div class="pusher">
+      <div class="ui large top fixed secondary pointing menu" style="background: rgba(255,255,255,1)">
+        <div class="ui container" style="font-size: 16px">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          <div class='center menu'>
+            <a class="item" href='/'>About</a>
+            <!-- <a class="item" href='/about/'>About</a> -->
+            <a class="item" href='/Design%20patterns/'>Design patterns</a>
+            <a class="item" href='/notes/Stack%20components/'>Stack</a>
+
+          </div>
+          
+        </div>
+      </div>
+      <!-- <div class="ui inverted vertical center aligned segment" style='background: #7cacda;'>
+        <div class="ui container">
+          <div class="ui large secondary inverted pointing menu">
+            <a class="toc item">
+              <i class="sidebar icon"></i>
+            </a>
+            <div class="right item">
+              <a class="ui inverted button" href='/login'>Log in</a>
+              &nbsp;
+              <a class="ui inverted button" href="/getting_started">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      Switchless
+      TEST
+      <br>
+<br>
+<br>
+<div class='ui container'>
+	
+	<div class='ui centered stackable grid'>
+		<div class='three wide computer only column'>
+			<img src="/assets/switchless_docs_logo.png" class='ui image'>
+		</div>
+		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
+			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
+				<h1>Setup 11ty</h1>
+<pre><code class="language-bash"># initialise npm
+npm init 
+	
+# install eleventy 
+npm install --save @11ty/eleventy
+
+# install markdown-it-obsidian - to convert obsidian wiki links to md links
+npm install markdown-it-obsidian --save
+
+# generate html
+npx @11ty/eleventy
+
+# run 11ty service with hot reloading
+npx @11ty/eleventy --serve
+</code></pre>
+<h2>Modify .eleventy.js</h2>
+<pre><code class="language-javascript">module.exports = function(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy(&quot;files&quot;);
+  let markdownIt = require(&quot;markdown-it&quot;);
+  let markdownItObsidian = require(&quot;markdown-it-obsidian&quot;)();
+  let markdownItOptions = {
+    html: true,
+  };
+  let markdownLib = markdownIt(markdownItOptions)
+    .use(markdownItObsidian)
+  eleventyConfig.setLibrary(&quot;md&quot;, markdownLib);
+  eleventyConfig.setEjsOptions({
+    // use &lt;? ?&gt; instead of &lt;% %&gt;
+    delimiter: &quot;?&quot;
+  });
+  eleventyConfig.addPassthroughCopy(&quot;assets&quot;);
+  return {
+    templateFormats: [
+      &quot;md&quot;,
+      // &quot;njk&quot;,
+      &quot;html&quot;,
+      // &quot;liquid&quot;
+    ],
+    // templateFormats: [&quot;html&quot;, &quot;njk&quot;, &quot;md&quot;, &quot;11ty.js&quot;],
+    markdownTemplateEngine: false,
+    htmlTemplateEngine: false,
+    dataTemplateEngine: false,
+    dir: {
+      input: &quot;.&quot;,
+      includes: &quot;_includes&quot;,
+      data: &quot;_data&quot;,
+      output: &quot;_site&quot;
+    }
+  };
+};
+</code></pre>
+<h2>Add includes folder</h2>
+<p>this copies layouts</p>
+<h2>Add assets folder</h2>
+<p>this copies semantic and general themes</p>
+<h2>create gitignore</h2>
+<pre><code>.obsidian/workspace
+.obsidian/publish.json
+.obsidian/graph.json
+
+_site
+node_modules
+</code></pre>
+<h2>Default Title and default layout</h2>
+<p>Create folder <code>_data</code>. create file -<code>layout.js</code>. In that file add <code>module.exports=&quot;layout/post.ejs&quot;</code>
+similar stuff for title as well</p>
+<p>ref: https://github.com/11ty/eleventy/issues/380</p>
+<p>Ref: https://www.11ty.dev/docs/getting-started/</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	if(window.location.pathname.indexOf('/blog/')>-1){
+		$('a[href="/blog/"]').addClass('active');
+	}
+</script>
+    </div>
+
+
+
+
+    <!--
+        Client-side Templates
+        ========================
+
+        HTML templates are important prerequisites of modern, rich client applications.
+        To work their magic, frameworks like React, Vue.js, Angular, Ember, and Backbone
+        require that you load these templates client-side.
+
+        By default, your Gruntfile is configured to automatically load and precompile
+        client-side JST templates in your `assets/templates` folder, then
+        include them here automatically (between TEMPLATES and TEMPLATES END).
+
+        To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Import templates from other directories
+            + Use a different view engine (handlebars, dust, pug/jade, etc.)
+            + Internationalize your client-side templates using a server-side
+              stringfile before they're served.
+    -->
+
+    <!--TEMPLATES-->
+    <!--TEMPLATES END-->
+
+
+    <!--
+        Server-side View Locals
+        ========================
+
+        Sometimes, it's convenient to get access to your server-side view locals from
+        client-side JavaScript.  This can improve page load times, remove the need for
+        extra AJAX requests, and make your client-side code easier to understand and
+        to maintain.  Sails provides a simple mechanism for accessing dynamic view
+        locals: the "exposeLocalsToBrowser()" view partial.
+
+        For more information on using this built-in feature, see:
+        https://sailsjs.com/docs/concepts/views/locals#?escaping-untrusted-data-using-exposelocalstobrowser
+
+    -->
+
+
+    <!--
+
+      Client-side Javascript
+      ========================
+
+      You can always bring in JS files manually with `script` tags, or asynchronously
+      on the client using a solution like AMD (RequireJS).  Or, if you like, you can
+      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+      By default, files in your `assets/js` folder are included here
+      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
+      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
+      and concatenated into a single file.
+
+      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+      For example, here are a few things you could do:
+
+          + Change the order of your scripts
+          + Import scripts from other directories
+          + Use a different preprocessor, like TypeScript
+
+    -->
+
+
+    <script src="/assets/sails.io.js"></script>
+    <script src="/assets/jquery.min.js"></script>
+    <script src="/assets/sematic/semantic.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var path = window.location.pathname;
+        console.log(path.split('/'));
+        
+        $('a[href="'+path+'"]').addClass('active');
+        $('.dropdown').dropdown();
+        // if(path.split('/')[1]=='features')
+        //   $('#features').addClass('active');
+        // $('.click-sidebar').click(function(){
+        //   $('.ui.sidebar').sidebar('toggle');
+        // })
+        // $('.inline.dropdown').dropdown();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+    <!-- Site Properties -->
+    <title>Switchless</title>
+
+    <link rel="stylesheet" href="/assets/sematic/semantic.min.css">
+    <style type="text/css">
+
+      .hidden.menu {
+        display: none;
+      }
+
+      .masthead.segment {
+        min-height: 500px;
+        padding: 1em 0em;
+      }
+      .masthead .logo.item img {
+        margin-right: 1em;
+      }
+      .masthead .ui.menu .ui.button {
+        margin-left: 0.5em;
+      }
+      .masthead h1.ui.header {
+        margin-top: 4em;
+        margin-bottom: 0em;
+        font-size: 3em;
+        /*color:#3f3c3d;*/
+        text-shadow: 0.04em 0.04em 0.04em rgba(0,0,0,0.25);
+        font-weight: normal;
+      }
+      .masthead h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+      }
+
+      .ui.vertical.stripe {
+        padding: 5em 0em;
+      }
+      .ui.vertical.stripe h3 {
+        font-size: 2em;
+      }
+      .ui.vertical.stripe .button + h3,
+      .ui.vertical.stripe p + h3 {
+        margin-top: 3em;
+      }
+      .ui.vertical.stripe .floated.image {
+        clear: both;
+      }
+      .ui.vertical.stripe p {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe ul {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe li {
+        line-height: 1.4285em;
+      }
+      .ui.vertical.stripe .horizontal.divider {
+        margin: 3em 0em;
+      }
+
+      .quote.stripe.segment {
+        padding: 0em;
+      }
+      .quote.stripe.segment .grid .column {
+        padding-top: 5em;
+        padding-bottom: 5em;
+      }
+
+      .footer.segment {
+        padding: 5em 0em;
+      }
+
+      .secondary.pointing.menu .toc.item {
+        display: none;
+      }
+
+      @media only screen and (max-width: 700px) {
+        /*.ui.fixed.menu {
+          display: none !important;
+        }*/
+        .secondary.pointing.menu .item,
+        .secondary.pointing.menu .menu {
+          display: none;
+        }
+        .secondary.pointing.menu .toc.item {
+          display: block;
+        }
+        .masthead.segment {
+          min-height: 350px;
+
+        }
+        .masthead h1.ui.header {
+          font-size: 2em;
+          margin-top: 1.5em;
+        }
+        .masthead h2 {
+          margin-top: 0.5em;
+          font-size: 1.5em;
+        }
+        .segment h2{
+          color: #00296b;
+        }
+      }
+
+
+    </style>
+      <script src="/assets/jquery.min.js"></script>
+      <script src="/assets/sematic/semantic.min.js"></script>
+    <script>
+    $(document)
+      .ready(function() {
+
+
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item')
+        ;
+        $('.ui.accordion').accordion();
+        $('img').addClass('ui').addClass('image');
+      })
+    ;
+    </script>
+
+  </head>
+  <body>
+    
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+      <a class="item" href='/'>About</a>
+      <!-- <a class="item" href='/about/'>About</a> -->
+      <a class="item" href='/Design%20patterns/'>Design patterns</a>
+      <a class="item" href='/notes/Stack%20components/'>Stack</a>
+    </div>
+    <!-- Page Contents -->
+    <div class="pusher">
+      <div class="ui large top fixed secondary pointing menu" style="background: rgba(255,255,255,1)">
+        <div class="ui container" style="font-size: 16px">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          <div class='center menu'>
+            <a class="item" href='/'>About</a>
+            <!-- <a class="item" href='/about/'>About</a> -->
+            <a class="item" href='/Design%20patterns/'>Design patterns</a>
+            <a class="item" href='/notes/Stack%20components/'>Stack</a>
+
+          </div>
+          
+        </div>
+      </div>
+      <!-- <div class="ui inverted vertical center aligned segment" style='background: #7cacda;'>
+        <div class="ui container">
+          <div class="ui large secondary inverted pointing menu">
+            <a class="toc item">
+              <i class="sidebar icon"></i>
+            </a>
+            <div class="right item">
+              <a class="ui inverted button" href='/login'>Log in</a>
+              &nbsp;
+              <a class="ui inverted button" href="/getting_started">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      Switchless
+      TEST
+      <br>
+<br>
+<br>
+<div class='ui container'>
+	
+	<div class='ui centered stackable grid'>
+		<div class='three wide computer only column'>
+			<img src="/assets/switchless_docs_logo.png" class='ui image'>
+		</div>
+		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
+			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
+				<h1>Mk Docs</h1>
+<hr>
+<ul>
+<li>Keywords: #stack</li>
+<li>author: #alex</li>
+</ul>
+<hr>
+<p>This is what we use to documenting things - both public documentation such as this and private documentations such in internal handbooks.</p>
+<h2>Requirements of a documentation system</h2>
+<ul>
+<li>tooling should be familiar</li>
+<li>documentation should be done by the creator - in this case the developer</li>
+<li>tooling should be efficient for creator - ie should be developer friendly</li>
+<li>A tooling that fits developers helps do multiple iterations of the same document.</li>
+</ul>
+<h2>What we tried before</h2>
+<p>We tried wordpress. The problem with wordpress is that, specifically for a developer, there is a lot of overhead.
+You will have to head over to a website, enter username password and then then write content.
+By the time you head over the browser, login, half of your enthusiasm for writing is gone.
+Also you are bothered by whether you should create a post or a page.</p>
+<p>Lets look at the workflow in Mkdocs.
+You are writing code and you come across an interesting idea. You command tab to the right sublime window. Create a file and start writing.
+Once you are done, you can choose you organise it. you can choose to commit it if you like it. you can choose to let it be there for a while if you are not satisfied with it.</p>
+<p>The obvious disadvantage for a system like this is that it is only suited for developer writters. Its going to be super difficult for a non developer to contribute.</p>
+<h2>Our flavor of mkdocs</h2>
+<p><a href="https://github.com/switchless-io/mkdocs">Swithless flavor of mkdocs</a></p>
+<h2>Getting started with Mkdocs</h2>
+<p>The generator for switchless is available in switchless-cli. Run the switchless cli to install mkdocs with our flavor.</p>
+<p><strong>Pre-requesites:</strong>
+<code>sudo easy_install mkdocs</code> - installs mkdocs cli</p>
+<h3>Setup documentation seperately</h3>
+<pre><code class="language-shell"># create a folder 
+mkdir asyncauto_handbook
+
+# setup up the folder. 
+cd asyncauto_handbook
+
+# Initialise git
+git init
+
+# Initialise npm and install switchless cli
+npm init
+npm install --save-dev @switchless-io/cli@latest
+
+# Run the cli and install the latest theme of mkdocs 
+./node_modules/@switchless-io/cli/index.js
+# choose --&gt; install --&gt; mkdocs
+
+# Lift the server
+mkdocs serve
+
+# create a remote repo and push data to repo
+git commit -m &quot;mkdocs setup&quot;
+git remote add origin https://github.com/your_name/your_repo.git
+git push -u origin master
+</code></pre>
+<h3>Setup documentation in your existing node project</h3>
+<p><code>./node_modules/@switchless-io/cli/index.js</code></p>
+<p>choose <code>install</code>, choose <code>mkdocs</code> from the menu.</p>
+<h3>Setup documentation in a new switchless app</h3>
+<p>If you are starting a new project, mkdocs in included in the <code>web-app</code> template.</p>
+<p><code>mkdocs serve</code> - you can view the static files that you are working on currently on your local browser. <code>localhost:8000</code></p>
+<h2>Hosting</h2>
+<h3>Public hosting using readthedocs</h3>
+<p>We generally prefer <a href="https://readthedocs.org">readthedocs.org</a> for hosting public documentations. They have some additional features regarding versioning of documentations.</p>
+<p><strong>To deploy via readthedocs:</strong></p>
+<ul>
+<li>signup for an account on readthedocs</li>
+<li>point the cloudflare DNS to the newly created doc <code>Cname handbook.asyncauto.com --&gt; cloudflare-to-cloudflare.readthedocs.io</code></li>
+<li>connect your github repos to readthedocs</li>
+<li>click <code>import repository</code></li>
+</ul>
+<p><strong>Use the following settings</strong></p>
+<ul>
+<li>advanced settings
+<ul>
+<li>defaut version - latest</li>
+<li>default branch - master</li>
+<li>single version - tick this checkbox</li>
+<li>documentation type - mkdocs (default is sphinx, you need to change this)</li>
+</ul>
+</li>
+<li>domains
+<ul>
+<li>add your domain
+<ul>
+<li>canonical - tick this checkbox</li>
+<li>always use http - tick this checkbox</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4>Expected issues:</h4>
+<ol>
+<li>If you dont point the dns to <code>cloudflare-to-cloudflare.readthedocs.io</code> before setting up the project, you will experience some DNS propogation delays.</li>
+<li>Immediately after you setup your custom domain, you will get an ssl error. It takes a while for readthedocs to issue you an ssl certificate. Browser bar will show <code>Not Secure</code> for some time.</li>
+</ol>
+<h3>Public hosting using s3</h3>
+<p>Use cloudflare and s3 to privately host your static files</p>
+<p>Refer to this - <a href="https://miketabor.com/how-to-host-a-static-website-using-aws-s3-and-cloudflare/">How to host a static website using AWS S3 and Cloudflare</a> to setup your static site.</p>
+<h3>Private hosting using aws s3</h3>
+<p>Perform the steps in the previous section
+<strong>Protection from cross domain access</strong>
+<img src="files/s3-does-not-allow-cross-domain-access.png" alt="s3 does not allow cross domain access">
+Because of how s3 works, your bucket name should be the name of the domain where you host your static site. S3 will not allow any other domain to point to your s3 bucket.</p>
+<p>Add some content to the S3 bucket and you will be able to see the content on your new endpoint.
+2 more things to do:</p>
+<ol>
+<li>Make it private - only someone from your team should be able to access it</li>
+<li>Site should be updated when the repo is updated.</li>
+</ol>
+<h4>Using Cloudflare access to restrict access to only your team</h4>
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/23c1eb1df7634e769217cc3c1ed4ff0d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+Use cloudflare access to limit who can access your static site. Note cloudflare access is paid. If you dont want to pay for it, and if you want just basic access restriction, create a google group and set access policy to that group email address. Cloudflare will send an OTP to that email address. Anyone in the google group will be able to access your private docs. 
+<p>If you fancy paying for it, cloudflare access gives a lot more sophisticated access control.</p>
+<h4>CI/CD pipeline using Gitlab</h4>
+<p><strong>Configure your AWS credentails as environment variables</strong></p>
+<p>Go to your repo on Gitlab. Go to <code>settings</code> --&gt; <code>CI/CD</code> --&gt; <code>Variables</code>
+Add these variables:</p>
+<ul>
+<li>AWS_ACCESS_KEY_ID</li>
+<li>AWS_DEFAULT_REGION</li>
+<li>AWS_SECRET_ACCESS_KEY</li>
+</ul>
+<p>These environment are special for Gitlab. Gitlab automatically recognises them as AWS credentials and will automatically configure the runner with the AWS credentials. You dont have to manually apply these credentials in the runner. This will prevent your credentials from getting leaked into the logs.</p>
+<p><strong>Configure Gitlab config - .gitlab-ci.yml</strong></p>
+<p>Create a file called <code>.gitlab-ci.yml</code> in your repo and add the following content to it.</p>
+<pre><code>image: ruby
+deploy_to_s3:
+ type: deploy
+ image: ruby
+ only: 
+  - master
+ script:
+  - apt update
+  - apt install -yq python3-pip nodejs git
+  - pip3 install mkdocs&gt;=1.1.2
+  - mkdocs build --verbose
+  - pip3 install awscli
+  - echo &quot;Pushing the static files&quot;
+  # - mkdir ~/.aws/
+  # - touch ~/.aws/credentials
+  # - printf &quot;[eb-cli]\naws_access_key_id = %s\naws_secret_access_key = %s\n&quot; &quot;$AWS_ACCESS_KEY_ID&quot; &quot;$AWS_SECRET_KEY&quot; &gt;&gt; ~/.aws/credentials
+  - aws s3 sync public/ s3://agent-handbook.mralbert.in --exclude &quot;.DS_Store/*&quot; --cache-control &quot;max-age=120000&quot; --delete
+</code></pre>
+<p>Notice that 3 lines are commented out. Gitlab runnner automatically recognises that you are trying to work with AWS. Because of this you dont have to specify the AWS credentials in the runner script. Gitlab detects this based on the environment variables that you set via the UI.</p>
+<h2>Usage</h2>
+<ul>
+<li>Write doc</li>
+<li>Organise it under folders etc</li>
+<li>Update the Navbar if required</li>
+<li>Commmit to repo</li>
+</ul>
+<h2>Other notes related to Mkdocs</h2>
+<ul>
+<li><a href="/notes/Install plugins in Mkdocs">Install plugins in Mkdocs</a></li>
+<li><a href="/notes/Obsidian to Mkdocs conversion">Obsidian to Mkdocs conversion</a></li>
+<li></li>
+</ul>
+<h2>Ref:</h2>
+<ul>
+<li><a href="https://www.mkdocs.org/user-guide/deploying-your-docs/">https://www.mkdocs.org/user-guide/deploying-your-docs/</a></li>
+</ul>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	if(window.location.pathname.indexOf('/blog/')>-1){
+		$('a[href="/blog/"]').addClass('active');
+	}
+</script>
+    </div>
+
+
+
+
+    <!--
+        Client-side Templates
+        ========================
+
+        HTML templates are important prerequisites of modern, rich client applications.
+        To work their magic, frameworks like React, Vue.js, Angular, Ember, and Backbone
+        require that you load these templates client-side.
+
+        By default, your Gruntfile is configured to automatically load and precompile
+        client-side JST templates in your `assets/templates` folder, then
+        include them here automatically (between TEMPLATES and TEMPLATES END).
+
+        To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Import templates from other directories
+            + Use a different view engine (handlebars, dust, pug/jade, etc.)
+            + Internationalize your client-side templates using a server-side
+              stringfile before they're served.
+    -->
+
+    <!--TEMPLATES-->
+    <!--TEMPLATES END-->
+
+
+    <!--
+        Server-side View Locals
+        ========================
+
+        Sometimes, it's convenient to get access to your server-side view locals from
+        client-side JavaScript.  This can improve page load times, remove the need for
+        extra AJAX requests, and make your client-side code easier to understand and
+        to maintain.  Sails provides a simple mechanism for accessing dynamic view
+        locals: the "exposeLocalsToBrowser()" view partial.
+
+        For more information on using this built-in feature, see:
+        https://sailsjs.com/docs/concepts/views/locals#?escaping-untrusted-data-using-exposelocalstobrowser
+
+    -->
+
+
+    <!--
+
+      Client-side Javascript
+      ========================
+
+      You can always bring in JS files manually with `script` tags, or asynchronously
+      on the client using a solution like AMD (RequireJS).  Or, if you like, you can
+      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+      By default, files in your `assets/js` folder are included here
+      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
+      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
+      and concatenated into a single file.
+
+      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+      For example, here are a few things you could do:
+
+          + Change the order of your scripts
+          + Import scripts from other directories
+          + Use a different preprocessor, like TypeScript
+
+    -->
+
+
+    <script src="/assets/sails.io.js"></script>
+    <script src="/assets/jquery.min.js"></script>
+    <script src="/assets/sematic/semantic.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var path = window.location.pathname;
+        console.log(path.split('/'));
+        
+        $('a[href="'+path+'"]').addClass('active');
+        $('.dropdown').dropdown();
+        // if(path.split('/')[1]=='features')
+        //   $('#features').addClass('active');
+        // $('.click-sidebar').click(function(){
+        //   $('.ui.sidebar').sidebar('toggle');
+        // })
+        // $('.inline.dropdown').dropdown();
+      });
+    </script>
+  </body>
+</html>

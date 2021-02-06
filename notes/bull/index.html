@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+    <!-- Site Properties -->
+    <title>Switchless</title>
+
+    <link rel="stylesheet" href="/assets/sematic/semantic.min.css">
+    <style type="text/css">
+
+      .hidden.menu {
+        display: none;
+      }
+
+      .masthead.segment {
+        min-height: 500px;
+        padding: 1em 0em;
+      }
+      .masthead .logo.item img {
+        margin-right: 1em;
+      }
+      .masthead .ui.menu .ui.button {
+        margin-left: 0.5em;
+      }
+      .masthead h1.ui.header {
+        margin-top: 4em;
+        margin-bottom: 0em;
+        font-size: 3em;
+        /*color:#3f3c3d;*/
+        text-shadow: 0.04em 0.04em 0.04em rgba(0,0,0,0.25);
+        font-weight: normal;
+      }
+      .masthead h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+      }
+
+      .ui.vertical.stripe {
+        padding: 5em 0em;
+      }
+      .ui.vertical.stripe h3 {
+        font-size: 2em;
+      }
+      .ui.vertical.stripe .button + h3,
+      .ui.vertical.stripe p + h3 {
+        margin-top: 3em;
+      }
+      .ui.vertical.stripe .floated.image {
+        clear: both;
+      }
+      .ui.vertical.stripe p {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe ul {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe li {
+        line-height: 1.4285em;
+      }
+      .ui.vertical.stripe .horizontal.divider {
+        margin: 3em 0em;
+      }
+
+      .quote.stripe.segment {
+        padding: 0em;
+      }
+      .quote.stripe.segment .grid .column {
+        padding-top: 5em;
+        padding-bottom: 5em;
+      }
+
+      .footer.segment {
+        padding: 5em 0em;
+      }
+
+      .secondary.pointing.menu .toc.item {
+        display: none;
+      }
+
+      @media only screen and (max-width: 700px) {
+        /*.ui.fixed.menu {
+          display: none !important;
+        }*/
+        .secondary.pointing.menu .item,
+        .secondary.pointing.menu .menu {
+          display: none;
+        }
+        .secondary.pointing.menu .toc.item {
+          display: block;
+        }
+        .masthead.segment {
+          min-height: 350px;
+
+        }
+        .masthead h1.ui.header {
+          font-size: 2em;
+          margin-top: 1.5em;
+        }
+        .masthead h2 {
+          margin-top: 0.5em;
+          font-size: 1.5em;
+        }
+        .segment h2{
+          color: #00296b;
+        }
+      }
+
+
+    </style>
+      <script src="/assets/jquery.min.js"></script>
+      <script src="/assets/sematic/semantic.min.js"></script>
+    <script>
+    $(document)
+      .ready(function() {
+
+
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item')
+        ;
+        $('.ui.accordion').accordion();
+        $('img').addClass('ui').addClass('image');
+      })
+    ;
+    </script>
+
+  </head>
+  <body>
+    
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+      <a class="item" href='/'>About</a>
+      <!-- <a class="item" href='/about/'>About</a> -->
+      <a class="item" href='/Design%20patterns/'>Design patterns</a>
+      <a class="item" href='/notes/Stack%20components/'>Stack</a>
+    </div>
+    <!-- Page Contents -->
+    <div class="pusher">
+      <div class="ui large top fixed secondary pointing menu" style="background: rgba(255,255,255,1)">
+        <div class="ui container" style="font-size: 16px">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          <div class='center menu'>
+            <a class="item" href='/'>About</a>
+            <!-- <a class="item" href='/about/'>About</a> -->
+            <a class="item" href='/Design%20patterns/'>Design patterns</a>
+            <a class="item" href='/notes/Stack%20components/'>Stack</a>
+
+          </div>
+          
+        </div>
+      </div>
+      <!-- <div class="ui inverted vertical center aligned segment" style='background: #7cacda;'>
+        <div class="ui container">
+          <div class="ui large secondary inverted pointing menu">
+            <a class="toc item">
+              <i class="sidebar icon"></i>
+            </a>
+            <div class="right item">
+              <a class="ui inverted button" href='/login'>Log in</a>
+              &nbsp;
+              <a class="ui inverted button" href="/getting_started">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      Switchless
+      TEST
+      <br>
+<br>
+<br>
+<div class='ui container'>
+	
+	<div class='ui centered stackable grid'>
+		<div class='three wide computer only column'>
+			<img src="/assets/switchless_docs_logo.png" class='ui image'>
+		</div>
+		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
+			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
+				<h1>Bull</h1>
+<hr>
+<ul>
+<li>keywords: #stack</li>
+<li>author: #alex</li>
+</ul>
+<hr>
+<h2>About</h2>
+<p>We use bull for queue up tasks. Two major reason why we use queues.</p>
+<ol>
+<li>something is expected to be heavy and we dont want to block the event loop</li>
+<li>something is expected to fail and we want the option to retry it</li>
+</ol>
+<p>Eg of case 1 is something that heavy process such running some shell scripts or running puppeteer etc.</p>
+<p>Eg of case 2 is a request to be made to a 3rd part that is expected to have a downtime or processing a webhook from a 3rd party system.</p>
+<p>Install bull via switchless cli - https://www.loom.com/share/7da3df9b1df045eba43b5fc66bb0cb70
+Basic bull usage walkthrough - https://www.loom.com/share/265833e77edc4651a35240c700f3c68e</p>
+<h2>Related notes</h2>
+<ul>
+<li><a href="/notes/bulk items in the queue">bulk items in the queue</a></li>
+<li><a href="/notes/Create a single item in queue">Create a single item in queue</a></li>
+</ul>
+<h2>Setup</h2>
+<p>Use the <a href="https://switchless.io/getting-started/">switchless cli</a> to setup bull. Our standard setup includes a UI for visualising the state of the queue.</p>
+<h2>Usage</h2>
+<h3>Sandboxed queue</h3>
+<blockquote>
+<p>Sometimes jobs are more CPU intensive which will could lock the Node event loop for too long and Bull could decide the job has been stalled. To avoid this situation, it is possible to run the process functions in separate Node processes. In this case, the concurrency parameter will decide the maximum number of concurrent processes that are allowed to run.</p>
+</blockquote>
+<blockquote>
+<p>We call this kind of processes for “sandboxed” processes, and they also have the property that if the crash they will not affect any other process, and a new process will be spawned automatically to replace it.</p>
+</blockquote>
+<p>ref:</p>
+<ul>
+<li><a href="https://optimalbits.github.io/bull/#sandboxed-processors">https://optimalbits.github.io/bull/#sandboxed-processors</a></li>
+</ul>
+<h4>When using sandboxed queue:</h4>
+<p><strong>1) Store all your processors in <code>/api/processors</code></strong></p>
+<p>here is an example of a processor that runs a shell script, picks up the data and creates a new queue item to process the data.</p>
+<pre><code class="language-js">module.exports = function (job,callback) {
+	var folder_name = __dirname;
+	folder_name = folder_name.split('/api')[0];
+	var options = job.data.options;
+	var run_config = options.run_config;
+	fs.writeFileSync(folder_name+&quot;/automations/run_config.json&quot;, JSON.stringify(run_config,null,'\t'));
+	fs.writeFileSync(&quot;./automations/data/gstr2a_&quot;+run_config.client.gstin+&quot;.json&quot;, JSON.stringify([],null,'\t'));
+	
+	var q='node node_modules/.bin/codeceptjs run --steps -c '+folder_name+'/automations/codecept.conf.js -i '+folder_name+'/automations/new_get_gstr2a_details_auto.js'			
+	shell.exec(q); 
+	// read the file
+	var filings = JSON.parse(fs.readFileSync(folder_name+'/automations/data/gstr2a_'+run_config.client.gstin+'.json'));
+	if(filings.length==0)
+		return callback(new Error('crawling failed - no data extracted'));
+	// if file is empty the throw error
+	var data={
+		title:`Add portal data(${options.what}) to tracker - ${options.mode}`,
+		options:{
+			what:options.what, //'gstr3b',
+			mode:options.mode, //'audit',
+			gstin:options.gstin,
+			run_config:run_config,
+			filings:filings,
+		},
+	};
+	promise = queue.add('add_portal_data_to_tracker',data);
+	promise.then(function(result) {
+		callback(null, filings);
+	}, function(error) {
+		callback(error);
+	});
+
+}
+</code></pre>
+<p><strong>2) Add process to <code>BullBootstrap.js</code></strong></p>
+<p>example:</p>
+<pre><code class="language-js">queue.process('crawl_gstr3b',1,'/Users/alex/ec2code/asyncauto/mralbert/api/processors/crawlGSTR3B.js');
+queue.process('crawl_gstr2a',1,'/Users/alex/ec2code/asyncauto/mralbert/api/processors/crawlGSTR2A.js');
+</code></pre>
+<p><strong>3) Update visual studio code's <code>launch.json</code> to be able to debug child process</strong>
+Add <code>autoAttachChildProcesses</code> to configurations.</p>
+<pre><code>{
+    &quot;type&quot;: &quot;node&quot;,
+    &quot;request&quot;: &quot;launch&quot;,
+    &quot;name&quot;: &quot;local_test&quot;,
+    &quot;autoAttachChildProcesses&quot;: true, // add this 
+    &quot;program&quot;: &quot;${workspaceFolder}/app.js&quot;,
+    &quot;outputCapture&quot;: &quot;std&quot;,
+    &quot;env&quot;: {
+        &quot;REDIS_HOST&quot;:&quot;localhost&quot;,
+    }
+},
+</code></pre>
+<p>VS code by default only setups debug for the main process. If you dont run this, the logic will not work when using the debug console on VS code. However if you run <code>npm start</code> via the terminal, it will work fine without making this change. Just that you will not be able to use the VS code debugger.</p>
+<h2>Cron tab format</h2>
+<p><a href="/notes/cron tab format">cron tab format</a></p>
+<h2>Ref:</h2>
+<ul>
+<li><a href="https://github.com/OptimalBits/bull/blob/develop/REFERENCE.md">Bull official reference</a></li>
+</ul>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	if(window.location.pathname.indexOf('/blog/')>-1){
+		$('a[href="/blog/"]').addClass('active');
+	}
+</script>
+    </div>
+
+
+
+
+    <!--
+        Client-side Templates
+        ========================
+
+        HTML templates are important prerequisites of modern, rich client applications.
+        To work their magic, frameworks like React, Vue.js, Angular, Ember, and Backbone
+        require that you load these templates client-side.
+
+        By default, your Gruntfile is configured to automatically load and precompile
+        client-side JST templates in your `assets/templates` folder, then
+        include them here automatically (between TEMPLATES and TEMPLATES END).
+
+        To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Import templates from other directories
+            + Use a different view engine (handlebars, dust, pug/jade, etc.)
+            + Internationalize your client-side templates using a server-side
+              stringfile before they're served.
+    -->
+
+    <!--TEMPLATES-->
+    <!--TEMPLATES END-->
+
+
+    <!--
+        Server-side View Locals
+        ========================
+
+        Sometimes, it's convenient to get access to your server-side view locals from
+        client-side JavaScript.  This can improve page load times, remove the need for
+        extra AJAX requests, and make your client-side code easier to understand and
+        to maintain.  Sails provides a simple mechanism for accessing dynamic view
+        locals: the "exposeLocalsToBrowser()" view partial.
+
+        For more information on using this built-in feature, see:
+        https://sailsjs.com/docs/concepts/views/locals#?escaping-untrusted-data-using-exposelocalstobrowser
+
+    -->
+
+
+    <!--
+
+      Client-side Javascript
+      ========================
+
+      You can always bring in JS files manually with `script` tags, or asynchronously
+      on the client using a solution like AMD (RequireJS).  Or, if you like, you can
+      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+      By default, files in your `assets/js` folder are included here
+      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
+      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
+      and concatenated into a single file.
+
+      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+      For example, here are a few things you could do:
+
+          + Change the order of your scripts
+          + Import scripts from other directories
+          + Use a different preprocessor, like TypeScript
+
+    -->
+
+
+    <script src="/assets/sails.io.js"></script>
+    <script src="/assets/jquery.min.js"></script>
+    <script src="/assets/sematic/semantic.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var path = window.location.pathname;
+        console.log(path.split('/'));
+        
+        $('a[href="'+path+'"]').addClass('active');
+        $('.dropdown').dropdown();
+        // if(path.split('/')[1]=='features')
+        //   $('#features').addClass('active');
+        // $('.click-sidebar').click(function(){
+        //   $('.ui.sidebar').sidebar('toggle');
+        // })
+        // $('.inline.dropdown').dropdown();
+      });
+    </script>
+  </body>
+</html>

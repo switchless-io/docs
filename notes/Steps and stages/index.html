@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+    <!-- Site Properties -->
+    <title>Switchless</title>
+
+    <link rel="stylesheet" href="/assets/sematic/semantic.min.css">
+    <style type="text/css">
+
+      .hidden.menu {
+        display: none;
+      }
+
+      .masthead.segment {
+        min-height: 500px;
+        padding: 1em 0em;
+      }
+      .masthead .logo.item img {
+        margin-right: 1em;
+      }
+      .masthead .ui.menu .ui.button {
+        margin-left: 0.5em;
+      }
+      .masthead h1.ui.header {
+        margin-top: 4em;
+        margin-bottom: 0em;
+        font-size: 3em;
+        /*color:#3f3c3d;*/
+        text-shadow: 0.04em 0.04em 0.04em rgba(0,0,0,0.25);
+        font-weight: normal;
+      }
+      .masthead h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+      }
+
+      .ui.vertical.stripe {
+        padding: 5em 0em;
+      }
+      .ui.vertical.stripe h3 {
+        font-size: 2em;
+      }
+      .ui.vertical.stripe .button + h3,
+      .ui.vertical.stripe p + h3 {
+        margin-top: 3em;
+      }
+      .ui.vertical.stripe .floated.image {
+        clear: both;
+      }
+      .ui.vertical.stripe p {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe ul {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe li {
+        line-height: 1.4285em;
+      }
+      .ui.vertical.stripe .horizontal.divider {
+        margin: 3em 0em;
+      }
+
+      .quote.stripe.segment {
+        padding: 0em;
+      }
+      .quote.stripe.segment .grid .column {
+        padding-top: 5em;
+        padding-bottom: 5em;
+      }
+
+      .footer.segment {
+        padding: 5em 0em;
+      }
+
+      .secondary.pointing.menu .toc.item {
+        display: none;
+      }
+
+      @media only screen and (max-width: 700px) {
+        /*.ui.fixed.menu {
+          display: none !important;
+        }*/
+        .secondary.pointing.menu .item,
+        .secondary.pointing.menu .menu {
+          display: none;
+        }
+        .secondary.pointing.menu .toc.item {
+          display: block;
+        }
+        .masthead.segment {
+          min-height: 350px;
+
+        }
+        .masthead h1.ui.header {
+          font-size: 2em;
+          margin-top: 1.5em;
+        }
+        .masthead h2 {
+          margin-top: 0.5em;
+          font-size: 1.5em;
+        }
+        .segment h2{
+          color: #00296b;
+        }
+      }
+
+
+    </style>
+      <script src="/assets/jquery.min.js"></script>
+      <script src="/assets/sematic/semantic.min.js"></script>
+    <script>
+    $(document)
+      .ready(function() {
+
+
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item')
+        ;
+        $('.ui.accordion').accordion();
+        $('img').addClass('ui').addClass('image');
+      })
+    ;
+    </script>
+
+  </head>
+  <body>
+    
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+      <a class="item" href='/'>About</a>
+      <!-- <a class="item" href='/about/'>About</a> -->
+      <a class="item" href='/Design%20patterns/'>Design patterns</a>
+      <a class="item" href='/notes/Stack%20components/'>Stack</a>
+    </div>
+    <!-- Page Contents -->
+    <div class="pusher">
+      <div class="ui large top fixed secondary pointing menu" style="background: rgba(255,255,255,1)">
+        <div class="ui container" style="font-size: 16px">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          <div class='center menu'>
+            <a class="item" href='/'>About</a>
+            <!-- <a class="item" href='/about/'>About</a> -->
+            <a class="item" href='/Design%20patterns/'>Design patterns</a>
+            <a class="item" href='/notes/Stack%20components/'>Stack</a>
+
+          </div>
+          
+        </div>
+      </div>
+      <!-- <div class="ui inverted vertical center aligned segment" style='background: #7cacda;'>
+        <div class="ui container">
+          <div class="ui large secondary inverted pointing menu">
+            <a class="toc item">
+              <i class="sidebar icon"></i>
+            </a>
+            <div class="right item">
+              <a class="ui inverted button" href='/login'>Log in</a>
+              &nbsp;
+              <a class="ui inverted button" href="/getting_started">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      Switchless
+      TEST
+      <br>
+<br>
+<br>
+<div class='ui container'>
+	
+	<div class='ui centered stackable grid'>
+		<div class='three wide computer only column'>
+			<img src="/assets/switchless_docs_logo.png" class='ui image'>
+		</div>
+		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
+			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
+				<h1>Steps and stages</h1>
+<hr>
+<ul>
+<li>Keywords:#pattern</li>
+<li>author: #alex</li>
+</ul>
+<hr>
+<p>The term steps and stages can be interchangibly used. We internally use the term steps when the overall process is a short one and typically gets completed in a single user session. The terminology stages are used to represent intermediate steps in a long running process that takes days/weeks or months to complete.</p>
+<h3>Eg - Steps in Mr Albert getting started process/form</h3>
+<p><img src="/Users/alex/ec2code/switchless/docs/docs/files/steps_in_getting_started_mralbert.png" alt="CleanShot 2020-08-28 at 15.25.10"></p>
+<p><a href="/files/steps_in_getting_started_mralbert.png">steps_in_getting_started_mralbert.png</a></p>
+<p><a href="/CleanShot_2020-08-28 at 15.25.10">CleanShot 2020-08-28 at 15.25.10</a></p>
+<p><img src="/files/assets_images.png"></img></p>
+<h3>Eg - Stages in GSTR3b filing - Mr Albert</h3>
+<p><img src="/Users/alex/ec2code/switchless/docs/docs/files/stages_in_gstr3b.png" alt="CleanShot 2020-08-28 at 15.26.52"></p>
+<h2>Pattern</h2>
+<p><img src="/Users/alex/ec2code/switchless/docs/docs/files/stages_pattern.png" alt="CleanShot 2020-08-28 at 15.26.52"></p>
+<ol>
+<li>A state that is complete is marked with a green tick mark</li>
+<li>An active stage is highlighed</li>
+<li>A future stage is disabled.</li>
+</ol>
+<p>Typically we split a process into stages for handling some sort of complexity. Do definitely you can expect each of these stages to be in seperate EJS files most of the time. The follow pattern is for writting steps without repeating yourself.</p>
+<pre><code class="language-ejs">&lt;%
+	var current_stage = 'business_info'; // current stage of the process 
+	// This function determines how should each stage of the process should be visualised (as active or complete or disabled) when the 	 process is at `current_stage`. 
+	var stageStatus=function(stage){ 
+    // this variable helps the code understand the actual sequence of stages in your process
+		var stages=['personal_info','business_info','your_plan','verify_submit'];
+		// var current_stage = filing.stage;
+		var active_stage_pos = stages.indexOf(current_stage); 
+		var stage_pos=stages.indexOf(stage);
+		if(stage_pos==-1) // invalid case
+			return 'disabled';
+		else if(stage_pos&lt;active_stage_pos)
+			return 'completed';
+		else if(stage_pos==active_stage_pos)
+			return 'active';
+		else if(stage_pos&gt;active_stage_pos)
+			return 'disabled';
+	}
+%&gt;
+&lt;br&gt;
+&lt;h1&gt;Getting Started&lt;/h1&gt;
+&lt;div class=&quot;ui steps&quot;&gt;
+	&lt;div class=&quot;&lt;%=stageStatus('personal_info')%&gt; step&quot;&gt;
+		&lt;i class=&quot;truck icon&quot;&gt;&lt;/i&gt;
+		&lt;div class=&quot;content&quot;&gt;
+			&lt;div class=&quot;title&quot;&gt;Personal Info&lt;/div&gt;
+			&lt;div class=&quot;description&quot;&gt;Your contact details&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;&lt;%=stageStatus('business_info')%&gt; step&quot;&gt;
+		&lt;i class=&quot;payment icon&quot;&gt;&lt;/i&gt;
+		&lt;div class=&quot;content&quot;&gt;
+			&lt;div class=&quot;title&quot;&gt;Business Info&lt;/div&gt;
+			&lt;div class=&quot;description&quot;&gt;How your business is registered&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;&lt;%=stageStatus('your_plan')%&gt; step&quot;&gt;
+		&lt;i class=&quot;info icon&quot;&gt;&lt;/i&gt;
+		&lt;div class=&quot;content&quot;&gt;
+			&lt;div class=&quot;title&quot;&gt;Your plan&lt;/div&gt;
+			&lt;div class=&quot;description&quot;&gt;Choose your plan&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;&lt;%=stageStatus('verify_submit')%&gt; step&quot;&gt;
+		&lt;i class=&quot;info icon&quot;&gt;&lt;/i&gt;
+		&lt;div class=&quot;content&quot;&gt;
+			&lt;div class=&quot;title&quot;&gt;Submit&lt;/div&gt;
+			&lt;div class=&quot;description&quot;&gt;Verify and submit&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	if(window.location.pathname.indexOf('/blog/')>-1){
+		$('a[href="/blog/"]').addClass('active');
+	}
+</script>
+    </div>
+
+
+
+
+    <!--
+        Client-side Templates
+        ========================
+
+        HTML templates are important prerequisites of modern, rich client applications.
+        To work their magic, frameworks like React, Vue.js, Angular, Ember, and Backbone
+        require that you load these templates client-side.
+
+        By default, your Gruntfile is configured to automatically load and precompile
+        client-side JST templates in your `assets/templates` folder, then
+        include them here automatically (between TEMPLATES and TEMPLATES END).
+
+        To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Import templates from other directories
+            + Use a different view engine (handlebars, dust, pug/jade, etc.)
+            + Internationalize your client-side templates using a server-side
+              stringfile before they're served.
+    -->
+
+    <!--TEMPLATES-->
+    <!--TEMPLATES END-->
+
+
+    <!--
+        Server-side View Locals
+        ========================
+
+        Sometimes, it's convenient to get access to your server-side view locals from
+        client-side JavaScript.  This can improve page load times, remove the need for
+        extra AJAX requests, and make your client-side code easier to understand and
+        to maintain.  Sails provides a simple mechanism for accessing dynamic view
+        locals: the "exposeLocalsToBrowser()" view partial.
+
+        For more information on using this built-in feature, see:
+        https://sailsjs.com/docs/concepts/views/locals#?escaping-untrusted-data-using-exposelocalstobrowser
+
+    -->
+
+
+    <!--
+
+      Client-side Javascript
+      ========================
+
+      You can always bring in JS files manually with `script` tags, or asynchronously
+      on the client using a solution like AMD (RequireJS).  Or, if you like, you can
+      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+      By default, files in your `assets/js` folder are included here
+      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
+      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
+      and concatenated into a single file.
+
+      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+      For example, here are a few things you could do:
+
+          + Change the order of your scripts
+          + Import scripts from other directories
+          + Use a different preprocessor, like TypeScript
+
+    -->
+
+
+    <script src="/assets/sails.io.js"></script>
+    <script src="/assets/jquery.min.js"></script>
+    <script src="/assets/sematic/semantic.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var path = window.location.pathname;
+        console.log(path.split('/'));
+        
+        $('a[href="'+path+'"]').addClass('active');
+        $('.dropdown').dropdown();
+        // if(path.split('/')[1]=='features')
+        //   $('#features').addClass('active');
+        // $('.click-sidebar').click(function(){
+        //   $('.ui.sidebar').sidebar('toggle');
+        // })
+        // $('.inline.dropdown').dropdown();
+      });
+    </script>
+  </body>
+</html>

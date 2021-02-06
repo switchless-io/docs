@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+    <!-- Site Properties -->
+    <title>Design Patterns</title>
+
+    <link rel="stylesheet" href="/assets/sematic/semantic.min.css">
+    <style type="text/css">
+
+      .hidden.menu {
+        display: none;
+      }
+
+      .masthead.segment {
+        min-height: 500px;
+        padding: 1em 0em;
+      }
+      .masthead .logo.item img {
+        margin-right: 1em;
+      }
+      .masthead .ui.menu .ui.button {
+        margin-left: 0.5em;
+      }
+      .masthead h1.ui.header {
+        margin-top: 4em;
+        margin-bottom: 0em;
+        font-size: 3em;
+        /*color:#3f3c3d;*/
+        text-shadow: 0.04em 0.04em 0.04em rgba(0,0,0,0.25);
+        font-weight: normal;
+      }
+      .masthead h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+      }
+
+      .ui.vertical.stripe {
+        padding: 5em 0em;
+      }
+      .ui.vertical.stripe h3 {
+        font-size: 2em;
+      }
+      .ui.vertical.stripe .button + h3,
+      .ui.vertical.stripe p + h3 {
+        margin-top: 3em;
+      }
+      .ui.vertical.stripe .floated.image {
+        clear: both;
+      }
+      .ui.vertical.stripe p {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe ul {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe li {
+        line-height: 1.4285em;
+      }
+      .ui.vertical.stripe .horizontal.divider {
+        margin: 3em 0em;
+      }
+
+      .quote.stripe.segment {
+        padding: 0em;
+      }
+      .quote.stripe.segment .grid .column {
+        padding-top: 5em;
+        padding-bottom: 5em;
+      }
+
+      .footer.segment {
+        padding: 5em 0em;
+      }
+
+      .secondary.pointing.menu .toc.item {
+        display: none;
+      }
+
+      @media only screen and (max-width: 700px) {
+        /*.ui.fixed.menu {
+          display: none !important;
+        }*/
+        .secondary.pointing.menu .item,
+        .secondary.pointing.menu .menu {
+          display: none;
+        }
+        .secondary.pointing.menu .toc.item {
+          display: block;
+        }
+        .masthead.segment {
+          min-height: 350px;
+
+        }
+        .masthead h1.ui.header {
+          font-size: 2em;
+          margin-top: 1.5em;
+        }
+        .masthead h2 {
+          margin-top: 0.5em;
+          font-size: 1.5em;
+        }
+        .segment h2{
+          color: #00296b;
+        }
+      }
+
+
+    </style>
+      <script src="/assets/jquery.min.js"></script>
+      <script src="/assets/sematic/semantic.min.js"></script>
+    <script>
+    $(document)
+      .ready(function() {
+
+
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item')
+        ;
+        $('.ui.accordion').accordion();
+        $('img').addClass('ui').addClass('image');
+      })
+    ;
+    </script>
+
+  </head>
+  <body>
+    
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+      <a class="item" href='/'>About</a>
+      <!-- <a class="item" href='/about/'>About</a> -->
+      <a class="item" href='/Design%20patterns/'>Design patterns</a>
+      <a class="item" href='/notes/Stack%20components/'>Stack</a>
+    </div>
+    <!-- Page Contents -->
+    <div class="pusher">
+      <div class="ui large top fixed secondary pointing menu" style="background: rgba(255,255,255,1)">
+        <div class="ui container" style="font-size: 16px">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          <div class='center menu'>
+            <a class="item" href='/'>About</a>
+            <!-- <a class="item" href='/about/'>About</a> -->
+            <a class="item" href='/Design%20patterns/'>Design patterns</a>
+            <a class="item" href='/notes/Stack%20components/'>Stack</a>
+
+          </div>
+          
+        </div>
+      </div>
+      <!-- <div class="ui inverted vertical center aligned segment" style='background: #7cacda;'>
+        <div class="ui container">
+          <div class="ui large secondary inverted pointing menu">
+            <a class="toc item">
+              <i class="sidebar icon"></i>
+            </a>
+            <div class="right item">
+              <a class="ui inverted button" href='/login'>Log in</a>
+              &nbsp;
+              <a class="ui inverted button" href="/getting_started">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      Design Patterns
+      TEST
+      <br>
+<br>
+<br>
+<div class='ui container'>
+	
+	<div class='ui centered stackable grid'>
+		<div class='three wide computer only column'>
+			<img src="/assets/switchless_docs_logo.png" class='ui image'>
+		</div>
+		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
+			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
+				<h1>Design patterns</h1>
+<h2>How to setup your infrastructure</h2>
+<ul>
+<li><a href="/notes/How to setup metabase">How to setup metabase</a></li>
+<li><a href="/notes/How to setup sentry">How to setup sentry</a></li>
+<li><a href="/notes/Set up ElasticBeanstalk Locally">Set up ElasticBeanstalk Locally</a></li>
+<li><a href="/notes/Setup wordpress multi site">Setup wordpress multi site</a></li>
+<li><a href="/notes/Install plugins in Mkdocs">Install plugins in Mkdocs</a></li>
+<li><a href="/notes/Refresh AWS Access Keys">Refresh AWS Access Keys</a></li>
+</ul>
+<h2>Patterns</h2>
+<ul>
+<li><a href="/notes/Asset pipeline done right">Asset pipeline done right</a></li>
+<li><a href="/notes/Error handling in async.auto">Error handling in async.auto</a></li>
+<li><a href="/notes/Making HTTP requests using &#39;request&#39; library">Making HTTP requests using 'request' library</a></li>
+<li><a href="/notes/Steps and stages">Steps and stages</a></li>
+<li><a href="/notes/tables">tables</a></li>
+<li><a href="/notes/Bearer Auth">Bearer Auth</a></li>
+<li><a href="/notes/Dates with Momentjs">Dates with Momentjs</a></li>
+<li><a href="/notes/Handling dates in xlsx">Handling dates in xlsx</a></li>
+<li><a href="/notes/What is the difference between pattern and how to">What is the difference between pattern and how to</a></li>
+<li><a href="/notes/export and import data using tableplus">export and import data using tableplus</a></li>
+<li><a href="/notes/filter by a field">filter by a field</a></li>
+</ul>
+<h2>Files</h2>
+<ul>
+<li><a href="/notes/Export data as csv,excel,json">Export data as csv,excel,json</a></li>
+<li><a href="/notes/Write excel file">Write excel file</a></li>
+<li><a href="/notes/Upload a file">Upload a file</a></li>
+<li><a href="/notes/Download file">Download file</a></li>
+</ul>
+<h2>UI Patterns</h2>
+<ul>
+<li><a href="/notes/Pagination">Pagination</a></li>
+<li><a href="/notes/Making a POST request">Making a POST request</a></li>
+<li><a href="/notes/Green check and red cross">Green check and red cross</a></li>
+<li><a href="/notes/Popup pattern 1">Popup pattern 1</a></li>
+<li><a href="/notes/Right floated button">Right floated button</a></li>
+<li><a href="/notes/Right floated icon download dropdown">Right floated icon download dropdown</a></li>
+<li><a href="/notes/Fully loaded tabs with its own url">Fully loaded tabs with its own url</a></li>
+<li><a href="/notes/Jquery post request">Jquery post request</a></li>
+<li><a href="/notes/Loader on form submit">Loader on form submit</a></li>
+</ul>
+<h2>Front end automations</h2>
+<ul>
+<li><a href="/notes/Click buttons on the screen in bulk">Click buttons on the screen in bulk</a></li>
+</ul>
+<h2>Ajax</h2>
+<ul>
+<li><a href="/notes/Update a blueprint object with Ajax">Update a blueprint object with Ajax</a></li>
+<li><a href="/notes/Create a blueprint object with Ajax">Create a blueprint object with Ajax</a></li>
+</ul>
+<h2>Forms</h2>
+<ul>
+<li><a href="/notes/List page Filter">List page Filter</a></li>
+<li><a href="/notes/dropdown with header">dropdown with header</a></li>
+<li><a href="/notes/Filter by start date, end date">Filter by start date, end date</a></li>
+<li><a href="/notes/Checkbox in a form">Checkbox in a form</a></li>
+<li><a href="/notes/Confirm">Confirm</a></li>
+<li><a href="/notes/Prevent multiple form submissions by using loader on buttons">Prevent multiple form submissions by using loader on buttons</a></li>
+<li><a href="/notes/Auto Saving Forms">Auto Saving Forms</a></li>
+<li><a href="/notes/Upload a file">Upload a file</a></li>
+<li><a href="/notes/Filter with custom query">Filter with custom query</a></li>
+</ul>
+<h2>Database</h2>
+<ul>
+<li><a href="/notes/Configure postgres db in a sails app">Configure postgres db in a sails app</a></li>
+<li><a href="/notes/Create Local DB Server with PGAdmin">Create Local DB Server with PGAdmin</a></li>
+<li><a href="/notes/How to set the sequence ID of a table to specific number">How to set the sequence ID of a table to specific number</a></li>
+<li><a href="/notes/Create a copy of the production database in your localhost">Create a copy of the production database in your localhost</a></li>
+</ul>
+<h2>Nginx</h2>
+<ul>
+<li><a href="/notes/How to change file upload size limit in Nginx">How to change file upload size limit in Nginx</a></li>
+<li><a href="/notes/How to redirect a specific url to a page in different domain with nginx">How to redirect a specific url to a page in different domain with nginx</a></li>
+</ul>
+<h2>Development Environment</h2>
+<ul>
+<li><a href="/notes/How to kill something running in a specific port">How to kill something running in a specific port</a></li>
+<li><a href="/notes/Making your local server remotely accessible">Making your local server remotely accessible</a></li>
+<li><a href="/notes/Filtering emails shot from staging environment">Filtering emails shot from staging environment</a></li>
+<li><a href="/notes/How to ignore a file already commited to a repo">How to ignore a file already commited to a repo</a></li>
+</ul>
+<h2>Deployment</h2>
+<ul>
+<li><a href="/notes/Auto deploy to Dev">Auto deploy to Dev</a></li>
+</ul>
+<h2>Export data</h2>
+<ul>
+<li>install sails hook - <a href="/notes/Download file">Download file</a></li>
+<li>setup UI - <a href="/notes/Right floated icon download dropdown">Right floated icon download dropdown</a></li>
+<li>setup controller - <a href="/notes/Export data as csv,excel,json">Export data as csv,excel,json</a></li>
+</ul>
+<h2>Verify email/phone</h2>
+<ul>
+<li><a href="/notes/verify email">verify email</a>
+<ul>
+<li><a href="/notes/verify email with OTP">verify email with OTP</a></li>
+<li><a href="/notes/verify email with JWT token">verify email with JWT token</a></li>
+</ul>
+</li>
+<li><a href="/notes/Verify phone number with OTP">Verify phone number with OTP</a></li>
+<li><a href="/notes/Login with mobile OTP">Login with mobile OTP</a></li>
+</ul>
+<h2>Others</h2>
+<ul>
+<li><a href="/notes/How to change Favicon">How to change Favicon</a></li>
+<li><a href="/notes/How to clear cache in cloudflare">How to clear cache in cloudflare</a></li>
+<li><a href="/notes/How to clear cache in your browser">How to clear cache in your browser</a></li>
+<li><a href="/notes/How to use blueprint APIs">How to use blueprint APIs</a></li>
+<li><a href="/notes/How to use postman collection runner to inject data into database">How to use postman collection runner to inject data into database</a></li>
+<li><a href="/notes/Create read only user for metabase">Create read only user for metabase</a></li>
+<li><a href="/notes/How to use dirname">How to use dirname</a></li>
+<li><a href="/notes/Install NPM packages from local directory">Install NPM packages from local directory</a></li>
+<li><a href="/notes/JSON schema validation">JSON schema validation</a></li>
+<li><a href="/notes/Install private gitrepo as dependancy">Install private gitrepo as dependancy</a></li>
+<li><a href="/notes/Passing vairables into a partial">Passing vairables into a partial</a></li>
+<li><a href="/notes/Implement Rate Limiting">Implement Rate Limiting</a></li>
+<li><a href="/notes/Mobile friendly filter using accordian">Mobile friendly filter using accordian</a></li>
+<li><a href="/notes/Mac OS setup">Mac OS setup</a></li>
+<li><a href="/notes/Error code">Error code</a></li>
+<li><a href="/notes/modified waterline">modified waterline</a></li>
+</ul>
+<h2>CSS tricks</h2>
+<ul>
+<li><a href="/notes/css tricks">css tricks</a></li>
+</ul>
+<h2>India formats</h2>
+<ul>
+<li><a href="/India_number format">India number format</a></li>
+<li><a href="/India_date format">India date format</a></li>
+</ul>
+<h2>How to create issues</h2>
+<ul>
+<li><a href="/notes/How to create issues">How to create issues</a></li>
+</ul>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	if(window.location.pathname.indexOf('/blog/')>-1){
+		$('a[href="/blog/"]').addClass('active');
+	}
+</script>
+    </div>
+
+
+
+
+    <!--
+        Client-side Templates
+        ========================
+
+        HTML templates are important prerequisites of modern, rich client applications.
+        To work their magic, frameworks like React, Vue.js, Angular, Ember, and Backbone
+        require that you load these templates client-side.
+
+        By default, your Gruntfile is configured to automatically load and precompile
+        client-side JST templates in your `assets/templates` folder, then
+        include them here automatically (between TEMPLATES and TEMPLATES END).
+
+        To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Import templates from other directories
+            + Use a different view engine (handlebars, dust, pug/jade, etc.)
+            + Internationalize your client-side templates using a server-side
+              stringfile before they're served.
+    -->
+
+    <!--TEMPLATES-->
+    <!--TEMPLATES END-->
+
+
+    <!--
+        Server-side View Locals
+        ========================
+
+        Sometimes, it's convenient to get access to your server-side view locals from
+        client-side JavaScript.  This can improve page load times, remove the need for
+        extra AJAX requests, and make your client-side code easier to understand and
+        to maintain.  Sails provides a simple mechanism for accessing dynamic view
+        locals: the "exposeLocalsToBrowser()" view partial.
+
+        For more information on using this built-in feature, see:
+        https://sailsjs.com/docs/concepts/views/locals#?escaping-untrusted-data-using-exposelocalstobrowser
+
+    -->
+
+
+    <!--
+
+      Client-side Javascript
+      ========================
+
+      You can always bring in JS files manually with `script` tags, or asynchronously
+      on the client using a solution like AMD (RequireJS).  Or, if you like, you can
+      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+      By default, files in your `assets/js` folder are included here
+      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
+      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
+      and concatenated into a single file.
+
+      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+      For example, here are a few things you could do:
+
+          + Change the order of your scripts
+          + Import scripts from other directories
+          + Use a different preprocessor, like TypeScript
+
+    -->
+
+
+    <script src="/assets/sails.io.js"></script>
+    <script src="/assets/jquery.min.js"></script>
+    <script src="/assets/sematic/semantic.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var path = window.location.pathname;
+        console.log(path.split('/'));
+        
+        $('a[href="'+path+'"]').addClass('active');
+        $('.dropdown').dropdown();
+        // if(path.split('/')[1]=='features')
+        //   $('#features').addClass('active');
+        // $('.click-sidebar').click(function(){
+        //   $('.ui.sidebar').sidebar('toggle');
+        // })
+        // $('.inline.dropdown').dropdown();
+      });
+    </script>
+  </body>
+</html>
