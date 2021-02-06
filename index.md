@@ -29,20 +29,5 @@ These patterns are best suited to solve info problems or operation optimization 
 - [[test]]
 
 --- 
-## The stack
-- [[Stack components]]
-- [[How to get things done with switchless]]
-- [[Mac OS setup]]
-- [[Error code]]
-- [[modified waterline]]
-
-## This stack allows you to
-- [[Authenticate users]]
-- [[Send and recieve emails]]
-- [[Send messages]]
-- [[Search function]]
-- [[logging]]
-
-
 __[[How to contribute to this doc]]__
 

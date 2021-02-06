@@ -116,6 +116,10 @@ layout: layouts/post.ejs
 - [[Passing vairables into a partial]]
 - [[Implement Rate Limiting]]
 - [[Mobile friendly filter using accordian]]
+- [[Mac OS setup]]
+- [[Error code]]
+- [[modified waterline]]
+
 
 ## CSS tricks
 - [[css tricks]]
