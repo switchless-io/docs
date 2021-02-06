@@ -26,6 +26,7 @@ These patterns are best suited to solve info problems or operation optimization 
 - [[This is an opinionated stack ]]
 - [[This stack is designed for a company of one]]
 - [[Importance of information architecture]]
+- [[test]]
 
 --- 
 # Design patterns
