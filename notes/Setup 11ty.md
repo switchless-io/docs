@@ -61,9 +61,9 @@ module.exports = function(eleventyConfig) {
 ```
 
 ## Add includes folder
-
+this copies layouts
 ## Add assets folder
-
+this copies semantic and general themes
 
 ## create gitignore
 ```
@@ -74,4 +74,14 @@ module.exports = function(eleventyConfig) {
 _site
 node_modules
 ```
+
+## Default Title and default layout
+Create folder `_data`. create file -`layout.js`. In that file add `module.exports="layout/post.ejs"`
+similar stuff for title as well
+
+ref: https://github.com/11ty/eleventy/issues/380
+
+
+
+
 Ref: https://www.11ty.dev/docs/getting-started/
