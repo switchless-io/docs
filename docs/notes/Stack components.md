@@ -2,6 +2,7 @@
 
 The switchless stack consist of the following components. 
 
+
 - [[sails]] - web framework
 	- [[Blueprint APIs]] - API framework
 	- [[EJS]] - templating language
@@ -38,4 +39,5 @@ The switchless stack consist of the following components.
 	- [[hjson]] - hjson
 - [[terminal]]
 - [[icons]]
-	
+- [[codeceptjs]]
+- [[puppeteer]]

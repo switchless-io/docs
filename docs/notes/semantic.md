@@ -7,7 +7,7 @@ Ref:
 https://fomantic-ui.com/
 http://semantic-ui.com/
 
-## Related notes:
+## Related patterns:
 - [[create forms UX]]
 - [[Streched rows]]
 - [[pricing cards]]
@@ -24,7 +24,8 @@ http://semantic-ui.com/
 - [[Prevent multiple form submissions by using loader on buttons]]
 - [[Click buttons on the screen in bulk]]
 
-
+### Menu
+- [[Center menu]]
 
 ### device breakpoints 
 - mobile - 768px

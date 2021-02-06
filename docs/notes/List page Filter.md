@@ -15,6 +15,7 @@ This is implemented as a section on the left side on a laptop screen.
 
 Sample code
 ```
+{% raw %}
 <div class='ui grid'>
 	<div class='four wide column'>
 		<form class="ui form segment" action="" method='get'>
@@ -43,6 +44,7 @@ Sample code
 		
 	</div>
 </div>
+{% endraw %}
 ```
 
 ```
