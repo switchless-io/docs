@@ -1,7 +1,6 @@
 # Form 
 ---
 - author: #alex
-
 ---
 We are big fans of html forms and the way semantic styles them. Ref [semantic form documentation](https://semantic-ui.com/collections/form.html) for basic form patterns. 
 

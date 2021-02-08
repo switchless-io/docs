@@ -11,3 +11,4 @@ Ngrok is a tool that we use for creating a public link that can be used to refer
 Linked notes: 
 
 - [[Making your local server remotely accessible]]
+- [[How to change file upload size limit in Nginx]]

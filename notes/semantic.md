@@ -32,3 +32,6 @@ http://semantic-ui.com/
 - tablet - 992px
 - computer - 1200px
 - large screen - >1200px
+
+## Sub components 
+- [[icons]]
