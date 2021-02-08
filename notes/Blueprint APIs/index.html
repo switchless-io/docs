@@ -184,37 +184,18 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Blueprint APIs</h1>
+				<h1>Sails Blueprint APIs</h1>
 <p>Keywords:</p>
-<p>Sailjs comes with blueprint APIs. These blueprint APIs help us default CRUD APIs out of the box. Relevant links from Sailsjs documentations:</p>
+<h2>Related notes</h2>
 <ul>
-<li><a href="https://sailsjs.com/documentation/concepts/blueprints/blueprint-routes#?restful-blueprint-routes">RESTful blueprint routes</a></li>
-</ul>
-<p><strong>Typical customisation that we apply over blueprint APIS:</strong></p>
-<ul>
-<li>routes - <code>/apis/v1</code></li>
-<li>pluralise - <code>users</code> instead of <code>user</code></li>
-<li>various authentication strategies
-<ul>
-<li>JWT user auth</li>
-<li>basic secret key auth</li>
-</ul>
-</li>
-</ul>
-<p><strong>Relevant how-tos:</strong></p>
-<ul>
+<li><a href="/notes/About sails blueprint API">About sails blueprint API</a></li>
 <li><a href="/notes/How to use blueprint APIs">How to use blueprint APIs</a></li>
 <li><a href="/notes/How to use postman collection runner to inject data into database">How to use postman collection runner to inject data into database</a></li>
 </ul>
-<h2>Source code</h2>
 <h2>Known issues</h2>
-<h3>update queries sometimes takes a lot of time.</h3>
-<p>With sockets and pubsub on, blueprint apis take a lot of time. particularly update queries.</p>
-<pre><code>delete req._sails.hooks.pubsub;
-</code></pre>
-<p>deleted the pubsub webhook in one of the policies</p>
-<p>read code in <code>sails/lib/hooks/blueprint/action/update</code></p>
-<p>asdfasf</p>
+<ul>
+<li><a href="/notes/blueprint update query takes a lot of time">blueprint update query takes a lot of time</a></li>
+</ul>
 
 			</div>
 		</div>

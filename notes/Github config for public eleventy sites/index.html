@@ -184,27 +184,56 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Bull</h1>
-<hr>
-<ul>
-<li>keywords: #stack</li>
-<li>author: #alex</li>
-</ul>
-<hr>
-<h2>Related notes</h2>
-<ul>
-<li><a href="/notes/Intro to bull">Intro to bull</a></li>
-<li><a href="/notes/bulk items in the queue">bulk items in the queue</a></li>
-<li><a href="/notes/Create a single item in queue">Create a single item in queue</a></li>
-<li><a href="/notes/sandboxed queue with bull">sandboxed queue with bull</a></li>
-<li><a href="/notes/cron tab format">cron tab format</a></li>
-</ul>
-<h2>Setup</h2>
-<p>Use the <a href="https://switchless.io/getting-started/">switchless cli</a> to setup bull. Our standard setup includes a UI for visualising the state of the queue.</p>
-<h2>Ref:</h2>
-<ul>
-<li><a href="https://github.com/OptimalBits/bull/blob/develop/REFERENCE.md">Bull official reference</a></li>
-</ul>
+				<h1>Github config for public eleventy sites</h1>
+<h2>Add scripts to package.json</h2>
+<pre><code>{
+  ...
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;,
+    &quot;add-domain&quot;: &quot;echo \&quot;new.echoalex.com\&quot; &gt; _site/CNAME&quot;, // this
+    &quot;build&quot;: &quot;env NODE_ENV=production npx eleventy&quot; // and this
+  },
+  ...
+}
+</code></pre>
+<h2>Add build to workflow</h2>
+<p><code>.github</code>-&gt;<code>workflow</code>-&gt;<code>build.yml</code></p>
+<pre><code>name: Build Eleventy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies &amp; build
+        run: |
+          npm ci
+          npm run build   
+          npm run add-domain       
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./_site
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+</code></pre>
 
 			</div>
 		</div>

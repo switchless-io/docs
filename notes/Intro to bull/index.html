@@ -184,60 +184,17 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Stack components</h1>
-<p>The switchless stack consist of the following components.</p>
-<ul>
-<li><a href="/notes/sails">sails</a> - web framework
-<ul>
-<li><a href="/notes/Blueprint APIs">Blueprint APIs</a> - API framework</li>
-<li><a href="/notes/EJS">EJS</a> - templating language</li>
-</ul>
-</li>
-<li><a href="/notes/bull">bull</a> - queue management</li>
-<li><a href="/notes/logging">logging</a></li>
-<li><a href="/notes/mailgun">mailgun</a> - transactional emails</li>
-<li><a href="/notes/sentry">sentry</a> - error handling</li>
-<li><a href="/notes/switchless-cli">switchless-cli</a> - custom made cli to setup the switchless stack</li>
-<li><a href="/notes/wordpress">wordpress</a> - publishing</li>
-<li><a href="/notes/sendgrid">sendgrid</a> - alternative to mailgun</li>
-<li><a href="/notes/postgresql">postgresql</a> - preferred transactional database of choice</li>
-<li>Static sites
-<ul>
-<li><a href="/notes/mkdocs">mkdocs</a> - how we publish and maintain documentation</li>
-<li><a href="/notes/Setup 11ty">11ty</a></li>
-</ul>
-</li>
-<li><a href="/notes/metabase">metabase</a> - BI tool</li>
-<li><a href="/notes/meilisearch">meilisearch</a> - search plugin</li>
-<li><a href="/notes/semantic">semantic</a></li>
-<li><a href="/notes/rtd">rtd</a></li>
-<li><a href="/notes/ngrok">ngrok</a></li>
-<li><a href="/notes/obsidian">obsidian</a></li>
-<li><a href="/notes/form">form</a></li>
-<li><a href="/notes/charts">charts</a></li>
-<li><a href="/notes/cloudflare">cloudflare</a></li>
-<li><a href="/notes/Refresh AWS Access Keys">AWS</a></li>
-<li><a href="/notes/nginx">nginx</a></li>
-<li><a href="/notes/Elastic search">Elastic search</a></li>
-<li><a href="/Kinesis">Kinesis</a></li>
-<li>3rd party services
-<ul>
-<li><a href="/notes/2factor.in">2factor.in</a></li>
-</ul>
-</li>
-<li><a href="/notes/npm">npm</a>
-<ul>
-<li><a href="/notes/npm xlsx">npm xlsx</a></li>
-<li><a href="/notes/FS">FS</a> - working with files</li>
-<li><a href="/notes/ajv">ajv</a> - schema validation</li>
-<li><a href="/notes/hjson">hjson</a> - hjson</li>
-</ul>
-</li>
-<li><a href="/notes/terminal">terminal</a></li>
-<li><a href="/notes/icons">icons</a></li>
-<li><a href="/notes/codeceptjs">codeceptjs</a></li>
-<li><a href="/notes/puppeteer">puppeteer</a></li>
-</ul>
+				<h1>Intro to bull</h1>
+<h2>About</h2>
+<p>We use bull for queue up tasks. Two major reason why we use queues.</p>
+<ol>
+<li>something is expected to be heavy and we dont want to block the event loop</li>
+<li>something is expected to fail and we want the option to retry it</li>
+</ol>
+<p>Eg of case 1 is something that heavy process such running some shell scripts or running puppeteer etc.</p>
+<p>Eg of case 2 is a request to be made to a 3rd part that is expected to have a downtime or processing a webhook from a 3rd party system.</p>
+<p>Install bull via switchless cli - https://www.loom.com/share/7da3df9b1df045eba43b5fc66bb0cb70
+Basic bull usage walkthrough - https://www.loom.com/share/265833e77edc4651a35240c700f3c68e</p>
 
 			</div>
 		</div>

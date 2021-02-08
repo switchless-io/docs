@@ -184,27 +184,74 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Bull</h1>
-<hr>
+				<h1>Sandboxed queue with bull</h1>
+<blockquote>
+<p>Sometimes jobs are more CPU intensive which will could lock the Node event loop for too long and Bull could decide the job has been stalled. To avoid this situation, it is possible to run the process functions in separate Node processes. In this case, the concurrency parameter will decide the maximum number of concurrent processes that are allowed to run.</p>
+</blockquote>
+<blockquote>
+<p>We call this kind of processes for “sandboxed” processes, and they also have the property that if the crash they will not affect any other process, and a new process will be spawned automatically to replace it.</p>
+</blockquote>
+<p>ref:</p>
 <ul>
-<li>keywords: #stack</li>
-<li>author: #alex</li>
+<li><a href="https://optimalbits.github.io/bull/#sandboxed-processors">https://optimalbits.github.io/bull/#sandboxed-processors</a></li>
 </ul>
-<hr>
-<h2>Related notes</h2>
-<ul>
-<li><a href="/notes/Intro to bull">Intro to bull</a></li>
-<li><a href="/notes/bulk items in the queue">bulk items in the queue</a></li>
-<li><a href="/notes/Create a single item in queue">Create a single item in queue</a></li>
-<li><a href="/notes/sandboxed queue with bull">sandboxed queue with bull</a></li>
-<li><a href="/notes/cron tab format">cron tab format</a></li>
-</ul>
-<h2>Setup</h2>
-<p>Use the <a href="https://switchless.io/getting-started/">switchless cli</a> to setup bull. Our standard setup includes a UI for visualising the state of the queue.</p>
-<h2>Ref:</h2>
-<ul>
-<li><a href="https://github.com/OptimalBits/bull/blob/develop/REFERENCE.md">Bull official reference</a></li>
-</ul>
+<h4>When using sandboxed queue:</h4>
+<p><strong>1) Store all your processors in <code>/api/processors</code></strong></p>
+<p>here is an example of a processor that runs a shell script, picks up the data and creates a new queue item to process the data.</p>
+<pre><code class="language-js">module.exports = function (job,callback) {
+	var folder_name = __dirname;
+	folder_name = folder_name.split('/api')[0];
+	var options = job.data.options;
+	var run_config = options.run_config;
+	fs.writeFileSync(folder_name+&quot;/automations/run_config.json&quot;, JSON.stringify(run_config,null,'\t'));
+	fs.writeFileSync(&quot;./automations/data/gstr2a_&quot;+run_config.client.gstin+&quot;.json&quot;, JSON.stringify([],null,'\t'));
+	
+	var q='node node_modules/.bin/codeceptjs run --steps -c '+folder_name+'/automations/codecept.conf.js -i '+folder_name+'/automations/new_get_gstr2a_details_auto.js'			
+	shell.exec(q); 
+	// read the file
+	var filings = JSON.parse(fs.readFileSync(folder_name+'/automations/data/gstr2a_'+run_config.client.gstin+'.json'));
+	if(filings.length==0)
+		return callback(new Error('crawling failed - no data extracted'));
+	// if file is empty the throw error
+	var data={
+		title:`Add portal data(${options.what}) to tracker - ${options.mode}`,
+		options:{
+			what:options.what, //'gstr3b',
+			mode:options.mode, //'audit',
+			gstin:options.gstin,
+			run_config:run_config,
+			filings:filings,
+		},
+	};
+	promise = queue.add('add_portal_data_to_tracker',data);
+	promise.then(function(result) {
+		callback(null, filings);
+	}, function(error) {
+		callback(error);
+	});
+
+}
+</code></pre>
+<p><strong>2) Add process to <code>BullBootstrap.js</code></strong></p>
+<p>example:</p>
+<pre><code class="language-js">queue.process('crawl_gstr3b',1,'/Users/alex/ec2code/asyncauto/mralbert/api/processors/crawlGSTR3B.js');
+queue.process('crawl_gstr2a',1,'/Users/alex/ec2code/asyncauto/mralbert/api/processors/crawlGSTR2A.js');
+</code></pre>
+<p><strong>3) Update visual studio code's <code>launch.json</code> to be able to debug child process</strong>
+Add <code>autoAttachChildProcesses</code> to configurations.</p>
+<pre><code>{
+    &quot;type&quot;: &quot;node&quot;,
+    &quot;request&quot;: &quot;launch&quot;,
+    &quot;name&quot;: &quot;local_test&quot;,
+    &quot;autoAttachChildProcesses&quot;: true, // add this 
+    &quot;program&quot;: &quot;${workspaceFolder}/app.js&quot;,
+    &quot;outputCapture&quot;: &quot;std&quot;,
+    &quot;env&quot;: {
+        &quot;REDIS_HOST&quot;:&quot;localhost&quot;,
+    }
+},
+</code></pre>
+<p>VS code by default only setups debug for the main process. If you dont run this, the logic will not work when using the debug console on VS code. However if you run <code>npm start</code> via the terminal, it will work fine without making this change. Just that you will not be able to use the VS code debugger.</p>
 
 			</div>
 		</div>
