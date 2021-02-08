@@ -4,7 +4,8 @@ is a headless chrome browser. We use this withing [[codecept]] for testing. This
 Notes related to puppeteer
 - [[]]
 
-
+https://pptr.dev/
+https://try-puppeteer.appspot.com/
 ## Set screen size
 ```javascript
 const browser = await puppeteer.launch({
