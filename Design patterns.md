@@ -31,6 +31,7 @@ In this page, all the design patterns are roughly organized by context/function.
 - [[Export data as csv,excel,json]]
 - [[Write excel file]]
 - [[Upload a file]]
+- [[Upload files drop zone]]
 - [[Download file]]
 - [[How to change file upload size limit in Nginx]]
 
@@ -71,6 +72,7 @@ In this page, all the design patterns are roughly organized by context/function.
 - [[Jquery post request]]
 - [[Loader on form submit]]
 - [[Mobile friendly filter using accordian]]
+- [[Upload files drop zone]]
 
 ### Front end automations 
 - [[Click buttons on the screen in bulk]]
