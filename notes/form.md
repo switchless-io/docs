@@ -11,3 +11,4 @@ The following are some advanced patterns that we use over and over again:
 - [[Prevent multiple form submissions by using loader on buttons]]
 - [[Auto Saving Forms]]
 - [[Mobile friendly filter using accordian]]
+- [[Form success error message]]
