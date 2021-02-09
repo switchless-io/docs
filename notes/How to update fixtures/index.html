@@ -184,33 +184,34 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Postgre SQL</h1>
-<hr>
+				<h1>How to update fixtures</h1>
+<h2>Step 1 :  Using table plus - Take backup</h2>
 <ul>
-<li>keywords: #stack</li>
-<li>author: #alex</li>
+<li>Pg version 12.0</li>
+<li>Options - none. Remove all options</li>
+<li>Once you get the file, open the file</li>
+<li>Search for rdsadmin</li>
+<li>Comment out these lines containing rdsadmin</li>
+<li>Drop the db locally</li>
 </ul>
-<hr>
-<p>This is our preferred database. We like it because it is a relational database and because it has native support for JSON Blobs.</p>
-<h2>Notes related to this:</h2>
-<ul>
-<li><a href="/notes/Create a copy of the production database in your localhost">Create a copy of the production database in your localhost</a></li>
-<li><a href="/notes/Create read only user for metabase">Create read only user for metabase</a></li>
-<li>Sequence
-<ul>
-<li><a href="/notes/Get current value of sequence">Get current value of sequence</a></li>
-<li><a href="/notes/Set value of a sequence">Set value of a sequence</a></li>
-</ul>
-</li>
-<li>JSONB
-<ul>
-<li><a href="/notes/JSON vs JSONB">JSON vs JSONB</a></li>
-<li><a href="/notes/Convert column from JSON to JSONB">Convert column from JSON to JSONB</a></li>
-<li><a href="/notes/Basic query with JSON,JSONB">Basic query with JSON,JSONB</a></li>
-</ul>
-</li>
-<li><a href="/notes/How to update fixtures">How to update fixtures</a></li>
-</ul>
+<h2>Step 2 : Using terminal - Load fixture</h2>
+<h3>Drop db</h3>
+<p><code>sudo -u alex dropdb sanitiser_test</code></p>
+<h3>Create db</h3>
+<p><code>sudo -u alex createdb sanitiser_test -O rdsuser</code></p>
+<h3>Restore database</h3>
+<p><code>psql highlyreco_test &lt; highlyreco.dump</code></p>
+<h3>Eg code for for Mr Albert</h3>
+<pre><code class="language-bash">sudo -u alex dropdb mralbert_test
+sudo -u alex createdb mralbert_test -O rdsuser
+# got mralbert.dump from step 1  
+psql mralbert_test &lt; /Users/alex/Documents/mralbert.dump 
+</code></pre>
+<h2>Other reference</h2>
+<h3>Convert .dump to sql</h3>
+<p><code>pg_restore mydb_backup.dump &gt; sql_statements.sql</code></p>
+<h3>download directly</h3>
+<p><code>psql -h cashflowy.ceh5y0ztnscb.us-east-1.rds.amazonaws.com -U rdsuser mralbert_dev &lt; mralbert.dump</code></p>
 
 			</div>
 		</div>
