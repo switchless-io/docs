@@ -185,6 +185,23 @@
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
 				<h1>Form success/error message</h1>
+<pre><code class="language-html">&lt;form class=&quot;ui &lt;%-success?'success':''%&gt; form&quot; id='file_upload_form' action=&quot;&quot; method='post' enctype=&quot;multipart/form-data&quot;&gt;
+	&lt;div class=&quot;ui success message&quot;&gt;
+		&lt;div class=&quot;header&quot;&gt;Files uploaded! - the following files are uploaded: &lt;/div&gt;
+		&lt;ul class=&quot;list&quot;&gt;
+			&lt;%uploaded_files.forEach(function(filename){%&gt;
+				&lt;li&gt;&lt;%=filename%&gt;&lt;/li&gt;
+			&lt;%})%&gt;
+		&lt;/ul&gt;
+		&lt;br&gt;
+		Track the processing of the files from the &lt;a href=&quot;/bull/queue&quot;&gt;bull queue&lt;/a&gt;
+	&lt;/div&gt;
+	... rest of the form comes here .. 
+	
+&lt;/form&gt;
+
+
+</code></pre>
 
 			</div>
 		</div>
