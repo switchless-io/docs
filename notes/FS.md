@@ -5,7 +5,6 @@
 ---
 This is an npm module that we use working with file systems. 
 
-
 ## Get a working directory
 ```
 var folder_name = __dirname;
@@ -56,6 +55,16 @@ lineReader.eachLine(folder_name+"/invoices.txt", function(line) {
 })
 ```
 
+## Get list of files in a directory
+```
+var files = fs.readdirSync(directoryPath);
+```
+
+## Get file size
+```
+var stats = fs.statSync("myfile.txt")
+var fileSizeInBytes = stats.size;
+```
 
 ## Related notes:
 - [[How to use dirname]]
