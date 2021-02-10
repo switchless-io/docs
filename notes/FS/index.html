@@ -225,6 +225,13 @@ lineReader.eachLine(folder_name+&quot;/invoices.txt&quot;, function(line) {
   exits.success();
 })
 </code></pre>
+<h2>Get list of files in a directory</h2>
+<pre><code>var files = fs.readdirSync(directoryPath);
+</code></pre>
+<h2>Get file size</h2>
+<pre><code>var stats = fs.statSync(&quot;myfile.txt&quot;)
+var fileSizeInBytes = stats.size;
+</code></pre>
 <h2>Related notes:</h2>
 <ul>
 <li><a href="/notes/How to use dirname">How to use dirname</a></li>
