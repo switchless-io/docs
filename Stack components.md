@@ -33,6 +33,8 @@ The switchless stack consist of the following components.
 - [[switchless-cli]] - custom made cli to setup the switchless stack
 - [[mailgun]] - transactional emails
 - [[wordpress]] - publishing
+- [[format json]]
+- [[format html]]
 
 ## Depricated 
 We used to use these before. These services are perfectly fine. It might fit your need. We dont use them anymore - mostly we found a different service
