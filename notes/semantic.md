@@ -27,6 +27,9 @@ http://semantic-ui.com/
 ### Menu
 - [[Center menu]]
 
+### User cards
+- [[User card circular image]]
+
 ### device breakpoints 
 - mobile - 768px
 - tablet - 992px
