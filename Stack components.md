@@ -27,6 +27,8 @@ The switchless stack consist of the following components.
 	- [[FS]] - working with files
 	- [[ajv]] - schema validation
 	- [[hjson]] - hjson
+	- [[mocha]]
+	- [[assert]]
 - [[terminal]]
 - [[codeceptjs]]
 - [[puppeteer]]
@@ -35,6 +37,7 @@ The switchless stack consist of the following components.
 - [[wordpress]] - publishing
 - [[format json]]
 - [[format html]]
+
 
 ## Depricated 
 We used to use these before. These services are perfectly fine. It might fit your need. We dont use them anymore - mostly we found a different service
