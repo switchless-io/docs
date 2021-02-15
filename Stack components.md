@@ -37,6 +37,7 @@ The switchless stack consist of the following components.
 - [[wordpress]] - publishing
 - [[format json]]
 - [[format html]]
+- [[git]]
 
 
 ## Depricated 
