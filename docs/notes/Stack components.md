@@ -13,15 +13,23 @@ The switchless stack consist of the following components.
 - [[wordpress]] - publishing
 - [[sendgrid]] - alternative to mailgun
 - [[postgresql]] - preferred transactional database of choice
-- [[mkdocs]] - how we publish and maintain documentation
+- Static sites
+	- [[mkdocs]] - how we publish and maintain documentation
+	- [[11ty]]
 - [[metabase]] - BI tool 
 - [[meilisearch]] - search plugin
 - [[semantic]]
 - [[rtd]]
 - [[ngrok]]
 - [[obsidian]] 
+- [[form]]
+- [[charts]]
+- [[cloudflare]]
+- [[AWS]]
+- [[nginx]]
 - [[npm]]
 	- [[npm xlsx]]
 	- [[FS]] - working with files
 	- [[ajv]] - schema validation
+	- [[hjson]] - hjson
 	

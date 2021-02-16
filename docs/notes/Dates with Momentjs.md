@@ -1,5 +1,5 @@
 # Date operations with moment
-Keyowrds :[[dates]][[moment]][[patterns]]
+Keyowrds :[[dates]][[moment]]#pattern
 
 
 

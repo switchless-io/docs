@@ -1,6 +1,8 @@
 # Mk Docs
-Keywords:[[stack]]
-
+---
+- Keywords: #stack
+- author: #alex
+---
 This is what we use to documenting things - both public documentation such as this and private documentations such in internal handbooks.
 
 ## Requirements of a documentation system 
@@ -167,6 +169,11 @@ Notice that 3 lines are commented out. Gitlab runnner automatically recognises t
 - Organise it under folders etc
 - Update the Navbar if required
 - Commmit to repo
+
+## Other notes related to Mkdocs
+- [[Install plugins in Mkdocs]]
+- [[Obsidian to Mkdocs conversion]]
+- 
 
 ## Ref: 
 - [https://www.mkdocs.org/user-guide/deploying-your-docs/](https://www.mkdocs.org/user-guide/deploying-your-docs/)

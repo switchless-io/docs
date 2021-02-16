@@ -1,8 +1,8 @@
 
 # Green check and red cross
 ---
-- keywords: [[ui pattern]]
-- author: [[Alex]]
+- keywords: #pattern
+- author: #alex
 ---
 
 ```

@@ -1,7 +1,7 @@
 # When you create a new note
 ---
 - keywords: [[How to contribute to this doc]]
-- author: [[alex]]
+- author: #alex
 ---
 When you create a new note, make sure you do the following.
 

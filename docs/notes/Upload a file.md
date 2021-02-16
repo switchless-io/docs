@@ -1,6 +1,6 @@
 # Upload a file
 ---
-- author: [[Anzal]]
+- author: #anzal
 --- 
 
 

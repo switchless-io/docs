@@ -22,7 +22,7 @@
 - [[Dates with Momentjs]]
 - [[Handling dates in xlsx]]
 - [[What is the difference between pattern and how to]]
-- [[publishing]]
+- [[export and import data using tableplus]]
 
 
 ## Files
@@ -32,10 +32,6 @@
 - [[Download file]]
 
 
-
-
-
-
 ## UI Patterns
 - [[Pagination]]
 - [[Making a POST request]]
@@ -43,6 +39,14 @@
 - [[Popup pattern 1]]
 - [[Right floated button]]
 - [[Right floated icon download dropdown]]
+- [[Fully loaded tabs with its own url]]
+- [[Jquery post request]]
+- [[Loader on form submit]]
+
+
+
+## Front end automations 
+- [[Click buttons on the screen in bulk]]
 
 
 ## Forms
@@ -75,10 +79,16 @@
 - [[How to kill something running in a specific port]]
 - [[Making your local server remotely accessible]]
 - [[Filtering emails shot from staging environment]]
+- [[How to ignore a file already commited to a repo]]
 
 
 ## Deployment
 - [[Auto deploy to Dev]]
+
+## Export data
+- install sails hook - [[Download file]]
+- setup UI - [[Right floated icon download dropdown]]
+- setup controller - [[Export data as csv,excel,json]]
 
 
 ## Others
@@ -94,7 +104,4 @@
 - [[Install private gitrepo as dependancy]]
 - [[Passing vairables into a partial]]
 - [[Implement Rate Limiting]]
-
-
-## Object/Array Manipulation
-- [[Iterating through an array like object]]
+- [[Mobile friendly filter using accordian]]

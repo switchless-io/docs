@@ -1,7 +1,7 @@
 # Filtering emails shot from staging environment  
 ---
-- Keywords:[[patterns]]
-- author: [[alex]]
+- Keywords:#pattern
+- author: #alex
 ---
 Create a filter from the backend to not send mails to email IDs not matching these patterns.  
 

@@ -1,7 +1,6 @@
 # Configure postgres db in a sails app
 ---
--Keywords:[[How to get things done with switchless]]
-- author: [[alex]]
+- author: #alex
 ---
 Step 1: [[Create a local db with pgAdmin]]
 

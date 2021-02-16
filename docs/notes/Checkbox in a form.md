@@ -1,7 +1,7 @@
 # Checkbox in a form
 ---
-Keywords: [[checkbox]],[[ui pattern]]
-Author: [[Anzal]]
+Keywords: #pattern
+Author: #anzal
 
 ---
 

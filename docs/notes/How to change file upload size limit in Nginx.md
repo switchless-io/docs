@@ -1,7 +1,7 @@
 # How to change file upload size limit in Nginx
 ---
-- Keywords:[[How to get things done with switchless]][[nginx]]
-- author: [[alex]]
+- Keywords: #pattern 
+- author: #alex
 ---
 - Nginx limits max file upload size to 1mb.  
 - To increase that you need to set client_max_body_size param.  

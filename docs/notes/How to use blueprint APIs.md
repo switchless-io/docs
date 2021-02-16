@@ -1,7 +1,7 @@
 # How to use blueprint APIs
 ---
-- Keywords:[[How to get things done with switchless]]
-- author: [[alex]]
+- Keywords:
+- author: #alex
 ---
 ## RESTful blueprint routes
 REST blueprints are the automatically generated routes Sails uses to expose a conventional REST API for a model, including `find`, `create`, `update`, and `destroy` actions. The path for RESTful routes is always `/:modelIdentity` or `/:modelIdentity/:id`. These routes use the HTTP "verb" to determine the action to take.

@@ -1,7 +1,7 @@
 # Download file
 ---
-- keywords: [[patterns]]
-- author: [[Alex]]
+- keywords: #pattern
+- author: #alex
 --- 
 
 ## Install sails hook upload

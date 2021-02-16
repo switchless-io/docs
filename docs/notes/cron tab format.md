@@ -1,6 +1,6 @@
 # Cron tab format
 ---
-- keywords:[[bull]]
-- author: [[Alex]]
+- keywords: #pattern 
+- author: #alex
 ---
 Bull uses this cron tab format- https://crontab.guru/

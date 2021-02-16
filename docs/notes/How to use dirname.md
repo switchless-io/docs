@@ -1,7 +1,7 @@
 # How to use __dirname
 ---
-- keywords: [[How to get things done with switchless]], [[FS]]
-- author: [[Alex]]
+- keywords: #pattern 
+- author: #alex
 ---
 to know when to use `__dirname` vs `process.cwd()` refer to the article below
 

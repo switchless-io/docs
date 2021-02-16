@@ -1,7 +1,7 @@
 # Click button on the screen in bulk
 ---
-- keywords: [[ui]],[[patterns]]
-- author: [[Alex]]
+- keywords: #pattern
+- author: #alex
 ---
 ```
 $('#create_all_invoices').click(function(){

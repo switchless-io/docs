@@ -1,6 +1,8 @@
 # Wordpress
-Keywords:[[stack]]
-
+---
+- Keywords: #stack
+- author: #alex
+---
 For marketing pages, we usually pick between these options: 
 - wordpress 
 - static site generators

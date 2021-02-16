@@ -1,6 +1,6 @@
 # Importance of Information architecture
 ---
-- author: [[Alex]]
+- author: #alex
 
 ---
 ## Example

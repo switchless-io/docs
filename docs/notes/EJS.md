@@ -1,6 +1,6 @@
 # EJS
 ---
-- author: [[Alex]]
+- author: #alex
 
 --- 
 

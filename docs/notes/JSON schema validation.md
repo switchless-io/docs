@@ -1,7 +1,7 @@
 # JSON schema validation
 ---
-- keyword: [[stack]]
-- Author: [[Alex]]
+- keyword: 
+- Author: #alex
 ---
 ## Reference: 
 https://json-schema.org/understanding-json-schema/reference/index.html#reference

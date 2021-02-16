@@ -1,7 +1,7 @@
 # Error handling in async.auto
 ---
-- Keywords:[[patterns]]
-- author: [[alex]]
+- Keywords:#pattern
+- author: #alex
 ---
 - Suppress error, not acting on it or just console.logging has lot's of unknow consequences.  
 - We won't able to identify any errors that is genuinely effecting the business/product functionalities. examples:

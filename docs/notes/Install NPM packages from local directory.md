@@ -1,7 +1,7 @@
 # install NPM packages from local directory
 --- 
-- keywords: [[How to get things done with switchless]], [[npm]]
-- author: [[Alex]]
+- keywords: , [[npm]]
+- author: #alex
 --- 
 ```shell
 npm install --save ../path/to/mymodule

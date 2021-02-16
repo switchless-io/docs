@@ -1,7 +1,7 @@
 # Fully loaded tabs with its own url
 ---
-- keywords: [[tabs]],[[ui pattern]]
-- author: [[Alex]]
+- keywords: #pattern
+- author: #alex
 ---
 ```
 <%
@@ -29,9 +29,9 @@ $('.secondary.menu .item').tab({
 	<a class="<%=tab=='tracker'?'active':''%> item" data-tab="tracker">Tracker</a>
 	<a class="<%=tab=='portal_data'?'active':''%> item" data-tab="portal_data">Portal data</a>
 	<a class="<%=tab=='checks'?'active':''%> item" data-tab="checks">Basic checks</a>
-	<%if(req.user.access_flags.is_admin){%>
-		<a class="<%=tab=='admin_actions'?'active':''%> item" data-tab="admin_actions">Admin Actions</a>
-	<%}%>
+
+	<a class="<%=tab=='admin_actions'?'active':''%> item" data-tab="admin_actions">Admin Actions</a>
+
 </div>
 <div class="ui <%=tab=='summary'?'active':''%> tab" data-tab="summary">
 	summary

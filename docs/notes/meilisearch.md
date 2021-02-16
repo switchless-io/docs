@@ -1,5 +1,8 @@
 # MeiliSearch
-Keywords:[[stack]]
+---
+- Keywords: #stack
+- author: #anzal
+---
 
 Meili Search is a free open source alternative for Algolia. 
 
