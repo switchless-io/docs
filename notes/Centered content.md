@@ -1,0 +1,4 @@
+# Centered content
+---
+- author: #alex 
+---

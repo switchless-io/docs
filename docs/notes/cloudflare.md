@@ -1,3 +1,0 @@
-# Cloudflare
-
-- [[maintainance mode setup]]

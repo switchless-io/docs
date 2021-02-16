@@ -1,0 +1,30 @@
+{
+  "name": "switchless-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "add-domain": "echo \"www.switchless.io\" > _site/CNAME",
+    "build": "env NODE_ENV=production npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/switchless-io/docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/switchless-io/docs/issues"
+  },
+  "homepage": "https://github.com/switchless-io/docs#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  },
+  "dependencies": {
+    "markdown-it-obsidian": "^1.0.2"
+  }
+}
