@@ -38,3 +38,4 @@ http://semantic-ui.com/
 
 ## Sub components 
 - [[icons]]
+- [[badges]]
