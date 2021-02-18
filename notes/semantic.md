@@ -18,7 +18,6 @@ http://semantic-ui.com/
 ### Grids
 - [[Centered content]]
 - [[mobile specific html]]
-
 ### Buttons
 - [[Right floated button]]
 - [[Prevent multiple form submissions by using loader on buttons]]
@@ -26,6 +25,9 @@ http://semantic-ui.com/
 
 ### Menu
 - [[Center menu]]
+- [[Sidebar Menu]]
+- [[Menu badges]]
+- [[Large multi column dropdown menu]]
 
 ### User cards
 - [[User card circular image]]
@@ -38,3 +40,4 @@ http://semantic-ui.com/
 
 ## Sub components 
 - [[icons]]
+- 
