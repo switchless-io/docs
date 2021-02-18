@@ -38,6 +38,10 @@ http://semantic-ui.com/
 - computer - 1200px
 - large screen - >1200px
 
+### Tabs
+[[simple tab]]
+
 ## Sub components 
 - [[icons]]
-- 
+
+
