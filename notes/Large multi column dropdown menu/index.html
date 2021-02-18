@@ -184,54 +184,55 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Semantic</h1>
-<p>keywords:</p>
-<p>We use semantic as our UI framework. To be specific, we acutally use the community fork of semantic - fomantic as it has more features that we commonly use.</p>
-<p>Ref:
-https://fomantic-ui.com/
-http://semantic-ui.com/</p>
-<h2>Related patterns:</h2>
+				<h1>Large multi-column dropdown menu</h1>
+<hr>
 <ul>
-<li><a href="/notes/create forms UX">create forms UX</a></li>
-<li><a href="/notes/Streched rows">Streched rows</a></li>
-<li><a href="/notes/pricing cards">pricing cards</a></li>
-<li><a href="/notes/pricing sliders">pricing sliders</a></li>
-<li><a href="/notes/colored section in landing pages">colored section in landing pages</a></li>
+<li>Author: #anzal</li>
 </ul>
-<h3>Grids</h3>
+<hr>
+<h2>Appearance</h2>
+<p><img src="/files/Pasted image 20210218110645.png"></img></p>
+<h2>Implementation</h2>
+<p><strong>Trigger button</strong></p>
+<pre><code class="language-html">&lt;div class=&quot;ui text menu&quot;&gt;
+
+&lt;div class=&quot;admin_menu item&quot;&gt;
+
+&lt;i class=&quot;sidebar icon&quot;&gt;&lt;/i&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+<p><strong>Custom Menu with grids</strong></p>
 <ul>
-<li><a href="/notes/Centered content">Centered content</a></li>
-<li><a href="/notes/mobile specific html">mobile specific html</a></li>
+<li>create a popup and add it below the menu</li>
+<li>set <code>inset</code> in <em>style</em> of the popup to position it where you want</li>
 </ul>
-<h3>Buttons</h3>
-<ul>
-<li><a href="/notes/Right floated button">Right floated button</a></li>
-<li><a href="/notes/Prevent multiple form submissions by using loader on buttons">Prevent multiple form submissions by using loader on buttons</a></li>
-<li><a href="/notes/Click buttons on the screen in bulk">Click buttons on the screen in bulk</a></li>
-</ul>
-<h3>Menu</h3>
-<ul>
-<li><a href="/notes/Center menu">Center menu</a></li>
-<li><a href="/Sidebar Menu">Sidebar Menu</a></li>
-<li><a href="/notes/Menu badges">Menu badges</a></li>
-<li><a href="/notes/Large multi column dropdown menu">Large multi column dropdown menu</a></li>
-</ul>
-<h3>User cards</h3>
-<ul>
-<li><a href="/notes/User card circular image">User card circular image</a></li>
-</ul>
-<h3>device breakpoints</h3>
-<ul>
-<li>mobile - 768px</li>
-<li>tablet - 992px</li>
-<li>computer - 1200px</li>
-<li>large screen - &gt;1200px</li>
-</ul>
-<h2>Sub components</h2>
-<ul>
-<li><a href="/notes/icons">icons</a></li>
-<li></li>
-</ul>
+<pre><code class="language-html">&lt;div class=&quot;ui flowing basic admission popup bottom left transition&quot; 
+style=&quot;inset: 3em auto auto 42px;&quot;&gt;
+
+	&lt;div class=&quot;ui three column relaxed divided grid&quot;&gt;
+
+		&lt;div class=&quot;ui row&quot;&gt;
+			&lt;div class=&quot;ui column&quot;&gt;
+				&lt;h3 class=&quot;ui header&quot;&gt;Manage Clients&lt;/h3&gt;
+				&lt;div class='ui list'&gt;
+					&lt;a href=&quot;&quot; class=&quot;org item&quot;&gt;List all Organizations&lt;/a&gt;
+					&lt;a href=&quot;&quot; class=&quot;client item&quot;&gt;List all clients&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			
+			&lt;div class=&quot;ui column&quot;&gt;
+			&lt;/div&gt;
+			
+			&lt;div class=&quot;ui column&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
 
 			</div>
 		</div>
