@@ -184,13 +184,16 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Badges</h1>
+				<h1>Hiding characters after a certain length</h1>
 <hr>
 <ul>
 <li>author: #anzal</li>
 </ul>
 <hr>
-<h2>Appearance:</h2>
+<pre><code class="language-javascript">text=text.replace(/(\w{3}).*/g, &quot;$1&quot;+(new Array(text.length -3 + 1).join( '*' )));
+
+// this will convert 'Anzal' to 'Anz**'
+</code></pre>
 
 			</div>
 		</div>
