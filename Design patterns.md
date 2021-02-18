@@ -55,6 +55,10 @@ In this page, all the design patterns are roughly organized by context/function.
 - [[Verify phone number with OTP]]
 - [[Login with mobile OTP]]
 
+### Working with objects, arrays and strings
+[[Pick n elements from an array randomly]]
+[[Paginate an array]]
+[[Hiding characters after a certain length]]
 
 
 

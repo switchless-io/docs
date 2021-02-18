@@ -1,7 +1,0 @@
-# Badges
-
----
-- author: #anzal  
----
-
-## Appearance:

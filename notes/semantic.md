@@ -26,6 +26,7 @@ http://semantic-ui.com/
 ### Menu
 - [[Center menu]]
 - [[Sidebar Menu]]
+- [[Menu badges]]
 
 ### User cards
 - [[User card circular image]]
@@ -38,4 +39,4 @@ http://semantic-ui.com/
 
 ## Sub components 
 - [[icons]]
-- [[badges]]
+- 
