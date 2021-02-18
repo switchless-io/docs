@@ -208,6 +208,9 @@ sails.sendNativeQuery(query, function(err, rawResult) {
 	callback(err, rawResult.rows);
 });
 </code></pre>
+<p>or</p>
+<pre><code>var results = await sails.sendNativeQuery(sql, valuesToEscape);
+</code></pre>
 
 			</div>
 		</div>
