@@ -24,3 +24,9 @@ sails.sendNativeQuery(query, function(err, rawResult) {
 	callback(err, rawResult.rows);
 });
 ```
+
+or
+
+```
+var results = await sails.sendNativeQuery(sql, valuesToEscape);
+```
