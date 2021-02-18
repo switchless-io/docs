@@ -27,6 +27,7 @@ http://semantic-ui.com/
 - [[Center menu]]
 - [[Sidebar Menu]]
 - [[Menu badges]]
+- [[Large multi column dropdown menu]]
 
 ### User cards
 - [[User card circular image]]
