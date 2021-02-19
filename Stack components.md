@@ -38,6 +38,7 @@ The switchless stack consist of the following components.
 - [[format json]]
 - [[format html]]
 - [[git]]
+- [[datatables]]
 
 
 ## Depricated 
