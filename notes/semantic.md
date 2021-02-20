@@ -40,6 +40,7 @@ http://semantic-ui.com/
 
 ### Tabs
 [[simple tab]]
+[[horizontal scroll on mobile]]
 
 ## Sub components 
 - [[icons]]
