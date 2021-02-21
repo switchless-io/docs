@@ -3,6 +3,7 @@
 The switchless stack consist of the following components. 
 
 - [[semantic]]
+- [[CSS]]
 - [[sails]] - web framework
 - [[Blueprint APIs]] - API framework
 - [[EJS]] - templating language

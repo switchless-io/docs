@@ -2,22 +2,20 @@
 This is useful on mobile 
 
 ```
- <style>
-  .hidden {
-	display: none !important;
-  }
-  html{
-	overflow-y: scroll;
-	overflow-x: hidden;
-  }
-  .mobile-slider {
-	min-width: 100%;
-	display: flex;
-	overflow-x: auto;
-  }
-  .mobile-slider::-webkit-scrollbar {
-	display: none;
-  }
+<style>
+    .mobile-slider {
+        margin-bottom: 14px;
+    }
+	@media only screen and (max-width: 700px) {
+		.mobile-slider {
+			min-width: 100%;
+			display: flex;
+			overflow-x: auto;
+		}
+		.mobile-slider::-webkit-scrollbar {
+			display: none;
+		}
+	}
 </style>
 ```
 
