@@ -4,7 +4,7 @@
 - author: #alex
 ---
 
-```
+```javascript
 
 // setting the variable as `this` is not avaible in the callback of the `post` request. 
 var button = this;
