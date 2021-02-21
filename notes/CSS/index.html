@@ -184,48 +184,11 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Horizontal scroll on mobile</h1>
-<p>This is useful on mobile</p>
-<pre><code>&lt;style&gt;
-    .mobile-slider {
-        margin-bottom: 14px;
-    }
-	@media only screen and (max-width: 700px) {
-		.mobile-slider {
-			min-width: 100%;
-			display: flex;
-			overflow-x: auto;
-		}
-		.mobile-slider::-webkit-scrollbar {
-			display: none;
-		}
-	}
-&lt;/style&gt;
-</code></pre>
-<pre><code class="language-html">&lt;div class='mobile-slider'&gt;
-	&lt;div class=&quot;ui tabular menu&quot;&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;'&gt;Overview&lt;/a&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/filings'&gt;Filings&lt;/a&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/invoices'&gt;Invoices&lt;/a&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/activities'&gt;Activity&lt;/a&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/tasks'&gt;Tasks&lt;/a&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/documents'&gt;Docs&lt;/a&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/third_parties'&gt;3rd parties&lt;/a&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/reports'&gt;Reports&lt;/a&gt;
-		&lt;%if(req.user.access.type!='auditor'){%&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/settings'&gt;Settings&lt;/a&gt;
-		&lt;%}%&gt;
-		&lt;%if(req.user &amp;&amp; _.includes(sails.config.admins, req.user.email)){%&gt;
-			&lt;%if(req.user&amp;&amp;req.user.id==1){%&gt;
-			&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/import'&gt;Import&lt;/a&gt;
-			&lt;%}%&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/admin'&gt;Admin&lt;/a&gt;
-		&lt;%}%&gt;
-	&lt;/div&gt;
-	&lt;br&gt;
-&lt;/div&gt;
-</code></pre>
-<p><img src="/files/CleanShot 2021-02-20 at 20.17.37.gif"></img></p>
+				<h1>CSS</h1>
+<ul>
+<li><a href="/notes/horizontal scroll on mobile">horizontal scroll on mobile</a></li>
+<li><a href="/notes/Device size specific CSS">Device size specific CSS</a></li>
+</ul>
 
 			</div>
 		</div>

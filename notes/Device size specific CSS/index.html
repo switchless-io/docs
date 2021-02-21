@@ -184,48 +184,35 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Horizontal scroll on mobile</h1>
-<p>This is useful on mobile</p>
-<pre><code>&lt;style&gt;
-    .mobile-slider {
-        margin-bottom: 14px;
-    }
-	@media only screen and (max-width: 700px) {
-		.mobile-slider {
-			min-width: 100%;
-			display: flex;
-			overflow-x: auto;
-		}
-		.mobile-slider::-webkit-scrollbar {
-			display: none;
-		}
-	}
-&lt;/style&gt;
+				<h1>Device size specific CSS</h1>
+<pre><code>@media only screen and (max-width: 700px) {
+  /*.ui.fixed.menu {
+    display: none !important;
+  }*/
+  .secondary.pointing.menu .item,
+  .secondary.pointing.menu .menu {
+    display: none;
+  }
+  .secondary.pointing.menu .toc.item {
+    display: block;
+  }
+  .masthead.segment {
+    min-height: 350px;
+
+  }
+  .masthead h1.ui.header {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+  .masthead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+  .segment h2{
+    color: #00296b;
+  }
+}
 </code></pre>
-<pre><code class="language-html">&lt;div class='mobile-slider'&gt;
-	&lt;div class=&quot;ui tabular menu&quot;&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;'&gt;Overview&lt;/a&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/filings'&gt;Filings&lt;/a&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/invoices'&gt;Invoices&lt;/a&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/activities'&gt;Activity&lt;/a&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/tasks'&gt;Tasks&lt;/a&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/documents'&gt;Docs&lt;/a&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/third_parties'&gt;3rd parties&lt;/a&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/reports'&gt;Reports&lt;/a&gt;
-		&lt;%if(req.user.access.type!='auditor'){%&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/settings'&gt;Settings&lt;/a&gt;
-		&lt;%}%&gt;
-		&lt;%if(req.user &amp;&amp; _.includes(sails.config.admins, req.user.email)){%&gt;
-			&lt;%if(req.user&amp;&amp;req.user.id==1){%&gt;
-			&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/import'&gt;Import&lt;/a&gt;
-			&lt;%}%&gt;
-		&lt;a class=&quot;item&quot; href='/gstin/&lt;%=req.gstin.value%&gt;/admin'&gt;Admin&lt;/a&gt;
-		&lt;%}%&gt;
-	&lt;/div&gt;
-	&lt;br&gt;
-&lt;/div&gt;
-</code></pre>
-<p><img src="/files/CleanShot 2021-02-20 at 20.17.37.gif"></img></p>
 
 			</div>
 		</div>
