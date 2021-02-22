@@ -184,39 +184,12 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Postgre SQL</h1>
-<hr>
-<ul>
-<li>keywords: #stack</li>
-<li>author: #alex</li>
-</ul>
-<hr>
-<p>This is our preferred database. We like it because it is a relational database and because it has native support for JSON Blobs.</p>
-<h2>Notes related to this:</h2>
-<ul>
-<li><a href="/notes/Create a copy of the production database in your localhost">Create a copy of the production database in your localhost</a></li>
-<li><a href="/notes/Create read only user for metabase">Create read only user for metabase</a></li>
-<li>Query
-<ul>
-<li><a href="/notes/find duplicate elements">find duplicate elements</a></li>
-<li>Sequence
-<ul>
-<li><a href="/notes/Get current value of sequence">Get current value of sequence</a></li>
-<li><a href="/notes/Set value of a sequence">Set value of a sequence</a></li>
-</ul>
-</li>
-<li>JSONB
-<ul>
-<li><a href="/notes/JSON vs JSONB">JSON vs JSONB</a></li>
-<li><a href="/notes/Convert column from JSON to JSONB">Convert column from JSON to JSONB</a></li>
-<li><a href="/notes/Basic query with JSON,JSONB">Basic query with JSON,JSONB</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="/notes/How to update fixtures">How to update fixtures</a></li>
-<li></li>
-</ul>
+				<h1>Find duplicate elements</h1>
+<pre><code>select gstin,count(*),remote_id,&quot;type&quot; from invoice
+group by gstin, remote_id,&quot;type&quot;
+HAVING count(*) &gt; 1
+order by count desc;
+</code></pre>
 
 			</div>
 		</div>
