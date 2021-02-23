@@ -22,6 +22,7 @@ http://semantic-ui.com/
 - [[Right floated button]]
 - [[Prevent multiple form submissions by using loader on buttons]]
 - [[Click buttons on the screen in bulk]]
+- [[Vertical buttons]]
 
 ### Menu
 - [[Center menu]]
