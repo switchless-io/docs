@@ -20,3 +20,4 @@ This is our preferred database. We like it because it is a relational database a
 		- [[Basic query with JSON,JSONB]]
 - [[How to update fixtures]]
 - [[Case insensitive columns for searching]]
+- [[copy database within same server for testing]]

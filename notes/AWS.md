@@ -18,6 +18,9 @@ aka amazon web services
 - [[Not able to connect to Postgres]]
 
 
+## Cost Management
+- [[]]
+
 ## config for Elastic search 
 ```javascript
 {

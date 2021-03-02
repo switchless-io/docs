@@ -84,6 +84,7 @@ In this page, all the design patterns are roughly organized by context/function.
 ### Ajax
 - [[Update a blueprint object with Ajax]]
 - [[Create a blueprint object with Ajax]]
+- [[Update comments or description with Ajax]]
 
 ### Forms
 - [[List page Filter]]
