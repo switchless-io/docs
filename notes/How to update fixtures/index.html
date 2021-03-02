@@ -211,7 +211,8 @@ psql mralbert_test &lt; /Users/alex/Documents/mralbert.dump
 <h3>Convert .dump to sql</h3>
 <p><code>pg_restore mydb_backup.dump &gt; sql_statements.sql</code></p>
 <h3>download directly</h3>
-<p><code>psql -h cashflowy.ceh5y0ztnscb.us-east-1.rds.amazonaws.com -U rdsuser mralbert_dev &lt; mralbert.dump</code></p>
+<p><code>psql -h cashflowy.us-east-1.rds.amazonaws.com -U rdsuser mralbert_dev &lt; mralbert.dump</code></p>
+<p><code>psql -h asyncauto.us-east-1.rds.amazonaws.com -p 5432 -d highlyreco\_test -U rdsuser -W -f /Users/alex/Documents/highlyreco\_again.dump</code></p>
 
 			</div>
 		</div>

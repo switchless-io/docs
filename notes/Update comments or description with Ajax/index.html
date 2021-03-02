@@ -184,45 +184,66 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>AWS</h1>
-<p>author: #alex</p>
-<p>aka amazon web services</p>
-<h2>setup</h2>
-<ul>
-<li><a href="/notes/setup a single instance">setup a single instance</a></li>
-<li><a href="/notes/AWS amzon linux 2 migration">AWS amzon linux 2 migration</a></li>
-<li><a href="/notes/Refresh AWS Access Keys">Refresh AWS Access Keys</a></li>
-<li><a href="/notes/How to create AWS access keys">How to create AWS access keys</a></li>
-<li><a href="/notes/Initialize EB CLI">Initialize EB CLI</a></li>
-<li><a href="/notes/Set up ElasticBeanstalk Locally">Set up ElasticBeanstalk Locally</a></li>
-</ul>
-<h2>Issues</h2>
-<ul>
-<li><a href="/notes/Not able to connect to Redis">Not able to connect to Redis</a></li>
-<li><a href="/notes/Not able to connect to Postgres">Not able to connect to Postgres</a></li>
-</ul>
-<h2>Cost Management</h2>
-<ul>
-<li>[[]]</li>
-</ul>
-<h2>config for Elastic search</h2>
-<pre><code class="language-javascript">{
-  &quot;Version&quot;: &quot;2012-10-17&quot;,
-  &quot;Statement&quot;: [
-    {
-      &quot;Effect&quot;: &quot;Allow&quot;,
-      &quot;Principal&quot;: {
-        &quot;AWS&quot;: [
-          &quot;arn:aws:iam::411068173358:user/programatic_access&quot;,
-          &quot;arn:aws:iam::411068173358:user/pa_mralbert&quot;,
-          &quot;arn:aws:sts::411068173358:assumed-role/Cognito_cashflowyInternalsoftwareAuth_Role/CognitoIdentityCredentials&quot;
-        ]
-      },
-      &quot;Action&quot;: &quot;*&quot;,
-      &quot;Resource&quot;: &quot;arn:aws:es:us-east-1:411068173358:domain/asyncauto-prod/*&quot;
-    }
-  ]
-}
+				<h1>Update comments or description with Ajax</h1>
+<pre><code class="language-html">&lt;span class='comments'&gt;&lt;%-i.comments?i.comments:''%&gt;&lt;/span&gt;
+&lt;a class='edit' data-id='&lt;%=i.id%&gt;' href=''&gt;edit&lt;/a&gt;&lt;br&gt;
+
+&lt;div class='edit_comments' data-id='&lt;%=i.id%&gt;' style='display:none;'&gt;
+	&lt;div class=&quot;ui fluid input&quot;&gt;
+		&lt;textarea rows = &quot;5&quot; name = &quot;comments&quot;&gt;&lt;%-i.comments?i.comments:''%&gt;&lt;/textarea&gt;&lt;br&gt;
+		&lt;!-- &lt;input type=&quot;text&quot; name='comments' value='&lt;%-i.comments?i.comments:''%&gt;'&gt; --&gt;
+	&lt;/div&gt;
+	&lt;br&gt;
+	&lt;button class=&quot;ui teal button submit_edit_desc&quot; data-id='&lt;%=i.id%&gt;' &gt;save&lt;/button&gt;
+	&lt;button class=&quot;ui red button cancel_edit_desc&quot; data-id='&lt;%=i.id%&gt;' &gt;cancel&lt;/button&gt;
+&lt;/div&gt;	
+</code></pre>
+<pre><code class="language-javascript">$('.edit').click(function(e){
+	e.preventDefault();
+	$(this).hide();
+	var i_id=$(this).attr('data-id');
+	// console.log('comments edit clicked');
+	// console.log(i_id);
+	// if(!edit_active)
+	$('tr[data-id='+i_id+']').find('span.comments').hide();
+	$(this).parent().find('.edit_comments').show();
+	// edit_active=true;
+});
+$('.cancel_edit_desc').click(function(e){
+	// console.log('cancel button clicked');
+	var i_id=$(this).attr('data-id');
+	// edit_active=false;
+	$(this).parent().hide();
+	$(this).parents('tr[data-id='+i_id+']').find('span.comments').show();
+	$(this).parents('tr[data-id='+i_id+']').find('.edit').show();
+	// $(this).parents().find('.edit[data-id='+i_id+']').show();
+});
+$('.submit_edit_desc').click(function(e){
+	// console.log('submit button clicked');
+	// var i_id=$(this).parents('.tc').attr('data-t-id');
+	var i_id=$(this).attr('data-id');
+	// console.log(i_id);
+	var comments=$('tr[data-id='+i_id+']').find('[name=comments]').val();
+	// console.log(comments);
+	$('tr[data-id='+i_id+'] span.comments').text(comments);
+	$('tr[data-id='+i_id+'] span.comments').show();
+	// /api/edit_desc
+	var button = this;
+	$(button).addClass('loading');
+	$(button).addClass('disabled');
+	$.post(&quot;/gstin/&lt;%=req.gstin.value%&gt;/api/edit_comments&quot;, {invoice: i_id,comments:comments}, function(result,status){
+		// console.log('result = '+result);
+		// console.log('status = '+status);// this runs only on sucess
+		if(status=='success'){
+			$(button).removeClass('loading');
+			$(button).removeClass('disabled');
+			$(button).parent().hide();
+			$(button).parents().find('.edit[data-id='+i_id+']').show();
+		}
+	});
+});
+
+
 </code></pre>
 
 			</div>

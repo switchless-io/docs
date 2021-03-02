@@ -184,45 +184,86 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>AWS</h1>
-<p>author: #alex</p>
-<p>aka amazon web services</p>
-<h2>setup</h2>
-<ul>
-<li><a href="/notes/setup a single instance">setup a single instance</a></li>
-<li><a href="/notes/AWS amzon linux 2 migration">AWS amzon linux 2 migration</a></li>
-<li><a href="/notes/Refresh AWS Access Keys">Refresh AWS Access Keys</a></li>
-<li><a href="/notes/How to create AWS access keys">How to create AWS access keys</a></li>
-<li><a href="/notes/Initialize EB CLI">Initialize EB CLI</a></li>
-<li><a href="/notes/Set up ElasticBeanstalk Locally">Set up ElasticBeanstalk Locally</a></li>
-</ul>
-<h2>Issues</h2>
-<ul>
-<li><a href="/notes/Not able to connect to Redis">Not able to connect to Redis</a></li>
-<li><a href="/notes/Not able to connect to Postgres">Not able to connect to Postgres</a></li>
-</ul>
-<h2>Cost Management</h2>
-<ul>
-<li>[[]]</li>
-</ul>
-<h2>config for Elastic search</h2>
-<pre><code class="language-javascript">{
-  &quot;Version&quot;: &quot;2012-10-17&quot;,
-  &quot;Statement&quot;: [
-    {
-      &quot;Effect&quot;: &quot;Allow&quot;,
-      &quot;Principal&quot;: {
-        &quot;AWS&quot;: [
-          &quot;arn:aws:iam::411068173358:user/programatic_access&quot;,
-          &quot;arn:aws:iam::411068173358:user/pa_mralbert&quot;,
-          &quot;arn:aws:sts::411068173358:assumed-role/Cognito_cashflowyInternalsoftwareAuth_Role/CognitoIdentityCredentials&quot;
-        ]
-      },
-      &quot;Action&quot;: &quot;*&quot;,
-      &quot;Resource&quot;: &quot;arn:aws:es:us-east-1:411068173358:domain/asyncauto-prod/*&quot;
-    }
-  ]
-}
+				<h1>Foldable table</h1>
+<h2>Example</h2>
+<p><img src="/files/CleanShot 2021-02-24 at 12.16.09 2.gif"></img></p>
+<pre><code>&lt;table class=&quot;ui selectable celled unstackable collapsing table&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Check Name&lt;/th&gt;
+			&lt;th&gt;Total&lt;/th&gt;
+			&lt;th&gt;Passing&lt;/th&gt;
+			&lt;th&gt;Failing&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr data-name='one' class='parent'&gt;
+			&lt;td&gt;Parent one &lt;i class=&quot;icon caret left&quot;&gt;&lt;/i&gt;&lt;/td&gt;
+			&lt;td&gt;1&lt;/td&gt;
+			&lt;td&gt;2&lt;/td&gt;
+			&lt;td&gt;3&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr data-parent='one' style=&quot;display:none;&quot;&gt;
+			&lt;td&gt;&lt;i class='icon'&gt;&lt;/i&gt;Child One&lt;/td&gt;
+			&lt;td&gt;11&lt;/td&gt;
+			&lt;td&gt;22&lt;/td&gt;
+			&lt;td&gt;33&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr data-parent='one' style=&quot;display:none;&quot;&gt;
+			&lt;td&gt;&lt;i class='icon'&gt;&lt;/i&gt;Child One&lt;/td&gt;
+			&lt;td&gt;11&lt;/td&gt;
+			&lt;td&gt;22&lt;/td&gt;
+			&lt;td&gt;33&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr data-name='two' class='parent'&gt;
+			&lt;td&gt;Parent two &lt;i class=&quot;icon caret left&quot;&gt;&lt;/i&gt;&lt;/td&gt;
+			&lt;td&gt;1&lt;/td&gt;
+			&lt;td&gt;2&lt;/td&gt;
+			&lt;td&gt;3&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr data-parent='two' style=&quot;display:none;&quot;&gt;
+			&lt;td&gt;&lt;i class='icon'&gt;&lt;/i&gt;Child two&lt;/td&gt;
+			&lt;td&gt;11&lt;/td&gt;
+			&lt;td&gt;22&lt;/td&gt;
+			&lt;td&gt;33&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr data-parent='two' style=&quot;display:none;&quot;&gt;
+			&lt;td&gt;&lt;i class='icon'&gt;&lt;/i&gt;Child two&lt;/td&gt;
+			&lt;td&gt;11&lt;/td&gt;
+			&lt;td&gt;22&lt;/td&gt;
+			&lt;td&gt;33&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr data-name='three' class='parent'&gt;
+			&lt;td&gt;Parent three &lt;i class=&quot;icon caret left&quot;&gt;&lt;/i&gt;&lt;/td&gt;
+			&lt;td&gt;1&lt;/td&gt;
+			&lt;td&gt;2&lt;/td&gt;
+			&lt;td&gt;3&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr data-parent='three' style=&quot;display:none;&quot;&gt;
+			&lt;td&gt;&lt;i class='icon'&gt;&lt;/i&gt;Child three&lt;/td&gt;
+			&lt;td&gt;11&lt;/td&gt;
+			&lt;td&gt;22&lt;/td&gt;
+			&lt;td&gt;33&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr data-parent='three' style=&quot;display:none;&quot;&gt;
+			&lt;td&gt;&lt;i class='icon'&gt;&lt;/i&gt;Child three&lt;/td&gt;
+			&lt;td&gt;11&lt;/td&gt;
+			&lt;td&gt;22&lt;/td&gt;
+			&lt;td&gt;33&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<pre><code>$('.parent').click(function(){
+	console.log('check name clicked');
+	var parent_name=$(this).attr('data-name');
+	console.log(parent_name);
+	$('[data-parent=&quot;'+parent_name+'&quot;]').toggle()
+	if($(this).find('.left').length)
+		$(this).find('.left').removeClass('left').addClass('down')
+	else if($(this).find('.down').length)
+		$(this).find('.down').removeClass('down').addClass('left')
+})
 </code></pre>
 
 			</div>
