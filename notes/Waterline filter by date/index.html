@@ -184,17 +184,16 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Sails</h1>
-<p>Sails is the web framework that we use.</p>
-<h2>Related notes:</h2>
-<ul>
-<li><a href="/notes/Lifting sails in terminal using launch.json from VS code">Lifting sails in terminal using launch.json from VS code</a></li>
-<li><a href="/notes/Scripting with sails">Scripting with sails</a></li>
-<li><a href="/notes/DB Migration">DB Migration</a></li>
-<li><a href="/notes/Send native SQL query with sails">Send native SQL query with sails</a></li>
-<li><a href="/notes/modified waterline">modified waterline</a></li>
-<li><a href="/notes/Waterline filter by date">Waterline filter by date</a></li>
-</ul>
+				<h1>Waterline filter by date</h1>
+<pre><code>{
+	type:'income',
+	gstin:results.getFiling.gstin.id,
+	date:{
+		'&gt;=':start_date.toISOString(),
+		'&lt;':end_date.toISOString(),
+	}
+}
+</code></pre>
 
 			</div>
 		</div>
