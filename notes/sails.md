@@ -9,4 +9,4 @@ Sails is the web framework that we use.
 - [[DB Migration]]
 - [[Send native SQL query with sails]]
 - [[modified waterline]]
-- 
+- [[Waterline filter by date]]
