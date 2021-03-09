@@ -11,6 +11,7 @@ This is our preferred database. We like it because it is a relational database a
 - [[Create read only user for metabase]]
 - Query
 	- [[find duplicate elements]]
+	- [[!= also avoids null elements]]
 	- Sequence
 		- [[Get current value of sequence]]
 		- [[Set value of a sequence]]
@@ -20,3 +21,5 @@ This is our preferred database. We like it because it is a relational database a
 		- [[Basic query with JSON,JSONB]]
 - [[How to update fixtures]]
 - [[Case insensitive columns for searching]]
+- [[copy database within same server for testing]]
+- 

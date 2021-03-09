@@ -43,6 +43,12 @@ http://semantic-ui.com/
 [[simple tab]]
 [[horizontal scroll on mobile]]
 
+### Table 
+- [[tables]]
+- [[Foldable table]]
+
+
+
 ## Sub components 
 - [[icons]]
 

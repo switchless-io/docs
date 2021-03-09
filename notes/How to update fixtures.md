@@ -37,4 +37,7 @@ psql mralbert_test < /Users/alex/Documents/mralbert.dump
 ### Convert .dump to sql
 `pg_restore mydb_backup.dump > sql_statements.sql`
 ### download directly
-`psql -h cashflowy.ceh5y0ztnscb.us-east-1.rds.amazonaws.com -U rdsuser mralbert_dev < mralbert.dump`
+`psql -h cashflowy.us-east-1.rds.amazonaws.com -U rdsuser mralbert_dev < mralbert.dump`
+
+
+`psql -h asyncauto.us-east-1.rds.amazonaws.com -p 5432 -d highlyreco\_test -U rdsuser -W -f /Users/alex/Documents/highlyreco\_again.dump`
