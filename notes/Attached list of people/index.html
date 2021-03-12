@@ -184,16 +184,71 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Alex</h1>
-<p>keywords: <a href="/notes/Attached list of people">people</a></p>
-<h2>About :</h2>
-<ul>
-<li>https://github.com/alexjv89</li>
-<li>https://www.linkedin.com/in/alexjv</li>
-<li>http://echoalex.com/</li>
-</ul>
-<h2>Notes contributed by Alex:</h2>
-<p>Search for #alex.  All notes contributed by Alex are tagged #alex.</p>
+				<h1>Attached list of people</h1>
+<p><img src="/files/Pasted image 20210312073350.png"></img></p>
+<pre><code>&lt;div class=&quot;ui ten wide column&quot;&gt;
+    &lt;div class=&quot;ui user_cards&quot;&gt;
+        &lt;div class=&quot;ui segments&quot;&gt;
+            
+
+            
+            &lt;h4 class=&quot;ui secondary top attached header&quot;&gt;People in this list - &lt;%=track.people.length%&gt;&lt;/h4&gt;
+            &lt;% _.each(track.people,function(user){ %&gt;
+                &lt;div class=&quot;ui attached segment&quot;&gt;
+                    &lt;div class=&quot;ui comments&quot;&gt;
+
+                        &lt;div class=&quot;comment&quot;&gt;
+                            &lt;a class=&quot;avatar&quot; href=&quot;/u/&lt;%=user.username%&gt;&quot;&gt;
+                            &lt;img src=&quot;&lt;%=user.image_url%&gt;&quot;&gt;
+                            &lt;/a&gt;
+                            &lt;div class=&quot;content&quot;&gt;
+                                &lt;a class=&quot;author&quot; href=&quot;/u/&lt;%=user.username%&gt;&quot;&gt;&lt;%= user.name%&gt;&lt;/a&gt;
+                                &lt;div class=&quot;metadata&quot;&gt;
+                                    &lt;span class=&quot;date&quot;&gt;&lt;%= user.username%&gt;&lt;/span&gt;
+                                    &lt;a href=&quot;/curator/user/&lt;%=user.id%&gt;/edit&quot;&gt;edit&lt;/a&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;text&quot;&gt;
+                                    &lt;span style=&quot;color: #888888&quot;&gt;
+                                        &lt;%if(user.details&amp;&amp;user.details.reviews_count){%&gt;
+                                            &lt;%=user.details.reviews_count%&gt; recommendations
+                                        &lt;%}%&gt;
+                                        &lt;br&gt;
+                                        &lt;span class=&quot;ui &lt;%- user.collect_tweets==false?'red':'green'%&gt; label&quot;&gt;collect_tweets&lt;/span&gt;
+                                        &lt;span class=&quot;ui &lt;%- user.twitter_profile?'green':'red'%&gt; label&quot;&gt;twitter_profile.id - &lt;%- user.twitter_profile?user.twitter_profile.id:''%&gt;&lt;/span&gt;
+                                        &lt;br&gt;
+                                        &lt;br&gt;
+                                        
+                                    &lt;/span&gt;
+                                    &lt;button class='ui tiny button remove_user_from_list' data-user-id='&lt;%=user.id%&gt;'&gt;remove&lt;/button&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;% }) %&gt;
+            &lt;div class=&quot;ui add_pple_list segment&quot;&gt;
+                &lt;div class=&quot;ui form&quot;&gt;
+                    &lt;div class=&quot;field&quot;&gt;
+                        &lt;label&gt;Add User&lt;/label&gt;
+                        &lt;div class=&quot;ui search&quot; id=&quot;search_user&quot;&gt;
+                            &lt;div class=&quot;ui icon input&quot;&gt;
+                                &lt;input class=&quot;prompt&quot; id=&quot;user_name&quot; type=&quot;text&quot; name=&quot;user_name&quot; placeholder=&quot;Select user&quot;&gt;
+                                &lt;i class=&quot;search icon&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;results&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;field&quot; style=&quot;display: none&quot;&gt;
+                        &lt;label&gt;User ID&lt;/label&gt;
+                        &lt;input type=&quot;text&quot; id=&quot;user_id&quot; name=&quot;user_id&quot; placeholder=&quot; User ID&quot; &gt;
+                    &lt;/div&gt;
+                    &lt;button class=&quot;ui button add_user&quot; type=&quot;submit&quot;&gt;Add&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 
 			</div>
 		</div>
