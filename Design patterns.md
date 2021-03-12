@@ -151,7 +151,9 @@ In this page, all the design patterns are roughly organized by context/function.
 - [[How to create issues]]
 
 
-
-
+## Patterns from highlyreco
+- [[pagination based on last viewed element]]
+- [[Attached list of people]]
+- [[curate tweets interface]]
 
 

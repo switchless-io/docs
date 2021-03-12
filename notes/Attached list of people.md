@@ -66,3 +66,61 @@
     </div>
 </div>
 ```
+
+![[Pasted image 20210312073537.png]]
+This also contains an attached form. 
+
+## Javascript needed for form
+```
+<script type="text/javascript">
+    $(document).ready(function(){
+
+
+        $('button.add_user').click(function(){
+            // window.location = $(this).attr('data-link');
+            // console.log($('#user_id').val());
+            var data={user_id:$('#user_id').val(),add_to:<%=track.id%>};
+            // console.log(data);
+            //update backend
+            $(this).addClass('loading');
+            $.post("/api/c/add_to_list",data, function(responseText, status,result){
+                    // alert("Data: " + data + "\nResult: " + result);
+                    console.log("result");
+                    console.log(result);
+                    console.log(data);
+                    location.reload();
+                   
+            });
+        });
+        $('button.remove_user_from_list').click(function(){
+            var data={user_id:$(this).attr('data-user-id'),list_id:<%=track.id%>};
+            $(this).addClass('loading');
+            $.post("/api/c/remove_from_list",data, function(responseText, status,result){
+                    // alert("Data: " + data + "\nResult: " + result);
+                    console.log("result");
+                    console.log(result);
+                    console.log(data);
+                    location.reload();
+            });
+        })
+
+        $('.ui.checkbox').checkbox();
+        $('#search_user').search({
+            apiSettings: {
+              url: '/search/user/?q={query}'
+            },
+            fields: {
+              results : 'users',
+              title   : 'username',
+              description : 'name',
+              url     : false,
+            },
+            minCharacters : 3,
+            onSelect:function(result,response){
+                $('#user_id').val(result.id);
+                return true;
+            }
+        });
+    });
+</script>
+```
