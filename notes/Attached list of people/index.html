@@ -249,6 +249,61 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+<p><img src="/files/Pasted image 20210312073537.png"></img>
+This also contains an attached form.</p>
+<h2>Javascript needed for form</h2>
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+    $(document).ready(function(){
+
+
+        $('button.add_user').click(function(){
+            // window.location = $(this).attr('data-link');
+            // console.log($('#user_id').val());
+            var data={user_id:$('#user_id').val(),add_to:&lt;%=track.id%&gt;};
+            // console.log(data);
+            //update backend
+            $(this).addClass('loading');
+            $.post(&quot;/api/c/add_to_list&quot;,data, function(responseText, status,result){
+                    // alert(&quot;Data: &quot; + data + &quot;\nResult: &quot; + result);
+                    console.log(&quot;result&quot;);
+                    console.log(result);
+                    console.log(data);
+                    location.reload();
+                   
+            });
+        });
+        $('button.remove_user_from_list').click(function(){
+            var data={user_id:$(this).attr('data-user-id'),list_id:&lt;%=track.id%&gt;};
+            $(this).addClass('loading');
+            $.post(&quot;/api/c/remove_from_list&quot;,data, function(responseText, status,result){
+                    // alert(&quot;Data: &quot; + data + &quot;\nResult: &quot; + result);
+                    console.log(&quot;result&quot;);
+                    console.log(result);
+                    console.log(data);
+                    location.reload();
+            });
+        })
+
+        $('.ui.checkbox').checkbox();
+        $('#search_user').search({
+            apiSettings: {
+              url: '/search/user/?q={query}'
+            },
+            fields: {
+              results : 'users',
+              title   : 'username',
+              description : 'name',
+              url     : false,
+            },
+            minCharacters : 3,
+            onSelect:function(result,response){
+                $('#user_id').val(result.id);
+                return true;
+            }
+        });
+    });
+&lt;/script&gt;
+</code></pre>
 
 			</div>
 		</div>

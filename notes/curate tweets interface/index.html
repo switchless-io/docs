@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+    <!-- Site Properties -->
+    <title>Switchless</title>
+
+    <link rel="stylesheet" href="/assets/sematic/semantic.min.css">
+    <style type="text/css">
+
+      .hidden.menu {
+        display: none;
+      }
+
+      .masthead.segment {
+        min-height: 500px;
+        padding: 1em 0em;
+      }
+      .masthead .logo.item img {
+        margin-right: 1em;
+      }
+      .masthead .ui.menu .ui.button {
+        margin-left: 0.5em;
+      }
+      .masthead h1.ui.header {
+        margin-top: 4em;
+        margin-bottom: 0em;
+        font-size: 3em;
+        /*color:#3f3c3d;*/
+        text-shadow: 0.04em 0.04em 0.04em rgba(0,0,0,0.25);
+        font-weight: normal;
+      }
+      .masthead h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+      }
+
+      .ui.vertical.stripe {
+        padding: 5em 0em;
+      }
+      .ui.vertical.stripe h3 {
+        font-size: 2em;
+      }
+      .ui.vertical.stripe .button + h3,
+      .ui.vertical.stripe p + h3 {
+        margin-top: 3em;
+      }
+      .ui.vertical.stripe .floated.image {
+        clear: both;
+      }
+      .ui.vertical.stripe p {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe ul {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe li {
+        line-height: 1.4285em;
+      }
+      .ui.vertical.stripe .horizontal.divider {
+        margin: 3em 0em;
+      }
+
+      .quote.stripe.segment {
+        padding: 0em;
+      }
+      .quote.stripe.segment .grid .column {
+        padding-top: 5em;
+        padding-bottom: 5em;
+      }
+
+      .footer.segment {
+        padding: 5em 0em;
+      }
+
+      .secondary.pointing.menu .toc.item {
+        display: none;
+      }
+
+      @media only screen and (max-width: 700px) {
+        /*.ui.fixed.menu {
+          display: none !important;
+        }*/
+        .secondary.pointing.menu .item,
+        .secondary.pointing.menu .menu {
+          display: none;
+        }
+        .secondary.pointing.menu .toc.item {
+          display: block;
+        }
+        .masthead.segment {
+          min-height: 350px;
+
+        }
+        .masthead h1.ui.header {
+          font-size: 2em;
+          margin-top: 1.5em;
+        }
+        .masthead h2 {
+          margin-top: 0.5em;
+          font-size: 1.5em;
+        }
+        .segment h2{
+          color: #00296b;
+        }
+      }
+
+
+    </style>
+      <script src="/assets/jquery.min.js"></script>
+      <script src="/assets/sematic/semantic.min.js"></script>
+    <script>
+    $(document)
+      .ready(function() {
+
+
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item')
+        ;
+        $('.ui.accordion').accordion();
+        $('img').addClass('ui').addClass('image');
+      })
+    ;
+    </script>
+
+  </head>
+  <body>
+    
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+      <a class="item" href='/'>About</a>
+      <!-- <a class="item" href='/about/'>About</a> -->
+      <a class="item" href='/Design%20patterns/'>Design patterns</a>
+      <a class="item" href='/Stack%20components/'>Stack</a>
+    </div>
+    <!-- Page Contents -->
+    <div class="pusher">
+      <div class="ui large top fixed secondary pointing menu" style="background: rgba(255,255,255,1)">
+        <div class="ui container" style="font-size: 16px">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          <div class='center menu'>
+            <a class="item" href='/'>About</a>
+            <!-- <a class="item" href='/about/'>About</a> -->
+            <a class="item" href='/Design%20patterns/'>Design patterns</a>
+            <a class="item" href='/Stack%20components/'>Stack</a>
+
+          </div>
+          
+        </div>
+      </div>
+      <!-- <div class="ui inverted vertical center aligned segment" style='background: #7cacda;'>
+        <div class="ui container">
+          <div class="ui large secondary inverted pointing menu">
+            <a class="toc item">
+              <i class="sidebar icon"></i>
+            </a>
+            <div class="right item">
+              <a class="ui inverted button" href='/login'>Log in</a>
+              &nbsp;
+              <a class="ui inverted button" href="/getting_started">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      Switchless
+      TEST
+      <br>
+<br>
+<br>
+<div class='ui container'>
+	
+	<div class='ui centered stackable grid'>
+		<div class='three wide computer only column'>
+			<img src="/assets/switchless_docs_logo.png" class='ui image'>
+		</div>
+		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
+			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
+				<h1>Curate tweets interface</h1>
+<h2>curate_raw_tweets.ejs</h2>
+<pre><code>&lt;div class=&quot;ui five item menu&quot;&gt;
+  &lt;a class=&quot;item &lt;%if(classification=='curation_required'){%&gt;active&lt;%}%&gt;&quot; href='/curator/curate_raw_tweets/curation_required?&lt;%if(track_id){%&gt;track=&lt;%=track_id%&gt;&lt;%}%&gt;'&gt;Curation Required (&lt;%=count.curation_required%&gt;)&lt;/a&gt;
+  &lt;a class=&quot;item &lt;%if(classification=='educational'){%&gt;active&lt;%}%&gt;&quot; href='/curator/curate_raw_tweets/educational?&lt;%if(track_id){%&gt;track=&lt;%=track_id%&gt;&lt;%}%&gt;'&gt;Educational (&lt;%=count.educational%&gt;)&lt;/a&gt;
+  &lt;a class=&quot;item &lt;%if(classification=='neutral'){%&gt;active&lt;%}%&gt;&quot; href='/curator/curate_raw_tweets/neutral?&lt;%if(track_id){%&gt;track=&lt;%=track_id%&gt;&lt;%}%&gt;'&gt;Neutral (&lt;%=count.neutral%&gt;)&lt;/a&gt;
+  &lt;a class=&quot;item &lt;%if(classification=='spam'){%&gt;active&lt;%}%&gt;&quot; href='/curator/curate_raw_tweets/spam?&lt;%if(track_id){%&gt;track=&lt;%=track_id%&gt;&lt;%}%&gt;'&gt;Spam (&lt;%=count.spam%&gt;)&lt;/a&gt;
+  &lt;a class=&quot;item &lt;%if(classification=='curate_later'){%&gt;active&lt;%}%&gt;&quot; href='/curator/curate_raw_tweets/curate_later?&lt;%if(track_id){%&gt;track=&lt;%=track_id%&gt;&lt;%}%&gt;'&gt;Curate_later (&lt;%=count.curate_later%&gt;)&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class='ui container'&gt;
+  &lt;!-- this contains the filter button --&gt;
+  &lt;div class=&quot;ui labeled icon top left pointing dropdown button&quot;&gt;
+    &lt;i class=&quot;filter icon&quot;&gt;&lt;/i&gt;
+    &lt;span class=&quot;text&quot;&gt;
+      &lt;%if(!filter.type){%&gt;
+        Filter Tweets
+      &lt;%}else if(filter.type=='list'){%&gt;
+        &lt;div class=&quot;ui red empty circular label&quot;&gt;&lt;/div&gt;&lt;%=filter.text%&gt;
+      &lt;%}else if(filter.type=='track'){%&gt;
+        &lt;div class=&quot;ui blue empty circular label&quot;&gt;&lt;/div&gt;&lt;%=filter.text%&gt;
+      &lt;%}else if(filter.type=='influencer'){%&gt;
+        &lt;div class=&quot;ui green empty circular label&quot;&gt;&lt;/div&gt;&lt;%=filter.text%&gt;
+      &lt;%}%&gt;
+    &lt;/span&gt;
+    &lt;div class=&quot;menu&quot;&gt;
+     
+      &lt;div class=&quot;header&quot;&gt;
+        &lt;i class=&quot;tags icon&quot;&gt;&lt;/i&gt;
+        Filter by Lists
+      &lt;/div&gt;
+      &lt;% _.each(lists,function(list){%&gt;
+        &lt;a class=&quot;item&quot; href='?list=&lt;%=list.id%&gt;'&gt;
+          &lt;div class=&quot;ui red empty circular label&quot;&gt;&lt;/div&gt;
+          &lt;%=list.name%&gt;
+        &lt;/a&gt;
+      &lt;%})%&gt;
+      &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;header&quot;&gt;
+        &lt;i class=&quot;calendar icon&quot;&gt;&lt;/i&gt;
+        Filter by Track
+      &lt;/div&gt;
+      &lt;% _.each(tracks,function(track){%&gt;
+        &lt;a class=&quot;item&quot; href='?track=&lt;%=track.id%&gt;'&gt;
+          &lt;div class=&quot;ui blue empty circular label&quot;&gt;&lt;/div&gt;
+          &lt;%=track.name%&gt;
+        &lt;/a&gt;
+      &lt;%})%&gt;
+      &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;header&quot;&gt;
+        &lt;i class=&quot;calendar icon&quot;&gt;&lt;/i&gt;
+        Filter by Influencers
+      &lt;/div&gt;
+      &lt;% _.each(influencers,function(influ){%&gt;
+        &lt;a class=&quot;item&quot; href='/curator/curate_raw_tweets/curation_required?influencer=&lt;%=influ.username%&gt;'&gt;
+          &lt;div class=&quot;ui green empty circular label&quot;&gt;&lt;/div&gt;
+          &lt;%=influ.name%&gt;
+        &lt;/a&gt;
+      &lt;%})%&gt;
+      
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class='ui stackable grid'&gt;
+  &lt;div class='ten wide column'&gt;
+    &lt;% _.each(tweets,function(tweet){%&gt;
+      &lt;%if(tweet.raw.user){%&gt;
+      &lt;div class='ui stackable grid' id='tweet_&lt;%=tweet.id%&gt;'&gt;
+        &lt;div class='three wide computer only column'&gt;
+        &lt;/div&gt;
+        &lt;div class='eight wide column'&gt;
+          &lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&lt;%=tweet.raw.text%&gt;&lt;/p&gt;&amp;mdash; &lt;%=tweet.raw.user.name%&gt; (@&lt;%=tweet.raw.user.screen_name%&gt;) &lt;a href=&quot;https://www.twitter.com/&lt;%=tweet.raw.user.screen_name%&gt;/status/&lt;%=tweet.raw.id_str%&gt;&quot;&gt;&lt;/a&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;
+        &lt;div class='five wide column'&gt;
+          &lt;%if(tweet.details){%&gt;
+          &lt;b&gt;type&lt;/b&gt; : &lt;%=tweet.details.type%&gt;&lt;br&gt;
+          &lt;b&gt;urls_count&lt;/b&gt; : &lt;%=tweet.details.urls_count%&gt;&lt;br&gt;
+          &lt;b&gt;own_content&lt;/b&gt;? : &lt;%=tweet.details.own_content%&gt;&lt;br&gt;
+          &lt;b&gt;share_url&lt;/b&gt; : &lt;%=tweet.details.share_url%&gt;&lt;br&gt;
+          &lt;b&gt;possible_topics&lt;/b&gt; : &lt;%=tweet.details.possible_topics%&gt;&lt;br&gt;
+          
+          &lt;%if(tweet.details.item){%&gt;
+            &lt;b&gt;item.url&lt;/b&gt; : &lt;span id='item_url_&lt;%=tweet.id%&gt;'&gt;&lt;%=tweet.details.item.url%&gt;&lt;/span&gt;&lt;br&gt;
+            &lt;b&gt;item.name&lt;/b&gt; : &lt;span id='item_name_&lt;%=tweet.id%&gt;'&gt;&lt;%=tweet.details.item.name%&gt;&lt;/span&gt;&lt;br&gt;
+            &lt;b&gt;item.type&lt;/b&gt; : &lt;span id='item_type_&lt;%=tweet.id%&gt;'&gt;&lt;%=tweet.details.item.type%&gt;&lt;/span&gt;&lt;br&gt;
+          &lt;%}%&gt;
+          &lt;!-- &lt;b&gt;repeat_count&lt;/b&gt; : &lt;%=tweet.details.repeat_count%&gt;&lt;br&gt; --&gt;
+          &lt;%}%&gt;
+          
+          &lt;div class='ui center aligned segment' id='action_&lt;%=tweet.id%&gt;'&gt;
+            &lt;div &gt;&lt;b&gt;Curate this tweet : &lt;/b&gt;&lt;/div&gt;
+            &lt;div class=&quot;four ui small buttons&quot;&gt;
+              &lt;button class=&quot;ui toggle button change_classification &lt;%if(classification=='curation_required'){%&gt;active&lt;%}%&gt;&quot; data-new-classification='curation_required' data-id='&lt;%=tweet.id%&gt;'&gt;CR&lt;/button&gt;
+              &lt;button class=&quot;ui toggle button change_classification &lt;%if(classification=='educational'){%&gt;active&lt;%}%&gt;&quot; data-new-classification='educational' data-id='&lt;%=tweet.id%&gt;'&gt;Edu&lt;/button&gt;
+              &lt;button class=&quot;ui toggle button change_classification &lt;%if(classification=='neutral'){%&gt;active&lt;%}%&gt;&quot; data-new-classification='neutral' data-id='&lt;%=tweet.id%&gt;'&gt;Ntrl&lt;/button&gt;
+              &lt;button class=&quot;ui toggle button change_classification &lt;%if(classification=='spam'){%&gt;active&lt;%}%&gt;&quot; data-new-classification='spam' data-id='&lt;%=tweet.id%&gt;'&gt;Spam&lt;/button&gt;
+              &lt;!-- &lt;button class=&quot;ui toggle button&quot;&gt;Support&lt;/button&gt; --&gt;
+            &lt;/div&gt;
+
+            &lt;%if(classification=='wall_of_love'){%&gt;
+              &lt;a class='change_classification' data-new-classification='curation_required' data-id='&lt;%=tweet.id%&gt;' href=&quot;#&quot;&gt;Mark as curation required&lt;/a&gt;&lt;br/&gt;
+              &lt;a class='change_classification' data-new-classification='discarded' data-id='&lt;%=tweet.id%&gt;' href=&quot;#&quot;&gt;Discard&lt;/a&gt;
+            &lt;%}%&gt;
+            &lt;%if(classification=='discarded'){%&gt;
+              &lt;a class='change_classification' data-new-classification='curation_required' data-id='&lt;%=tweet.id%&gt;' href=&quot;#&quot;&gt;Mark as curation required&lt;/a&gt;&lt;br/&gt;
+              &lt;a class='change_classification' data-new-classification='wall_of_love' data-id='&lt;%=tweet.id%&gt;' href=&quot;#&quot;&gt;Add to wall of love&lt;/a&gt;&lt;br/&gt;
+            &lt;%}%&gt;
+            &lt;%if(classification=='educational'){%&gt;
+            &lt;div class=&quot;ui divider&quot;&gt;&lt;/div&gt;
+              &lt;a class=&quot;ui button&quot; href=&quot;/curator/item/create_with_review?tweet_id=&lt;%=tweet.id%&gt;&quot;&gt;Convert to review&lt;/a&gt;
+            &lt;%}%&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+      &lt;div class='ui divider'&gt;&lt;/div&gt;
+      &lt;%}%&gt;
+    &lt;%});%&gt;
+    &lt;!-- &lt;button class='ui fluid button' onClick=&quot;window.location.reload()&quot;&gt;Reload&lt;/button&gt; --&gt;
+    &lt;div class=&quot;ui two item menu&quot;&gt;
+        
+        
+      &lt;a class=&quot;pagination &lt;%if(!tweets_from){%&gt; disabled &lt;%}%&gt; item&quot; data-page='&lt;%=pg.pagination.page-1%&gt;' onclick=&quot;goBack()&quot;&gt;
+      &lt;i class=&quot;left chevron icon&quot;&gt;&lt;/i&gt;
+      Back
+      &lt;/a&gt;
+
+      
+
+      &lt;a class=&quot;pagination &lt;% if(pg.pagination.page==Math.ceil(pg.pagination.total_pages)){%&gt; disabled&lt;%}%&gt; item&quot; data-page='&lt;%=Number(pg.pagination.page)+1%&gt;' href=&quot;?&lt;%if(track_id){%&gt;track=&lt;%=track_id%&gt;&amp;&lt;%}%&gt;tweets_from=&lt;%=last_tweet%&gt;&quot;&gt;
+        Next
+        &lt;i class=&quot;right chevron icon&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+      
+      
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class='six wide column'&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&quot;ui small modal input_proper_item_url&quot;&gt;
+  &lt;i class=&quot;close icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;header&quot;&gt;
+    Item url does not seem right
+  &lt;/div&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;description&quot;&gt;
+      &lt;!-- &lt;div class=&quot;ui header&quot;&gt;We've auto-chosen a profile image for you.&lt;/div&gt; --&gt;
+      &lt;h5&gt;Item url : &lt;a href=&quot;&quot; id='modal_item_url'&gt;&lt;/a&gt;&lt;/h5&gt;
+      &lt;h5&gt;Raw Tweet id : &lt;span id='modal_raw_tweet_id'&gt;&lt;/span&gt;&lt;/h5&gt;
+      &lt;p&gt;Item that you are saying is educational is a link to a tweet. You are probably referring to something else in the tweet that is educational. I am not able to extract it. Please enter the actual url of the item in the tweet, that you think is educational.&lt;/p&gt;
+      &lt;div class=&quot;ui fluid input&quot;&gt;
+        &lt;input id='actual_item_url' type=&quot;text&quot; placeholder=&quot;Enter actual item url&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='when_loading' style=&quot;display: none;&quot;&gt;
+      &lt;h5&gt;Extracting details from new url &lt;/h5&gt;
+    &lt;/div&gt;
+    
+  &lt;/div&gt;
+  &lt;div class=&quot;actions&quot;&gt;
+    &lt;button class=&quot;ui red deny button&quot; &gt;
+      Cancel
+    &lt;/button&gt;
+    &lt;button class=&quot;ui blue approve button&quot;&gt;
+      Submit
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&quot;ui small modal confirm_item_url&quot;&gt;
+  &lt;i class=&quot;close icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;header&quot;&gt;
+    Fetching details of the url that you submitted
+  &lt;/div&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;description&quot;&gt;
+      &lt;!-- &lt;div class=&quot;ui header&quot;&gt;We've auto-chosen a profile image for you.&lt;/div&gt; --&gt;
+      &lt;h5&gt;Item url : &lt;a href=&quot;&quot; id='modal_item_url_submitted'&gt;&lt;/a&gt;&lt;/h5&gt;
+      &lt;div class=&quot;ui active centered inline loader&quot;&gt;&lt;/div&gt;
+      &lt;b&gt;Item Name:&lt;/b&gt; &lt;span id='submitted_item_url_name'&gt;&lt;/span&gt;&lt;br/&gt;
+      &lt;b&gt;Item Type:&lt;/b&gt; &lt;span id='submitted_item_url_type'&gt;&lt;/span&gt;&lt;br/&gt;
+      &lt;b&gt;Item Author:&lt;/b&gt; &lt;span id='submitted_item_url_author'&gt;&lt;/span&gt;&lt;br/&gt;
+      &lt;b&gt;Item Image:&lt;/b&gt; &lt;span id='submitted_item_url_image'&gt;&lt;/span&gt;&lt;br/&gt;
+      
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class='when_loading' style=&quot;display: none;&quot;&gt;
+      &lt;p&gt;The item details in the raw_tweet is getting updated. It will also get marked as educational&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;div class=&quot;actions&quot;&gt;
+    &lt;button class=&quot;ui red deny button&quot; &gt;
+      Cancel
+    &lt;/button&gt;
+    &lt;button class=&quot;ui blue approve button&quot;&gt;
+      Update item details
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+  var removeParams=function(keys, sourceURL) {
+    //removes all params in keys from sourceURL
+    //
+    //Declaring variables
+        var result = sourceURL.split(&quot;?&quot;)[0];//
+        var param;
+        var params_arr = []
+        var queryString = (sourceURL.indexOf(&quot;?&quot;) !== -1) ? sourceURL.split(&quot;?&quot;)[1] : &quot;&quot;;
+
+
+        if (queryString !== &quot;&quot;) {
+            params_arr = queryString.split(&quot;&amp;&quot;);
+            for (var i = params_arr.length - 1; i &gt;= 0; i -= 1) {
+                param = params_arr[i].split(&quot;=&quot;)[0];
+                if (keys.indexOf(param)&gt;-1) {
+                    params_arr.splice(i, 1);
+                }
+            }
+            if(params_arr.length&gt;0)
+                result = result + &quot;?&quot; + params_arr.join(&quot;&amp;&quot;);
+        }
+      return result;
+  }
+
+  $(document).ready(function(){
+    var raw_tweet={
+      //id
+      //details
+    }
+    $('.ui.modal').modal({
+      allowMultiple: false
+    });
+    $('.modal.input_proper_item_url').modal({
+      closable  : false,
+      onDeny    : function(){
+        return true;
+      },
+      onApprove : function() {
+        $('.modal.input_proper_item_url .approve').addClass('loading');
+        $('.modal.input_proper_item_url .deny').addClass('disabled');
+        $('.modal.input_proper_item_url .description').hide();
+        $('.modal.input_proper_item_url .when_loading').show();
+        var data={
+          url:$('#actual_item_url').val()
+        }
+        $.post(&quot;/api/c/get_item_details&quot;,data, function(responseText, classification,result){
+          // alert(&quot;Data: &quot; + data + &quot;\nResult: &quot; + result);
+          raw_tweet.details={
+            item:result.responseJSON.item
+          }
+          if(classification=='success'){
+
+            // $('#tweet_'+tweet).fadeOut();
+            // button.parent().children().removeClass('active');
+            // $('#action_'+tweet).removeClass('loading');
+            // button.addClass('active');
+            $('.modal.input_proper_item_url .approve').removeClass('loading');
+            $('.modal.input_proper_item_url .deny').removeClass('disabled');
+            $('.modal.input_proper_item_url .description').show();
+            $('.modal.input_proper_item_url .when_loading').hide();
+
+            $('#submitted_item_url_name').html(result.responseJSON.item.name);
+            $('#submitted_item_url_type').html(result.responseJSON.item.type);
+            $('#modal_item_url_submitted').html(result.responseJSON.item.url);
+            $('#submitted_item_url_author').html(result.responseJSON.item.details.author);
+            $('#submitted_item_url_image').html(result.responseJSON.item.details.image);
+            $('.modal.confirm_item_url').modal('show');
+          } else alert('something went wrong');
+        });
+        return false;
+      }
+    })
+    $('.modal.confirm_item_url').modal({
+      closable  : false,
+      onDeny    : function(){
+        return true;
+      },
+      onApprove : function() {
+        $('.modal.confirm_item_url .approve').addClass('loading');
+        $('.modal.confirm_item_url .deny').addClass('disabled');
+        var data={
+          raw_tweet_id:raw_tweet.id,
+          details:raw_tweet.details
+        }
+        console.log(data);
+        $.post(&quot;/api/c/updateRawTweetDetails&quot;,data, function(responseText, classification,result){
+          // alert(&quot;Data: &quot; + data + &quot;\nResult: &quot; + result);
+          if(classification=='success'){
+
+            $('#item_url_'+raw_tweet.id).text(raw_tweet.details.item.url);
+            $('#item_name_'+raw_tweet.id).text(raw_tweet.details.item.name);
+            $('#item_type_'+raw_tweet.id).text(raw_tweet.details.item.type);
+            $('.modal.confirm_item_url .approve').removeClass('loading');
+            $('.modal.confirm_item_url .deny').removeClass('disabled');
+            $('.modal.confirm_item_url .description').show();
+            $('.modal.confirm_item_url .when_loading').hide();
+
+            $('.modal.confirm_item_url').modal('hide');
+          } else alert('something went wrong');
+        });
+        return false;
+      }
+    })
+    // $('.modal.confirm_item_url').modal('attach events', '.modal.input_proper_item_url .approve')
+    //pagination
+    // $('a.pagination').click(function(){
+    //   var page=$(this).attr('data-page');
+    //   console.log('page= '+page);
+    //   var current_url=window.location.href;
+    //   if(current_url.indexOf(&quot;?&quot;)!=-1)//if ? exists
+    //     window.location=removeParams(['page'],window.location.href)+'&amp;page='+page;
+    //   else
+    //     window.location=removeParams(['page'],window.location.href)+'?page='+page;
+
+
+    // });
+
+    /**
+     * Change classification of the tweet to wall_of_love
+     */
+    $('.change_classification').click(function(){
+      var tweet=$(this).attr('data-id');
+      var classification=$(this).attr('data-new-classification');
+      var item_url=$('#item_url_'+tweet).text();
+      var button=$(this);
+      if(item_url.indexOf('twitter.com/i/web/status/')&gt;0 &amp;&amp; classification=='educational'){
+        $('#modal_item_url').attr('href',item_url);
+        $('#modal_item_url').html(item_url);
+        $('#modal_raw_tweet_id').html(tweet);
+        raw_tweet.id=tweet;
+        raw_tweet.this=$(this);
+        $('.input_proper_item_url').modal('show');
+      }
+      else{
+        var data={
+          tweet:tweet,
+          classification:classification,
+        };
+        button.parent().children().removeClass('active');
+        $('#action_'+tweet).removeClass('loading');
+        button.addClass('active');
+        $('#action_'+tweet).addClass('loading');
+        $.post(&quot;/curator/change_classification_of_one_tweet&quot;,data, function(responseText, classification,result){
+          if(classification=='success'){
+            button.parent().children().removeClass('active');
+            $('#action_'+tweet).removeClass('loading');
+            button.addClass('active');
+          }else alert('something went wrong');
+        });
+      }
+    });
+  });
+&lt;/script&gt;
+
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  $(document).ready(function(){
+    $('.ui.dropdown').dropdown();
+  })
+
+
+&lt;/script&gt;
+
+
+&lt;script&gt;
+  function goBack() {
+      window.history.back()
+  }
+&lt;/script&gt;
+
+</code></pre>
+<h2>Controller</h2>
+<pre><code>curateRawTweetsPaginated:function(req,res){ // this is for the business owner
+	var classification;
+	if(!req.params.classification)
+		classification='curation_required';
+	else 
+		classification=req.params.classification;
+	var page=req.query.page||1;
+	var tweets_from=req.query.tweets_from;//we'll show tweets greater than this id
+	var limit=req.query.limit||40;//we'll show these many tweets in a page
+	var pg={
+		u:req.user,
+		pagination:{
+			page:page
+		}
+	};
+	var marked=0;
+
+	var locals={
+		pg:pg,
+		title:'Curate raw tweets',
+		description:'Mark the tweets that teach',
+		item:'',
+		classification:classification,
+		filter:{}, // this is used by the front end filter
+		tweets:[],
+		tweets_from:tweets_from,
+		track_id:req.query.track,
+	}
+	var filter={};
+	sails.log.debug('\n\n\n\n\n --------_________----------');
+	sails.log.debug('curateRawTweetsPaginated');
+	// sails.log.info(locals);
+	if(classification=='curation_required'||classification=='educational'||classification=='neutral'||classification=='spam'||classification=='curate_later')
+	{
+		async.auto({
+			getListofLists:function(callback){
+				var select =['name','description','type','id','createdAt','updatedAt'];
+				List.find({type:'list'}).exec(callback);
+			},
+			getListOfTracks:function(callback){ // getting list of tracks
+				var select =['name','description','type','id','createdAt','updatedAt'];
+				List.find({type:'track'}).exec(callback);
+			},
+			getListofDomainExperts:function(callback){ // getting list of influencers
+				var select = ['name','id','createdAt','updatedAt','twitter','image_url','username','description'];
+				User.find({is_influencer:true}).exec(callback);
+			}, 
+			generateFilter:function(callback){ //setting filter - list/track or influencer
+				var filter={};
+				if(req.query.list || req.query.track){
+					var list;
+					if(req.query.list){
+						locals.filter.type='list';	
+						list=req.query.list;
+					}
+					else{
+						locals.filter.type='track';
+						list=req.query.track;
+					}
+					List.findOne({id:list}).populate('people').exec(function(err,list){
+						filter.user=[];
+						// sails.log.info(list);
+						list.people.forEach(function(people){
+							filter.user.push(people.id);
+						});
+						locals.filter.text=list.name;
+						callback(err,filter);
+					})
+
+				}else if(req.query.influencer){ // this is to filter content from one influencer
+
+					User.findOne({username:req.query.influencer}).exec(function(err,influ){
+						// sails.log.info(influ);
+						if(!err)
+							filter.user=influ.id;
+						locals.filter.type='influencer';
+						locals.filter.text=influ.name;
+						callback(err,filter);
+					});
+				}
+				else
+					callback(null,filter);
+			},
+			getCountOfCurationRequired:['generateFilter',function(results,callback){ // getting count of curation_required
+				var filter=results.generateFilter;
+				filter.classification='curation_required';
+				Raw_tweet.count(filter).exec(callback);
+			}],
+			getCountOfEducational:['generateFilter',function(results,callback){ // getting count of educational
+				var filter=results.generateFilter;
+				filter.classification='educational';
+				Raw_tweet.count(filter).exec(callback);
+			}],
+			getCountOfNeutral:['generateFilter',function(results,callback){ // getting count of neutral
+				var filter=results.generateFilter;
+				filter.classification='neutral';
+				Raw_tweet.count(filter).exec(callback);
+			}],
+			getCountOfSpam:['generateFilter',function(results,callback){ // getting count of spam
+				var filter=results.generateFilter;
+				filter.classification='spam';
+				Raw_tweet.count(filter).exec(callback);
+			}],
+			getCountOfCurateLater:['generateFilter',function(results,callback){ // getting count of curate_later
+				var filter=results.generateFilter;
+				filter.classification='curate_later';
+				Raw_tweet.count(filter).exec(callback);
+			}],
+		},function(err,results){
+			if(err)
+				throw err;
+			locals.lists=results.getListofLists;
+			locals.tracks=results.getListOfTracks;
+			locals.influencers=results.getListofDomainExperts;
+			locals.count={
+				curation_required:results.getCountOfCurationRequired,
+				educational:results.getCountOfEducational,
+				neutral:results.getCountOfNeutral,
+				spam:results.getCountOfSpam,
+				curate_later:results.getCountOfCurateLater,
+			};
+			console.log('all done');
+			var filter=results.generateFilter;
+			filter.classification=classification;
+			locals.last_tweet=0;
+			if(tweets_from&gt;=1)
+				filter.id={'&lt;':tweets_from};
+			Raw_tweet.find(filter).sort('id DESC').limit(limit).exec(function(err,tweets){
+				locals.pg.pagination.total_pages=locals.count[classification]/limit;//total # of pages
+				if(err)
+					throw err;
+				if(tweets.length&gt;0)
+					locals.last_tweet=tweets[tweets.length-1].id;
+				locals.tweets=tweets;
+				GeneralService.sendJsonOrHtmlRes(req,res,'curator/curate_raw_tweets',locals);
+			});
+		});
+	}
+	else
+		res.send('Unknown status');
+},
+</code></pre>
+<h2>Screenshot</h2>
+<p><img src="/files/Pasted image 20210312082505.png"></img></p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	if(window.location.pathname.indexOf('/blog/')>-1){
+		$('a[href="/blog/"]').addClass('active');
+	}
+</script>
+    </div>
+
+
+
+
+    <!--
+        Client-side Templates
+        ========================
+
+        HTML templates are important prerequisites of modern, rich client applications.
+        To work their magic, frameworks like React, Vue.js, Angular, Ember, and Backbone
+        require that you load these templates client-side.
+
+        By default, your Gruntfile is configured to automatically load and precompile
+        client-side JST templates in your `assets/templates` folder, then
+        include them here automatically (between TEMPLATES and TEMPLATES END).
+
+        To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Import templates from other directories
+            + Use a different view engine (handlebars, dust, pug/jade, etc.)
+            + Internationalize your client-side templates using a server-side
+              stringfile before they're served.
+    -->
+
+    <!--TEMPLATES-->
+    <!--TEMPLATES END-->
+
+
+    <!--
+        Server-side View Locals
+        ========================
+
+        Sometimes, it's convenient to get access to your server-side view locals from
+        client-side JavaScript.  This can improve page load times, remove the need for
+        extra AJAX requests, and make your client-side code easier to understand and
+        to maintain.  Sails provides a simple mechanism for accessing dynamic view
+        locals: the "exposeLocalsToBrowser()" view partial.
+
+        For more information on using this built-in feature, see:
+        https://sailsjs.com/docs/concepts/views/locals#?escaping-untrusted-data-using-exposelocalstobrowser
+
+    -->
+
+
+    <!--
+
+      Client-side Javascript
+      ========================
+
+      You can always bring in JS files manually with `script` tags, or asynchronously
+      on the client using a solution like AMD (RequireJS).  Or, if you like, you can
+      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+      By default, files in your `assets/js` folder are included here
+      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
+      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
+      and concatenated into a single file.
+
+      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+      For example, here are a few things you could do:
+
+          + Change the order of your scripts
+          + Import scripts from other directories
+          + Use a different preprocessor, like TypeScript
+
+    -->
+
+
+    <script src="/assets/sails.io.js"></script>
+    <script src="/assets/jquery.min.js"></script>
+    <script src="/assets/sematic/semantic.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var path = window.location.pathname;
+        console.log(path.split('/'));
+        
+        $('a[href="'+path+'"]').addClass('active');
+        $('.dropdown').dropdown();
+        // if(path.split('/')[1]=='features')
+        //   $('#features').addClass('active');
+        // $('.click-sidebar').click(function(){
+        //   $('.ui.sidebar').sidebar('toggle');
+        // })
+        // $('.inline.dropdown').dropdown();
+      });
+    </script>
+  </body>
+</html>
