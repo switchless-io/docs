@@ -77,6 +77,7 @@ In this page, all the design patterns are roughly organized by context/function.
 - [[Loader on form submit]]
 - [[Mobile friendly filter using accordian]]
 - [[Upload files drop zone UI]]
+- [[Attached list of people]]
 
 ### Front end automations 
 - [[Click buttons on the screen in bulk]]
@@ -150,7 +151,9 @@ In this page, all the design patterns are roughly organized by context/function.
 - [[How to create issues]]
 
 
-
-
+## Patterns from highlyreco
+- [[pagination based on last viewed element]]
+- [[Attached list of people]]
+- [[curate tweets interface]]
 
 
