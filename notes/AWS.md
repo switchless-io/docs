@@ -12,6 +12,7 @@ aka amazon web services
 - [[Initialize EB CLI]]
 - [[Set up ElasticBeanstalk Locally]]
 - [[Different ways of setting ElasticBeanstalk environmental variables]]
+- [[SSH into ElasticBeanstalk Server Instance]]
 
 
 ## Issues
