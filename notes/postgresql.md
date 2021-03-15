@@ -12,6 +12,7 @@ This is our preferred database. We like it because it is a relational database a
 - Query
 	- [[find duplicate elements]]
 	- [[!= also avoids null elements]]
+	- [[delete rows from a table]]
 	- Sequence
 		- [[Get current value of sequence]]
 		- [[Set value of a sequence]]
