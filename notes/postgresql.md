@@ -23,4 +23,5 @@ This is our preferred database. We like it because it is a relational database a
 - [[How to update fixtures]]
 - [[Case insensitive columns for searching]]
 - [[copy database within same server for testing]]
-- 
+- debugging
+	- [[cannot connect to postgres after restarting laptop]]
