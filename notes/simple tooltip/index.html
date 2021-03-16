@@ -185,11 +185,17 @@
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
 				<h1>Simple tooltip</h1>
+<h2>Usage</h2>
 <h3>Example</h3>
-<pre><code class="language-html">&lt;button class='ui teal button' id='reparse_portal_data' data-tooltip='Convert uploaded raw &quot;portal data json&quot; into &quot;Transformed portal data&quot;.'&gt;
+<pre><code class="language-html">&lt;button class='ui teal button' id='sync_portal_data' data-content='Compare invoices in filing portal data with invoices in tracker. Create missing invoices. Update existing invoices. Only import_data is updated. Rest invoice values are unaffected.'&gt;
+	Sync Portal Data
+&lt;/button&gt;
+</code></pre>
+<h3>Trigger</h3>
+<pre><code>$(&quot;[data-content]&quot;).popup({variation:'wide'});
 </code></pre>
 <h3>Preferences</h3>
-<pre><code>data-tooltip='content of the popup'
+<pre><code>data-content='content of the popup'
 data-position='top left'
 </code></pre>
 <h2>Variation</h2>
@@ -201,7 +207,9 @@ data-position='top left'
 </code></pre>
 <h3>on button</h3>
 <p><img src="/files/Pasted image 20210316114810.png"></img></p>
-<pre><code class="language-html">&lt;button class='ui teal button' id='reparse_portal_data' data-tooltip='Convert uploaded raw &quot;portal data json&quot; into &quot;Transformed portal data&quot;.'&gt;
+<pre><code class="language-html">&lt;button class='ui teal button' id='sync_portal_data' data-content='Compare invoices in filing portal data with invoices in tracker. Create missing invoices. Update existing invoices. Only import_data is updated. Rest invoice values are unaffected.'&gt;
+	Sync Portal Data
+&lt;/button&gt;
 </code></pre>
 
 			</div>
