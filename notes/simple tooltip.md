@@ -1,14 +1,22 @@
 # Simple tooltip
 
+## Usage
 
 ### Example
 ```html
-<button class='ui teal button' id='reparse_portal_data' data-tooltip='Convert uploaded raw "portal data json" into "Transformed portal data".'>
+<button class='ui teal button' id='sync_portal_data' data-content='Compare invoices in filing portal data with invoices in tracker. Create missing invoices. Update existing invoices. Only import_data is updated. Rest invoice values are unaffected.'>
+	Sync Portal Data
+</button>
+```
+
+### Trigger
+```
+$("[data-content]").popup({variation:'wide'});
 ```
 
 ### Preferences
 ```
-data-tooltip='content of the popup'
+data-content='content of the popup'
 data-position='top left'
 ```
 
@@ -26,5 +34,8 @@ data-position='top left'
 ![[Pasted image 20210316114810.png]]
 
 ```html
-<button class='ui teal button' id='reparse_portal_data' data-tooltip='Convert uploaded raw "portal data json" into "Transformed portal data".'>
+<button class='ui teal button' id='sync_portal_data' data-content='Compare invoices in filing portal data with invoices in tracker. Create missing invoices. Update existing invoices. Only import_data is updated. Rest invoice values are unaffected.'>
+	Sync Portal Data
+</button>
 ```
+
