@@ -54,6 +54,5 @@ http://semantic-ui.com/
 
 ## Tooltip
 - [[simple tooltip]]
-- 
 
 
