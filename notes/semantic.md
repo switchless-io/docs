@@ -54,6 +54,7 @@ http://semantic-ui.com/
 
 ## Tooltip
 - [[simple tooltip]]
-- 
 
+## Toast
+- [[Default toast]]
 
