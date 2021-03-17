@@ -43,15 +43,17 @@ var crawl_data = fs.readFileSync(folder_name+'/automations/data/setup_gstin.json
 
 ### Read file line by line
 ```
-const lineReader = require('line-reader');
+const fs = require('fs');
+const readline = require('readline');
 var folder_name = __dirname;
 
-lineReader.eachLine(folder_name+"/invoices.txt", function(line) {
-    
-},function(err){
-  if (err) throw err;
-  console.log("All done");
-  exits.success();
+const fileStream = fs.createReadStream(folder_name + "/filings.txt");
+const rl = readline.createInterface({
+	input: fileStream,
+	crlfDelay: Infinity
+});
+await async.eachLimit(rl,3,async function(line){
+	console.log(line);
 })
 ```
 
