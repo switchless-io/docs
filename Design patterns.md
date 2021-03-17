@@ -78,6 +78,7 @@ In this page, all the design patterns are roughly organized by context/function.
 - [[Mobile friendly filter using accordian]]
 - [[Upload files drop zone UI]]
 - [[Attached list of people]]
+- [[UI Elements for Displaying Reports]]
 
 ### Front end automations 
 - [[Click buttons on the screen in bulk]]
