@@ -5,3 +5,4 @@ All notes liked to dropdowns are linked with this.
 Linked notes: 
 
 - [[dropdown with header]]
+- [[simple inline dropdown]]
