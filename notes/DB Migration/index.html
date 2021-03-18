@@ -199,6 +199,16 @@
 <li>Start run from in between</li>
 <li>run for specific data sets without meddling with code</li>
 </ul>
+<h2>Read line one by one</h2>
+<p>use async.eachlimit to speed up delays due to network delays.</p>
+<h2>Debug steps</h2>
+<ul>
+<li>verify if you are writing to the correct database. modify the data manually and pull the data to file. that should tell if you are reading from the right file.</li>
+<li>make sure models are modified</li>
+<li>make sure the db is manually updated</li>
+<li>use fs readline</li>
+<li>use async.eachlimit to send multiple update requests simultaneously to speedup network delays.</li>
+</ul>
 
 			</div>
 		</div>

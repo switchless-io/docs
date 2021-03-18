@@ -214,15 +214,17 @@ if (!fs.existsSync(dir)){
 <pre><code>var crawl_data = fs.readFileSync(folder_name+'/automations/data/setup_gstin.json');
 </code></pre>
 <h3>Read file line by line</h3>
-<pre><code>const lineReader = require('line-reader');
+<pre><code>const fs = require('fs');
+const readline = require('readline');
 var folder_name = __dirname;
 
-lineReader.eachLine(folder_name+&quot;/invoices.txt&quot;, function(line) {
-    
-},function(err){
-  if (err) throw err;
-  console.log(&quot;All done&quot;);
-  exits.success();
+const fileStream = fs.createReadStream(folder_name + &quot;/filings.txt&quot;);
+const rl = readline.createInterface({
+	input: fileStream,
+	crlfDelay: Infinity
+});
+await async.eachLimit(rl,3,async function(line){
+	console.log(line);
 })
 </code></pre>
 <h2>Get list of files in a directory</h2>

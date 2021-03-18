@@ -184,27 +184,15 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Sails</h1>
-<p>Sails is the web framework that we use.</p>
-<h2>Related notes:</h2>
-<ul>
-<li><a href="/notes/Lifting sails in terminal using launch.json from VS code">Lifting sails in terminal using launch.json from VS code</a></li>
-<li><a href="/notes/Send native SQL query with sails">Send native SQL query with sails</a></li>
-<li><a href="/notes/modified waterline">modified waterline</a></li>
-<li><a href="/notes/Waterline filter by date">Waterline filter by date</a></li>
-<li><a href="/notes/measure execution time with process.hrtime()">measure execution time with process.hrtime()</a>\</li>
-<li><a href="/notes/Lift multiple servers locally">Lift multiple servers locally</a></li>
-<li></li>
-</ul>
-<h3>Scripts</h3>
-<ul>
-<li><a href="/notes/Scripting with sails">Scripting with sails</a></li>
-<li><a href="/notes/DB Migration">DB Migration</a></li>
-</ul>
-<h3>Waterline</h3>
-<ul>
-<li><a href="/notes/sort">sort</a></li>
-</ul>
+				<h1>Sort</h1>
+<h2>simple sort</h2>
+<pre><code>.sort('createdAt DESC')
+</code></pre>
+<h2>sort by multiple variables</h2>
+<pre><code>.sort([{ status: 'DESC' }, { createdAt: 'DESC' }])
+
+</code></pre>
+<p>This sorts by <code>status</code> and then by <code>createdAt</code></p>
 
 			</div>
 		</div>
