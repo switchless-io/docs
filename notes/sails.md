@@ -10,6 +10,7 @@ Sails is the web framework that we use.
 - [[Waterline filter by date]]
 - [[measure execution time with process.hrtime()]]\
 - [[Lift multiple servers locally]]
+- [[server responses]]
 - 
 ### Scripts
 - [[Scripting with sails]]
