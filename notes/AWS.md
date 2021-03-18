@@ -11,6 +11,8 @@ aka amazon web services
 - [[How to create AWS access keys]]
 - [[Initialize EB CLI]]
 - [[Set up ElasticBeanstalk Locally]]
+- [[Different ways of setting ElasticBeanstalk environmental variables]]
+- [[SSH into ElasticBeanstalk Server Instance]]
 
 
 ## Issues
