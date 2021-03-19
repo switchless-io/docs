@@ -1,6 +1,7 @@
 # Mobile friendly filter using accordian
 
 ## Example
+![[CleanShot 2021-03-19 at 10.05.55.gif]]
 ### When filter is minimised
 ![[Pasted image 20201224165216.png]]
 ### When filter is opened to edit
