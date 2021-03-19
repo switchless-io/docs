@@ -122,7 +122,7 @@ In this page, all the design patterns are roughly organized by context/function.
 - [[Setup wordpress multi site]]
 - [[Install plugins in Mkdocs]]
 - [[Refresh AWS Access Keys]]
-
+- [[Ensuring Email Delivery]]
 
 ### Deployment
 - [[Auto deploy to Dev]]
