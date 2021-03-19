@@ -65,7 +65,7 @@ remove the class `active` from `content` and `title`
 							<div class="ui calendar" id="rangestart">
 								<div class="ui input left icon">
 									<i class="calendar icon"></i>
-									<input type="text" name="start_date" placeholder="Start" value="<%=req.query.start_date%>">
+									<input type="text" name="start_date" placeholder="Start" value="<%=req.query.start_date%>" autocomplete="off">
 								</div>
 							</div>
 						</div>
@@ -74,7 +74,7 @@ remove the class `active` from `content` and `title`
 							<div class="ui calendar" id="rangeend">
 								<div class="ui input left icon">
 									<i class="calendar icon"></i>
-									<input type="text" name="end_date" placeholder="End" value="<%=req.query.end_date%>">
+									<input type="text" name="end_date" placeholder="End" value="<%=req.query.end_date%>" autocomplete="off">
 								</div>
 							</div>
 						</div>
