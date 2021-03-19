@@ -13,6 +13,11 @@
 ### When filter is applied and is opened to edit
 ![[Pasted image 20201224165410.png]]
 
+### to start with folded filter
+remove the class `active` from `content` and `title`
+
+### Code
+
 ```
 
 <div class='ui container'>
