@@ -6,9 +6,7 @@ layout: layouts/post.ejs
 In this page, all the design patterns are roughly organized by context/function. If you would like to see design patterns organised by subsystem/tool visit [[Stack components]].
 
 
-## Backend 
-
-
+## Backend
 ### Basic backend infra patterns
 - [[Asset pipeline done right]]
 - [[Error handling in async.auto]]
@@ -122,7 +120,9 @@ In this page, all the design patterns are roughly organized by context/function.
 - [[Setup wordpress multi site]]
 - [[Install plugins in Mkdocs]]
 - [[Refresh AWS Access Keys]]
-- [[Ensuring Email Delivery]]
+
+
+
 
 ### Deployment
 - [[Auto deploy to Dev]]
@@ -131,13 +131,14 @@ In this page, all the design patterns are roughly organized by context/function.
 
 
 
-## Others
 
+## Others
+- [[Ensuring Email Delivery]]
 - [[Create read only user for metabase]]
 - [[JSON schema validation]]
 - [[Implement Rate Limiting]]
 - [[Error code]]
-
+- [[SEO and Performance Audit]]
 
 
 ## CSS tricks
