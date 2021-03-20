@@ -28,7 +28,7 @@ author: #alex
 sudo -u alex dropdb mralbert_test
 sudo -u alex createdb mralbert_test -O rdsuser
 # got mralbert.dump from step 1  
-psql mralbert_test < /Users/alex/Documents/mralbert.dump 
+psql mralbert_test < /Users/alex/Downloads/mralbert.dump 
 ```
 
 
