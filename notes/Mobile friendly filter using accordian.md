@@ -1,6 +1,7 @@
 # Mobile friendly filter using accordian
 
 ## Example
+![[CleanShot 2021-03-19 at 10.05.55.gif]]
 ### When filter is minimised
 ![[Pasted image 20201224165216.png]]
 ### When filter is opened to edit
@@ -11,6 +12,11 @@
 
 ### When filter is applied and is opened to edit
 ![[Pasted image 20201224165410.png]]
+
+### to start with folded filter
+remove the class `active` from `content` and `title`
+
+### Code
 
 ```
 
@@ -59,7 +65,7 @@
 							<div class="ui calendar" id="rangestart">
 								<div class="ui input left icon">
 									<i class="calendar icon"></i>
-									<input type="text" name="start_date" placeholder="Start" value="<%=req.query.start_date%>">
+									<input type="text" name="start_date" placeholder="Start" value="<%=req.query.start_date%>" autocomplete="off">
 								</div>
 							</div>
 						</div>
@@ -68,7 +74,7 @@
 							<div class="ui calendar" id="rangeend">
 								<div class="ui input left icon">
 									<i class="calendar icon"></i>
-									<input type="text" name="end_date" placeholder="End" value="<%=req.query.end_date%>">
+									<input type="text" name="end_date" placeholder="End" value="<%=req.query.end_date%>" autocomplete="off">
 								</div>
 							</div>
 						</div>
