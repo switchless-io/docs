@@ -20,6 +20,7 @@ This is our preferred database. We like it because it is a relational database a
 		- [[JSON vs JSONB]]
 		- [[Convert column from JSON to JSONB]]
 		- [[Basic query with JSON,JSONB]]
+		- [[query size of array in json column]]
 - [[How to update fixtures]]
 - [[Case insensitive columns for searching]]
 - [[copy database within same server for testing]]
