@@ -184,61 +184,77 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Stack components</h1>
-<p>The switchless stack consist of the following components.</p>
+				<h1>Basic docker cheatsheet</h1>
+<p>keyword: <a href="/notes/docker">docker</a>, <a href="/cheatsheet">cheatsheet</a></p>
+<h2>Note:</h2>
+<h2>Flags:</h2>
 <ul>
-<li><a href="/notes/semantic">semantic</a></li>
-<li><a href="/notes/Device size specific CSS">CSS</a></li>
-<li><a href="/notes/nodejs">nodejs</a></li>
-<li><a href="/notes/sails">sails</a> - web framework</li>
-<li><a href="/notes/Blueprint APIs">Blueprint APIs</a> - API framework</li>
-<li><a href="/notes/EJS">EJS</a> - templating language</li>
-<li><a href="/notes/sandboxed queue with bull">bull</a> - queue management</li>
-<li><a href="/notes/sentry">sentry</a> - error handling</li>
-<li><a href="/notes/postgresql">postgresql</a> - preferred transactional database of choice</li>
-<li><a href="/notes/Setup 11ty">11ty</a></li>
-<li><a href="/notes/ngrok">ngrok</a></li>
-<li><a href="/notes/meilisearch">meilisearch</a> - search plugin</li>
-<li><a href="/notes/obsidian">obsidian</a></li>
-<li><a href="/notes/format json">form</a></li>
-<li><a href="/notes/charts">charts</a></li>
-<li><a href="/notes/cloudflare">cloudflare</a></li>
-<li><a href="/notes/Refresh AWS Access Keys">AWS</a></li>
-<li><a href="/notes/nginx">nginx</a></li>
-<li><a href="/notes/Elastic search">Elastic search</a></li>
-<li><a href="/Kinesis">Kinesis</a></li>
-<li><a href="/notes/metabase">metabase</a> - BI tool</li>
-<li><a href="/notes/2factor.in">2factor.in</a></li>
-<li><a href="/notes/npm">npm</a>
+<li>d - run the container in detached mode (in the background)</li>
+<li>p - 2000:80 map port 2000 on local machine to port 80 of the container</li>
+</ul>
+<pre><code>docker run -d -p 80:80 docker/getting-started
+</code></pre>
+<p>name the container while running it</p>
+<pre><code>docker run -d -p 2000:80 --name testname docker/getting-started
+</code></pre>
+<p>docker build</p>
+<pre><code> docker build -t crawler .
+</code></pre>
+<p>docker build options</p>
 <ul>
-<li><a href="/notes/npm xlsx">npm xlsx</a></li>
-<li><a href="/notes/FS">FS</a> - working with files</li>
-<li><a href="/notes/ajv">ajv</a> - schema validation</li>
-<li><a href="/notes/hjson">hjson</a> - hjson</li>
-<li><a href="/notes/mocha">mocha</a></li>
-<li><a href="/notes/assert">assert</a></li>
+<li>t - for tagging in this format <code>name:tag</code></li>
+<li>f or --file - this is where the</li>
 </ul>
-</li>
-<li><a href="/notes/terminal">terminal</a></li>
-<li><a href="/notes/codeceptjs">codeceptjs</a></li>
-<li><a href="/notes/puppeteer">puppeteer</a></li>
-<li><a href="/notes/switchless-cli">switchless-cli</a> - custom made cli to setup the switchless stack</li>
-<li><a href="/notes/mailgun">mailgun</a> - transactional emails</li>
-<li><a href="/notes/wordpress">wordpress</a> - publishing</li>
-<li><a href="/notes/format json">format json</a></li>
-<li><a href="/notes/format html">format html</a></li>
-<li><a href="/notes/gitignore for obsidian">git</a></li>
-<li><a href="/notes/datatables">datatables</a></li>
-<li><a href="/notes/docker">docker</a></li>
-</ul>
-<h2>Depricated</h2>
-<p>We used to use these before. These services are perfectly fine. It might fit your need. We dont use them anymore - mostly we found a different service</p>
-<ul>
-<li><a href="/notes/rtd">rtd</a></li>
-<li><a href="/notes/sendgrid">sendgrid</a> - alternative to mailgun</li>
-<li>algolia</li>
-<li><a href="/notes/mkdocs">mkdocs</a> - how we publish and maintain documentation</li>
-</ul>
+<p>to see a list of images</p>
+<pre><code>docker images
+</code></pre>
+<p>To see all processes running</p>
+<pre><code>docker ps
+docker ps -a
+</code></pre>
+<p>to enter docker file system</p>
+<pre><code>docker exec -t -i elegant_poitras /bin/bash
+</code></pre>
+<p><img src="/Pasted_image 16.png"></img></p>
+<p><code>docker start &lt;container name&gt;</code>
+<code>docker stop &lt;container name&gt;</code>
+<code>docker rm &lt;container name&gt;</code></p>
+<p>Images and container names
+<img src="/CleanShot_2020-08-08 at 16.51.31.png"></img></p>
+<p><code>docker logs &lt;conatiner name&gt;</code>
+<code>docker logs -f &lt;conatiner name&gt;</code></p>
+<p>docker push image name
+docker tag local stuff with global stuff</p>
+<p><code>docker pull &lt;image name&gt;</code></p>
+<p><code>docker-compose up -d</code> - looks for <code>docker-compose.yml</code> . In the YML you will specify what you would have written in docker run params.</p>
+<p>remove all docker images
+<code>docker rmi $(docker images -a -q)</code></p>
+<p>Pushing things to docker hub</p>
+<pre><code>docker tag alex-custom:tagname alexjv89/test:tagname
+docker push alexjv89/test:tagname
+
+
+docker tag alex-custom alexjv89/test
+docker push alexjv89/test:latest
+</code></pre>
+<p>Now add a new file called .dockerignore to your project’s root directory. The .dockerignore specifies which files and folders to ignore in the COPY step. In the .dockerignore, add the 2 lines below to ignore node modules and the npm debug log.</p>
+<pre><code>node_modules
+npm-debug.log
+</code></pre>
+<p>Basic walkthough on how to deploy a docker container to docker - https://medium.com/@sommershurbaji/deploying-a-docker-container-to-aws-with-elastic-beanstalk-28adfd6e7e95</p>
+<p>Enter cli of the docker container
+<code>docker exec -it quizzical_yalow /bin/sh</code></p>
+<p>Connect from container to a service on the host
+https://docs.docker.com/docker-for-mac/networking/#use-cases-and-workarounds</p>
+<p>passing env from host to container
+https://vsupalov.com/docker-environment-variables-from-host/#:~:text=You%20can%20pass%20the%20values,e%20var_name%20(...)</p>
+<h2>Running mr Albert crawler</h2>
+<pre><code>docker build -t crawler .
+</code></pre>
+<pre><code>docker run --env-file=docker_local_env crawler
+</code></pre>
+<pre><code>docker run -d -p 1337:1337 --env-file=docker\_local\_env crawler
+</code></pre>
 
 			</div>
 		</div>
