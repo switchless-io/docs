@@ -184,48 +184,16 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Postgre SQL</h1>
-<hr>
-<ul>
-<li>keywords: #stack</li>
-<li>author: #alex</li>
-</ul>
-<hr>
-<p>This is our preferred database. We like it because it is a relational database and because it has native support for JSON Blobs.</p>
-<h2>Notes related to this:</h2>
-<ul>
-<li><a href="/notes/Create a copy of the production database in your localhost">Create a copy of the production database in your localhost</a></li>
-<li><a href="/notes/Create read only user for metabase">Create read only user for metabase</a></li>
-<li>Query
-<ul>
-<li><a href="/notes/find duplicate elements">find duplicate elements</a></li>
-<li><a href="/notes/!= also avoids null elements">!= also avoids null elements</a></li>
-<li><a href="/notes/delete rows from a table">delete rows from a table</a></li>
-<li>Sequence
-<ul>
-<li><a href="/notes/Get current value of sequence">Get current value of sequence</a></li>
-<li><a href="/notes/Set value of a sequence">Set value of a sequence</a></li>
-</ul>
-</li>
-<li>JSONB
-<ul>
-<li><a href="/notes/JSON vs JSONB">JSON vs JSONB</a></li>
-<li><a href="/notes/Convert column from JSON to JSONB">Convert column from JSON to JSONB</a></li>
-<li><a href="/notes/Basic query with JSON,JSONB">Basic query with JSON,JSONB</a></li>
-<li><a href="/notes/query size of array in json column">query size of array in json column</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="/notes/How to update fixtures">How to update fixtures</a></li>
-<li><a href="/notes/Case insensitive columns for searching">Case insensitive columns for searching</a></li>
-<li><a href="/notes/copy database within same server for testing">copy database within same server for testing</a></li>
-<li>debugging
-<ul>
-<li><a href="/notes/cannot connect to postgres after restarting laptop">cannot connect to postgres after restarting laptop</a></li>
-</ul>
-</li>
-</ul>
+				<h1>query size of array in json column in postgres</h1>
+<pre><code class="language-sql">SELECT jsonb_array_length('[&quot;question&quot;,&quot;solved&quot;]') AS length;
+</code></pre>
+<p>Ref: https://stackoverflow.com/a/33908392/1650911</p>
+<h2>Example</h2>
+<pre><code>SELECT json_array_length(portal_data_json-&gt;'b2ba') as b2ba,* from filing 
+where gstin=31 AND 
+type='gstr1';
+</code></pre>
+<p><img src="/files/Pasted image 20210322163631.png"></img></p>
 
 			</div>
 		</div>
