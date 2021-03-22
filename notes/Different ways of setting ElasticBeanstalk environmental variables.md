@@ -5,7 +5,7 @@ author: #anzal
 
 ---
 
-This will set the environment variables from:
+This command will let you set environment variables using eb CLI:
 
 ```
 eb setenv APP_URL=http://app.wsxd.co SOME_KEY=sectret1234
