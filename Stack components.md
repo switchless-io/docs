@@ -42,6 +42,7 @@ The switchless stack consist of the following components.
 - [[git]]
 - [[datatables]]
 - [[docker]]
+- [[discourse]]
 
 
 ## Depricated 
