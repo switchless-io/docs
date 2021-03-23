@@ -13,6 +13,7 @@ aka amazon web services
 - [[Set up ElasticBeanstalk Locally]]
 - [[Different ways of setting ElasticBeanstalk environmental variables]]
 - [[SSH into ElasticBeanstalk Server Instance]]
+- [[SSH into EC2 instance]]
 
 
 ## Issues
