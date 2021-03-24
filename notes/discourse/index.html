@@ -186,6 +186,7 @@
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
 				<h1>Discourse</h1>
 <p>How to set up discourse with ec2</p>
+<p>https://medium.com/@axelmarcus27/how-to-configure-discourse-on-amazon-web-services-aws-e4964bcafb9</p>
 <ol>
 <li>
 <p>Setup an ec2 instance</p>
@@ -197,19 +198,38 @@
 <p>SSH into ec2 instance</p>
 </li>
 <li>
-<p>Install docker and start: https://serverfault.com/questions/836198/how-to-install-docker-on-aws-ec2-instance-with-ami-ce-ee-update</p>
+<p>Install docker and start</p>
+<ol>
+<li>Update the packages on your instance</li>
+</ol>
+<p><code>[ec2-user ~]$ sudo yum update -y</code></p>
+<ol start="2">
+<li>Install Docker</li>
+</ol>
+<p><code>[ec2-user ~]$ sudo yum install docker -y</code></p>
+<ol start="3">
+<li>Start the Docker Service</li>
+</ol>
+<p><code>[ec2-user ~]$ sudo service docker start</code></p>
+<ol start="4">
+<li>Add the ec2-user to the docker group so you can execute Docker commands without using sudo.</li>
+</ol>
+<p><code>[ec2-user ~]$ sudo usermod -a -G docker ec2-user</code></p>
 </li>
 <li>
-<p>Install git</p>
+<p>Install git
+<code>sudo yum install git -y</code></p>
 </li>
 <li>
-<p>Install netcat: https://aws.amazon.com/premiumsupport/knowledge-center/cloud9-ec2-linux-2-jump-host/</p>
+<p>Install netcat</p>
 </li>
-<li>
-<p>Get SMTP credentials from your email server: https://github.com/discourse/discourse/blob/master/docs/INSTALL-email.md</p>
-</li>
-<li>
-<p>Setup discourse https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md</p>
+</ol>
+<pre><code>yum install nc
+</code></pre>
+<ol start="6">
+<li>Get SMTP credentials from your email server:
+https://github.com/discourse/discourse/blob/master/docs/INSTALL-email.md</li>
+<li>Setup discourse https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md
 <ol>
 <li>During the setup set the hostname as ec2's IP address: <img src="/files/Pasted image 20210323172955.png"></img></li>
 </ol>
