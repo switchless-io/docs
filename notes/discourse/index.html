@@ -235,6 +235,16 @@ https://github.com/discourse/discourse/blob/master/docs/INSTALL-email.md</li>
 </ol>
 </li>
 </ol>
+<h1>Appendix</h1>
+<p>To Re-launch discourse</p>
+<pre><code>sudo su -
+service docker start
+cd /var/discourse
+./discourse-setup
+</code></pre>
+<ol start="9">
+<li>In case, it throws a 'domain not accessible error', check cloudlflare settings and disable firewall and try again</li>
+</ol>
 
 			</div>
 		</div>
