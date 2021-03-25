@@ -37,3 +37,15 @@ yum install nc
 	https://github.com/discourse/discourse/blob/master/docs/INSTALL-email.md
 7. Setup discourse https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md
 	1. During the setup set the hostname as ec2's IP address: ![[Pasted image 20210323172955.png]]
+
+# Appendix
+To Re-launch discourse
+
+```
+sudo su -
+service docker start
+cd /var/discourse
+./discourse-setup
+```
+
+9.  In case, it throws a 'domain not accessible error', check cloudlflare settings and disable firewall and try again
