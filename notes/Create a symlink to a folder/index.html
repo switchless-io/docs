@@ -184,13 +184,15 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Terminal</h1>
-<p>Notes related to terminal</p>
-<ul>
-<li><a href="/notes/Kill process running on a particular port">Kill process running on a particular port</a></li>
-<li><a href="/notes/Clear everything from termial">Clear everything from termial</a></li>
-<li><a href="/notes/Create a symlink to a folder">Create a symlink to a folder</a></li>
-</ul>
+				<h1>Create a symlink to a folder</h1>
+<p>This is useful when you are modularising your code. part of your code is in a particular folder and you want to refer to this code base in another project.</p>
+<p>If it is an npm package you can use <code>npm link</code></p>
+<p>if it an <code>obsidian plugin</code> then you can use symlink.</p>
+<p>plugins in obsidian needs to be in <code>.obsidian/plugin</code> folder.</p>
+<h2>usage</h2>
+<pre><code>ln -s /path/to/original /path/to/link
+</code></pre>
+<p>ref: https://www.howtogeek.com/297721/how-to-create-and-use-symbolic-links-aka-symlinks-on-a-mac/</p>
 
 			</div>
 		</div>
