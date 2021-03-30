@@ -184,8 +184,70 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Discourse</h1>
-<p><a href="/notes/How to set up discourse with AWS EC2">How to set up discourse with AWS EC2</a></p>
+				<h1>How to set up discourse with AWS EC2</h1>
+<hr>
+<p>author: #anzal</p>
+<hr>
+<ol>
+<li>
+<p>Setup an ec2 instance</p>
+<ol>
+<li>make sure HTTPS ports are open <img src="/files/Pasted image 20210323171803.png"></img></li>
+</ol>
+</li>
+<li>
+<p><a href="/SSH_into ec2 instance">SSH into ec2 instance</a></p>
+</li>
+<li>
+<p>Install and start docker in the machine</p>
+<ol>
+<li>Update the packages on your instance</li>
+</ol>
+<p><code>[ec2-user ~]$ sudo yum update -y</code></p>
+<ol start="2">
+<li>Install Docker</li>
+</ol>
+<p><code>[ec2-user ~]$ sudo yum install docker -y</code></p>
+<ol start="3">
+<li>Start the Docker Service</li>
+</ol>
+<p><code>[ec2-user ~]$ sudo service docker start</code></p>
+<ol start="4">
+<li>Add the ec2-user to the docker group so you can execute Docker commands without using sudo.</li>
+</ol>
+<p><code>[ec2-user ~]$ sudo usermod -a -G docker ec2-user</code></p>
+</li>
+<li>
+<p>Install git
+<code>sudo yum install git -y</code></p>
+</li>
+<li>
+<p>Install netcat</p>
+</li>
+</ol>
+<pre><code>yum install nc
+</code></pre>
+<ol start="6">
+<li>Get SMTP credentials from your email server:
+https://github.com/discourse/discourse/blob/master/docs/INSTALL-email.md</li>
+<li>Start discourse setup
+<ol>
+<li>refer: https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md</li>
+<li>In case, the domain entered is not accessible by discourse server, turn off the firewall and try again<img src="/files/Pasted image 20210330094212.png"></img></li>
+</ol>
+</li>
+</ol>
+<h1>Appendix</h1>
+<p>Reference: https://medium.com/@axelmarcus27/how-to-configure-discourse-on-amazon-web-services-aws-e4964bcafb9</p>
+<p><strong>To Re-launch discourse</strong></p>
+<pre><code>sudo su -
+service docker start
+cd /var/discourse
+./discourse-setup
+</code></pre>
+<ol start="9">
+<li>In case, it throws a 'domain not accessible error', check cloudlflare settings and disable firewall and try again</li>
+</ol>
 
 			</div>
 		</div>
