@@ -3,13 +3,13 @@
 
 How to set up discourse with ec2 
 
-https://medium.com/@axelmarcus27/how-to-configure-discourse-on-amazon-web-services-aws-e4964bcafb9
+
 
 
 1. Setup an ec2 instance
 	1. make sure HTTPS ports are open ![[Pasted image 20210323171803.png]]
-2. SSH into ec2 instance
-3. Install docker and start
+2. [[SSH into ec2 instance]]
+3. Install and start docker in the machine
 	1.  Update the packages on your instance
     
     `[ec2-user ~]$ sudo yum update -y`
@@ -35,11 +35,19 @@ yum install nc
 	
 6. Get SMTP credentials from your email server: 
 	https://github.com/discourse/discourse/blob/master/docs/INSTALL-email.md
-7. Setup discourse https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md
-	1. During the setup set the hostname as ec2's IP address: ![[Pasted image 20210323172955.png]]
+7. Start discourse setup 
+	1. refer: https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md
+	2. In case, the domain entered is not accessible by discourse server, turn off the firewall and try again![[Pasted image 20210330094212.png]]
+
+
+
+
 
 # Appendix
-To Re-launch discourse
+Reference: https://medium.com/@axelmarcus27/how-to-configure-discourse-on-amazon-web-services-aws-e4964bcafb9
+
+
+**To Re-launch discourse**
 
 ```
 sudo su -
