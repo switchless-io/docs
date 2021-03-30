@@ -186,7 +186,6 @@
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
 				<h1>Discourse</h1>
 <p>How to set up discourse with ec2</p>
-<p>https://medium.com/@axelmarcus27/how-to-configure-discourse-on-amazon-web-services-aws-e4964bcafb9</p>
 <ol>
 <li>
 <p>Setup an ec2 instance</p>
@@ -195,10 +194,10 @@
 </ol>
 </li>
 <li>
-<p>SSH into ec2 instance</p>
+<p><a href="/SSH_into ec2 instance">SSH into ec2 instance</a></p>
 </li>
 <li>
-<p>Install docker and start</p>
+<p>Install and start docker in the machine</p>
 <ol>
 <li>Update the packages on your instance</li>
 </ol>
@@ -229,14 +228,16 @@
 <ol start="6">
 <li>Get SMTP credentials from your email server:
 https://github.com/discourse/discourse/blob/master/docs/INSTALL-email.md</li>
-<li>Setup discourse https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md
+<li>Start discourse setup
 <ol>
-<li>During the setup set the hostname as ec2's IP address: <img src="/files/Pasted image 20210323172955.png"></img></li>
+<li>refer: https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md</li>
+<li>In case, the domain entered is not accessible by discourse server, turn off the firewall and try again<img src="/files/Pasted image 20210330094212.png"></img></li>
 </ol>
 </li>
 </ol>
 <h1>Appendix</h1>
-<p>To Re-launch discourse</p>
+<p>Reference: https://medium.com/@axelmarcus27/how-to-configure-discourse-on-amazon-web-services-aws-e4964bcafb9</p>
+<p><strong>To Re-launch discourse</strong></p>
 <pre><code>sudo su -
 service docker start
 cd /var/discourse
