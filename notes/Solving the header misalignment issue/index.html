@@ -184,10 +184,24 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<ul>
-<li><a href="/notes/Disabling sort on certain columns">Disabling sort on certain columns</a></li>
-<li><a href="/notes/Solving the header misalignment issue">Solving the header misalignment issue</a></li>
-</ul>
+				<h1>Solving the header misalignment issue</h1>
+<p>Data-tables have a misalignment problem with large tables:</p>
+<p><img src="/files/Pasted image 20210406215126.png"></img></p>
+<p>we need it to appear like this:
+<img src="/files/Pasted image 20210406215151.png"></img></p>
+<h2>Solution:</h2>
+<p>Initialize tables in this manner:</p>
+<pre><code class="language-javascript">
+$(document).ready(function(){
+
+	var table=$('#table_id').DataTable({
+
+	})
+
+	table.draw();
+
+})
+</code></pre>
 
 			</div>
 		</div>
