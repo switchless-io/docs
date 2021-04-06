@@ -61,6 +61,8 @@ In this page, all the design patterns are roughly organized by context/function.
 
 
 ## Front end 
+### Micro-interactions
+- [[Replace element with loader]]
 ### UI Patterns
 - [[Pagination]]
 - [[Making a POST request]]
