@@ -218,6 +218,11 @@ CMD [ &quot;npm&quot;, &quot;start&quot; ]
 <p>Expect the first build to take a long time.</p>
 <h2>create local config file for docker</h2>
 <p><code>docker_local_env</code></p>
+<p>if you want to use resources from the host such as redis or postgres, instead of setting the host as <code>localhost</code>, set the host as <code>host.docker.internal</code>
+eg:</p>
+<pre><code>DB_HOST=host.docker.internal
+REDIS_HOST=host.docker.internal
+</code></pre>
 <p>Add <code>docker_local_env</code> to <code>.gitignore</code></p>
 
 			</div>
