@@ -46,7 +46,15 @@ Expect the first build to take a long time.
 ## create local config file for docker
 `docker_local_env`
 
+if you want to use resources from the host such as redis or postgres, instead of setting the host as `localhost`, set the host as `host.docker.internal`
+eg:
+```
+DB_HOST=host.docker.internal
+REDIS_HOST=host.docker.internal
+```
+
 Add `docker_local_env` to `.gitignore`
+
 
 
 
