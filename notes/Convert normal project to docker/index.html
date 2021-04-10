@@ -184,12 +184,39 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Docker</h1>
-<ul>
-<li><a href="/notes/Docker cheat sheet">Docker cheat sheet</a></li>
-<li><a href="/notes/Install docker">Install docker</a></li>
-<li><a href="/notes/Convert normal project to docker">Convert normal project to docker</a></li>
-</ul>
+				<h1>Convert normal project to docker</h1>
+<h2>Create a dockerfile</h2>
+<p>File name - <code>Dockerfile</code>
+File content:</p>
+<pre><code>FROM node:12.16.3
+
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Install app dependencies
+COPY package.json .
+# For npm@5 or later, copy package-lock.json as well
+# COPY package.json package-lock.json .
+
+RUN npm install
+
+# Bundle app source
+COPY . .
+
+EXPOSE 1337
+
+# CMD [&quot;npm&quot;,&quot;run&quot;, &quot;codeceptjs&quot;]
+
+CMD [ &quot;npm&quot;, &quot;start&quot; ]
+</code></pre>
+<h2>Run docker build to create the image</h2>
+<pre><code> docker build -t cashflowy .
+</code></pre>
+<p>when you check for images with <code>docker images</code>, you should see your newly created image.
+<img src="/files/CleanShot 2021-04-10 at 10.41.15.png"></img></p>
+<p>Expect the first build to take a long time.</p>
+<h2></h2>
 
 			</div>
 		</div>
