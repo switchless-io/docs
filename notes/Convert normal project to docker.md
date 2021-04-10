@@ -43,4 +43,10 @@ when you check for images with `docker images`, you should see your newly create
 
 Expect the first build to take a long time. 
 
-## 
+## create local config file for docker
+`docker_local_env`
+
+Add `docker_local_env` to `.gitignore`
+
+
+
