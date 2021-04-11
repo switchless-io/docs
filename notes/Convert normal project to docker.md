@@ -55,6 +55,9 @@ REDIS_HOST=host.docker.internal
 
 Add `docker_local_env` to `.gitignore`
 
+## Grunt install issue
+This was resolved when more packages was installed. Not sure how this happened. 
+
 ## 
 
 
