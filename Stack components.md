@@ -6,6 +6,7 @@ The switchless stack consist of the following components.
 - [[CSS]]
 - [[nodejs]]
 - [[sails]] - web framework
+- [[grunt]]
 - [[Blueprint APIs]] - API framework
 - [[EJS]] - templating language
 - [[bull]] - queue management
