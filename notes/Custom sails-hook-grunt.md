@@ -1,5 +1,5 @@
 ---
--au
+-author:#alex
 ---
 # Custom sails-hook-grunt
 
