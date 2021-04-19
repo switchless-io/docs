@@ -18,3 +18,7 @@ Sails is the web framework that we use.
 
 ### Waterline
 - [[sort]]
+
+### Customization
+- [[Custom sails-hook-grunt]]
+- [[custom sails-hook-orm]]
