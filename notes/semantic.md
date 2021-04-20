@@ -41,6 +41,7 @@ http://semantic-ui.com/
 
 ### Tabs
 - [[simple tab]]
+- [[simple persistent tab]]
 - [[horizontal scroll on mobile]]
 
 ### Table 
