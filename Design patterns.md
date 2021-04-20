@@ -98,6 +98,7 @@ In this page, all the design patterns are roughly organized by context/function.
 - [[Auto Saving Forms]]
 - [[Upload a file]]
 - [[Filter with custom query]]
+- [[Simplest confirmation popup implementation on submit button]]
 
 
 
