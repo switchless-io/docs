@@ -40,8 +40,8 @@ http://semantic-ui.com/
 - large screen - >1200px
 
 ### Tabs
-[[simple tab]]
-[[horizontal scroll on mobile]]
+- [[simple tab]]
+- [[horizontal scroll on mobile]]
 
 ### Table 
 - [[tables]]
