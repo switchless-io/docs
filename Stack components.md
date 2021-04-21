@@ -45,6 +45,7 @@ The switchless stack consist of the following components.
 - [[docker]]
 - [[discourse]]
 - [[webviewgold]]
+- [[ERPNext]]
 
 
 ## Depricated 
