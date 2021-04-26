@@ -13,6 +13,7 @@ Sails is the web framework that we use.
 - [[server responses]]
 - 
 ### Scripts
+- [[Setup scripts]]
 - [[Scripting with sails]]
 - [[DB Migration]]
 
