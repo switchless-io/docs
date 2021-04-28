@@ -184,76 +184,63 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Basic docker cheatsheet</h1>
-<p>keyword: <a href="/notes/docker">docker</a>, <a href="/notes/Models cheatsheet">cheatsheet</a></p>
-<h2>Note:</h2>
-<h2>Flags:</h2>
-<ul>
-<li>d - run the container in detached mode (in the background)</li>
-<li>p - 2000:80 map port 2000 on local machine to port 80 of the container</li>
-</ul>
-<pre><code>docker run -d -p 80:80 docker/getting-started
+				<h1>Models cheatsheet</h1>
+<h2>JSON</h2>
+<pre><code>details:{
+	type:'json'
+},
 </code></pre>
-<p>name the container while running it</p>
-<pre><code>docker run -d -p 2000:80 --name testname docker/getting-started
+<h2>isIn</h2>
+<pre><code>location_type:{
+	type: 'string',
+	isIn: ['interstate', 'intrastate','international','sez']
+},	
 </code></pre>
-<p>docker build</p>
-<pre><code> docker build -t crawler .
+<h2>allowNull</h2>
+<pre><code>location_type:{
+	type: 'string',
+	allowNull:true,
+},	
 </code></pre>
-<p>docker build options</p>
-<ul>
-<li>t - for tagging in this format <code>name:tag</code></li>
-<li>f or --file - this is where the</li>
-</ul>
-<p>to see a list of images</p>
-<pre><code>docker images
+<h2>required</h2>
+<pre><code>user:{
+	model:'user',
+	required:true
+},
 </code></pre>
-<p>To see all processes running</p>
-<pre><code>docker ps
-docker ps -a
+<h2>refer to a model</h2>
+<pre><code>user:{
+	model:'user',
+	required:true
+},
 </code></pre>
-<p>to enter docker file system</p>
-<pre><code>docker exec -t -i elegant_poitras /bin/bash
+<h2>backlink model reference</h2>
+<pre><code>changes:{
+	collection:'change',
+	via:'transaction',
+},
 </code></pre>
-<p><img src="/Pasted_image 16.png"></img></p>
-<p><code>docker start &lt;container name&gt;</code>
-<code>docker stop &lt;container name&gt;</code>
-<code>docker rm &lt;container name&gt;</code></p>
-<p>Images and container names
-<img src="/CleanShot_2020-08-08 at 16.51.31.png"></img></p>
-<p><code>docker logs &lt;conatiner name&gt;</code>
-<code>docker logs -f &lt;conatiner name&gt;</code></p>
-<p>docker push image name
-docker tag local stuff with global stuff</p>
-<p><code>docker pull &lt;image name&gt;</code></p>
-<p><code>docker-compose up -d</code> - looks for <code>docker-compose.yml</code> . In the YML you will specify what you would have written in docker run params.</p>
-<p>remove all docker images
-<code>docker rmi $(docker images -a -q)</code></p>
-<p>Pushing things to docker hub</p>
-<pre><code>docker tag alex-custom:tagname alexjv89/test:tagname
-docker push alexjv89/test:tagname
-
-
-docker tag alex-custom alexjv89/test
-docker push alexjv89/test:latest
+<h2>Many to many reference</h2>
+<pre><code></code></pre>
+<h2>Number format (float)</h2>
+<pre><code>change:{
+	type: 'number',
+	columnType: 'float8'
+},
 </code></pre>
-<p>Now add a new file called .dockerignore to your project’s root directory. The .dockerignore specifies which files and folders to ignore in the COPY step. In the .dockerignore, add the 2 lines below to ignore node modules and the npm debug log.</p>
-<pre><code>node_modules
-npm-debug.log
+<h2>Date format  (timestamp)</h2>
+<pre><code>date: {
+	type: 'ref',
+	columnType: 'timestamptz'
+},
 </code></pre>
-<p>Basic walkthough on how to deploy a docker container to docker - https://medium.com/@sommershurbaji/deploying-a-docker-container-to-aws-with-elastic-beanstalk-28adfd6e7e95</p>
-<p>Enter cli of the docker container
-<code>docker exec -it quizzical_yalow /bin/sh</code></p>
-<p>Connect from container to a service on the host
-https://docs.docker.com/docker-for-mac/networking/#use-cases-and-workarounds</p>
-<p>passing env from host to container
-https://vsupalov.com/docker-environment-variables-from-host/#:~:text=You%20can%20pass%20the%20values,e%20var_name%20(...)</p>
-<h2>Running mr Albert crawler</h2>
-<pre><code>docker build -t crawler .
-</code></pre>
-<pre><code>docker run --env-file=docker_local_env crawler
-</code></pre>
-<pre><code>docker run -d -p 1337:1337 --env-file=docker\_local\_env crawler
+<h2>defaultsTo</h2>
+<pre><code>status:{
+	type:'string',
+	isIn:['processed_not_claimed','processed','not_filed','void','draft'],
+	allowNull: true,
+	defaultsTo:'not_filed', &lt;----
+},
 </code></pre>
 
 			</div>
