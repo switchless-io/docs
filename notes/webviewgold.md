@@ -2,7 +2,7 @@
 
 this stuff is useful for making mobile apps of web apps. 
 
-
+- [[webviewgold cheatsheet]]
 
 https://www.raywenderlich.com/10868372-testflight-tutorial-ios-beta-testing
 
@@ -11,3 +11,5 @@ Setup wishup org - apple developer account
 
 
 ## Adhoc build
+
+
