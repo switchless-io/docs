@@ -58,7 +58,10 @@ Add this to table element - `style="display: block;overflow-x:scroll;"`
 
 
 
+## Structured 
+This is where are creating structured table. 
 
+Add class `structured`
 
 
 
