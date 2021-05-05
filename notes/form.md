@@ -12,3 +12,4 @@ The following are some advanced patterns that we use over and over again:
 - [[Auto Saving Forms]]
 - [[Mobile friendly filter using accordian]]
 - [[Form success error message]]
+- [[Detect if device is mobile]]
