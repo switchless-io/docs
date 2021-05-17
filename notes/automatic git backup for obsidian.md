@@ -1,0 +1,1 @@
+# Automatic git backup for obsidian

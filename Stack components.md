@@ -48,6 +48,7 @@ The switchless stack consist of the following components.
 - [[webviewgold]]
 - [[ERPNext]]
 - [[Onesignal]]
+- [[vscode]]
 
 
 ## Depricated 
