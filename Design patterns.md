@@ -25,6 +25,10 @@ In this page, all the design patterns are roughly organized by context/function.
 - [[Install NPM packages from local directory]]
 - [[Passing vairables into a partial]]
 
+### Security
+- [[Blocking Bots with CAPTCHA]]
+- [[Blocking bots with cloudflare]]
+
 ### Working with files
 - [[Export data as csv,excel,json]]
 - [[Write excel file]]

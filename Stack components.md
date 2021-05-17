@@ -25,6 +25,7 @@ The switchless stack consist of the following components.
 - [[Kinesis]]
 - [[metabase]] - BI tool 
 - [[2factor.in]]
+- [[reCAPTCHA]]
 - [[npm]]
 	- [[npm xlsx]]
 	- [[FS]] - working with files
