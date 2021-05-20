@@ -184,11 +184,71 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h3>Choose a verification method</h3>
-<p>https://developers.google.com/recaptcha/docs/versions</p>
+				<h3>Create an account</h3>
+<p>Create a developer's account and get the <code>site_key</code>
+https://developers.google.com/</p>
+<h3>Choosing a verification method</h3>
+<ul>
+<li>reCaptcha v3 gives a score between 0 and 1</li>
+<li>reCaptcha v2 has Yes or No results for security check. There are two types
+<ul>
+<li>'I'm not a robot'</li>
+<li>invisible captcha</li>
+</ul>
+</li>
+</ul>
+<p>Refer: https://developers.google.com/recaptcha/docs/versions</p>
 <h3>Implement reCAPTCHA in front end</h3>
+<pre><code>&lt;form&gt;
+	&lt;div class=&quot;g-recaptcha&quot; data-sitekey=&quot;&lt;%=sails.config.recaptcha.site_key%&gt;&quot;&gt;&lt;/div&gt;
+
+
+	&lt;br&gt;
+
+	&lt;input type=&quot;submit&quot; value=&quot;Create Account&quot; class='ui fluid circular button' style=&quot;margin-bottom: 0.7em;&quot;&gt;
+
+
+&lt;/form&gt;
+</code></pre>
 <h3>Verify user's response from backend</h3>
 <p>https://developers.google.com/recaptcha/docs/verify</p>
+<pre><code>authenticateReCAPTCHA(req_body,callback){
+
+var options = {
+
+	method: &quot;POST&quot;,
+
+	url: `https://www.google.com/recaptcha/api/siteverify`,
+
+	body:`secret=${sails.config.recaptcha.secret_key}&amp;response=${req_body['g-recaptcha-response']}`,
+
+	headers: { &quot;Content-Type&quot;: &quot;application/x-www-form-urlencoded&quot; },
+
+
+
+	};
+
+
+
+	function cb(error, response, body) {
+
+	if(response){
+
+	callback(JSON.parse(body).success);
+
+	}
+
+	}
+
+
+
+	request(options, cb);
+
+
+
+},
+
+</code></pre>
 
 			</div>
 		</div>
