@@ -66,6 +66,7 @@ npm-debug.log
 ## Grunt install issue
 This was resolved when more packages was installed. Not sure how this happened. 
 
-## 
+## Getting VSCode inside docker
+https://code.visualstudio.com/docs/remote/containers
 
 

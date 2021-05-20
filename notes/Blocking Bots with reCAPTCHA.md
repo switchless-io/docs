@@ -1,8 +1,10 @@
+# Blocking Bots with reCAPTCHA
 ---
 author: #anzal 
 ---
 ### Create an account
 Create a developer's account and get the `site_key`
+
 https://developers.google.com/
 
 ### Choosing a verification method
@@ -16,7 +18,8 @@ Refer: https://developers.google.com/recaptcha/docs/versions
 ### Implement reCAPTCHA in front end
 ```
 <form>
-	<div class="g-recaptcha" data-sitekey="<%=sails.config.recaptcha.site_key%>"></div>
+	<div class="g-recaptcha" data-sitekey="<%=sails.config.recaptcha.site_key%>">
+	</div>
 
 
 	<br>
@@ -28,7 +31,9 @@ Refer: https://developers.google.com/recaptcha/docs/versions
 ```
 
 ### Verify user's response from backend
+
 https://developers.google.com/recaptcha/docs/verify
+
 
 ```
 authenticateReCAPTCHA(req_body,callback){
