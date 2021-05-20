@@ -26,7 +26,7 @@ In this page, all the design patterns are roughly organized by context/function.
 - [[Passing vairables into a partial]]
 
 ### Security
-- [[Blocking Bots with CAPTCHA]]
+- [[Blocking Bots with reCAPTCHA]]
 - [[Blocking bots with cloudflare]]
 
 ### Working with files
