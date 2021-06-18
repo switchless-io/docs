@@ -50,6 +50,8 @@ The switchless stack consist of the following components.
 - [[Onesignal]]
 - [[vscode]]
 - [[stripe]]
+- [[Chrome apps]]
+- [[Google apps]]
 
 
 ## Depricated 

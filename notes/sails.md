@@ -26,3 +26,12 @@ Sails is the web framework that we use.
 
 ### Models
 - [[Models cheatsheet]]
+
+
+### Generate
+```
+
+sails generate script get_data_from_zoho
+
+sails run get-data-from-zoho
+```

@@ -1,6 +1,8 @@
 .obsidian/workspace
 .obsidian/publish.json
 .obsidian/graph.json
+.obsidian/config
+
 
 _site
 node_modules

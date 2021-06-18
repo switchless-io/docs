@@ -6,3 +6,4 @@
 - [[Delete remote]]
 - [[Rename remote]]
 - [[automatic git backup for obsidian]]
+- [[basic git branching workflow]]
