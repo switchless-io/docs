@@ -184,15 +184,123 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Git</h1>
-<h2>related notes</h2>
+				<h1>Basic git branching workflow</h1>
+<p><strong>Permitted branches:</strong></p>
 <ul>
-<li><a href="/notes/Update git branches from master">Update git branches from master</a></li>
-<li><a href="/notes/Create new branch">Create new branch</a></li>
-<li><a href="/notes/Delete remote">Delete remote</a></li>
-<li><a href="/notes/Rename remote">Rename remote</a></li>
-<li><a href="/notes/automatic git backup for obsidian">automatic git backup for obsidian</a></li>
-<li><a href="/notes/basic git branching workflow">basic git branching workflow</a></li>
+<li><strong>master</strong> anything that goes to production goes via this</li>
+<li><strong>develop</strong> – contains code for whatever there is in master + new feature pending release into master</li>
+<li><strong><em>feature/&lt;feature_name&gt;</em></strong>: for a new feature that you are working on. You will create this branch from <em>develop</em>.</li>
+<li><strong><em>hotfix/&lt;bug_name&gt;</em></strong>: There is a bug in production. You will create the branch from the <em>master</em>_._</li>
+</ul>
+<p><strong>What is a hotfix?</strong></p>
+<p>If your production system is facing a breaking issue. There is a 500 error. The customer is not able to make payment. The customer is not able to place an order. The hotfix is called hotfix because you are making small quick changes in the production environment. One needs to pay attention to what constitutes (to)- Delete a hotfix:</p>
+<ul>
+<li>
+<p>It should be very a critical issue</p>
+</li>
+<li>
+<p>some very critical error</p>
+</li>
+<li>
+<p>500 error</p>
+</li>
+<li>
+<p>It should be something that can be fixed in a short duration of time</p>
+</li>
+<li>
+<p>the fix should be solved in minutes(max a few hours)..- Delete one full stop</p>
+</li>
+<li>
+<p>It should be a small change</p>
+</li>
+<li>
+<p>Most errors are some silly mistakes that require a character change or line change. At max, a few lines change.</p>
+</li>
+</ul>
+<p>When creating a hotfix, create your local branch from <strong>master</strong>.</p>
+<p><strong>What is a feature?</strong></p>
+<p>Any other change other than a hotfix is considered a feature. A feature can consist of:</p>
+<ul>
+<li>new feature development</li>
+<li>addressing new corner cases</li>
+<li>code refactor</li>
+</ul>
+<p>When creating a feature branch, create your local branch from <strong>develop</strong>.</p>
+<p><strong>FAQs:</strong></p>
+<p><strong>I am done with a feature development in feature/&lt;feature_name&gt;. What shall I do now?</strong></p>
+<ul>
+<li>Once you are done with the feature testing you need to merge the branch with <strong>develop</strong>.</li>
+<li>The problem with merging with <strong>develop</strong> branch is that the code in <strong>develop</strong> is supposed to contain code that is supposed to go into <strong>master</strong> soon.</li>
+<li>So you should merge code to <strong>develop</strong> when you are sure that your feature is ready to go to production.</li>
+<li>If not, complete your work and park the feature for a while.</li>
+<li>If your feature has a specific release date, do all the necessary testing in the feature branch itself and try and not block the production pipeline by merging too early. After testing merge into <strong>develop</strong> closer to release date.</li>
+<li>follow the merge request checklist for the feature branch</li>
+</ul>
+<p><strong>I have merged my feature branch into develop, but I encountered a bug while testing in develop?</strong></p>
+<ul>
+<li>If the code is not in production yet, you don't need to create a new branch to fix the bug in <strong>develop</strong>. Solve the bug in develop itself.</li>
+</ul>
+<p><strong>Can I create multiple feature branches?</strong></p>
+<p>Yes. If you are working on a feature that got de-prioritized and wants to work on a new feature, you can park the feature and create a new <strong>feature/&lt;feature_name&gt;</strong> branch from <strong>develop</strong> branch.</p>
+<p><strong>Checklists:</strong></p>
+<p><strong>Creating a new branch checklist:</strong></p>
+<ul>
+<li>
+<p>name it properly –</p>
+</li>
+<li>
+<p><strong>feature/&lt;feature_name&gt;</strong> for a feature branch</p>
+</li>
+<li>
+<p><strong>hotfix/&lt;bug_name&gt;</strong> for hotfix</p>
+</li>
+<li>
+<p>make sure your local <strong>develop</strong> and <strong>master</strong> branches are up to date. Run <strong>git pull</strong> on both these branches. Remember, others are contributing code too.</p>
+</li>
+<li>
+<p>Create a branch from the right branch</p>
+</li>
+<li>
+<p>from <strong>develop</strong> for the feature branch</p>
+</li>
+<li>
+<p>from <strong>master</strong> for the master branch</p>
+</li>
+</ul>
+<p><strong>Merge checklist – feature/&lt;feature_name&gt; branch:</strong></p>
+<ul>
+<li>
+<p>pull the code from a remote <strong>feature</strong> branch into your local <strong>feature/&lt;feature_name&gt;</strong> branch.</p>
+</li>
+<li>
+<p>While you were working on your feature in the silo, someone else could have an updated feature branch. Your merge is accepted faster if you resolve any merge conflicts arising from race conditions.</p>
+</li>
+<li>
+<p>push code to the remote server</p>
+</li>
+<li>
+<p>Create a merge request on <strong>a feature</strong> branch on Gitlab/Github via the UI.</p>
+</li>
+</ul>
+<p><strong>Merge checklist – hotfix/&lt;bug_name&gt; branch:</strong></p>
+<ul>
+<li>
+<p>pull the code from the remote <strong>master</strong> branch into your local <strong>hotfix/&lt;bug_name&gt;</strong> branch</p>
+</li>
+<li>
+<p>While you were working on your feature in the silo, someone else could have an updated master branch. Your merge is accepted faster if you resolve any merge conflicts arising from race conditions.</p>
+</li>
+<li>
+<p>push code to the remote server</p>
+</li>
+<li>
+<p>Create a merge request to <strong>master</strong> and <strong>develop</strong> branch on Gitlab/Github via the UI</p>
+</li>
+</ul>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>You can avoid making mistakes in remembering the details. Install git-flow to take care of these cases. <a href="https://github.com/nvie/gitflow">https://github.com/nvie/gitflow</a>.</li>
+<li>We use a subset of the git-flow branching strategy. For details <a href="https://nvie.com/posts/a-successful-git-branching-model/">https://nvie.com/posts/a-successful-git-branching-model/</a></li>
 </ul>
 
 			</div>
