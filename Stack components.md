@@ -52,6 +52,7 @@ The switchless stack consist of the following components.
 - [[stripe]]
 - [[Chrome apps]]
 - [[Google apps]]
+- [[zoho creator]]
 
 
 ## Depricated 
