@@ -25,6 +25,6 @@
     "@11ty/eleventy": "^0.11.1"
   },
   "dependencies": {
-    "markdown-it-obsidian": "^1.0.2"
+    "markdown-it-obsidian": "^1.1.0"
   }
 }
