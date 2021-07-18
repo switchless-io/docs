@@ -1,0 +1,13 @@
+{
+  "fileSortOrder": "byModifiedTime",
+  "attachmentFolderPath": "files",
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "defaultViewMode": "preview",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "notes",
+  "foldHeading": true,
+  "foldIndent": true,
+  "spellcheck": true,
+  "strictLineBreaks": true
+}
