@@ -14,6 +14,7 @@ aka amazon web services
 - [[Different ways of setting ElasticBeanstalk environmental variables]]
 - [[SSH into ElasticBeanstalk Server Instance]]
 - [[SSH into EC2 instance]]
+- [[Deploying to EB]]
 
 
 ## Issues
