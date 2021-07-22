@@ -184,50 +184,10 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>AWS</h1>
-<p>author: #alex</p>
-<p>aka amazon web services</p>
-<h2>setup</h2>
-<ul>
-<li><a href="/notes/setup a single instance">setup a single instance</a></li>
-<li><a href="/notes/AWS amzon linux 2 migration">AWS amzon linux 2 migration</a></li>
-<li><a href="/notes/Refresh AWS Access Keys">Refresh AWS Access Keys</a></li>
-<li><a href="/notes/How to create AWS access keys">How to create AWS access keys</a></li>
-<li><a href="/notes/Initialize EB CLI">Initialize EB CLI</a></li>
-<li><a href="/notes/Set up ElasticBeanstalk Locally">Set up ElasticBeanstalk Locally</a></li>
-<li><a href="/notes/Different ways of setting ElasticBeanstalk environmental variables">Different ways of setting ElasticBeanstalk environmental variables</a></li>
-<li><a href="/notes/SSH into ElasticBeanstalk Server Instance">SSH into ElasticBeanstalk Server Instance</a></li>
-<li><a href="/notes/SSH into EC2 instance">SSH into EC2 instance</a></li>
-<li><a href="/notes/Deploying to EB">Deploying to EB</a></li>
-</ul>
-<h2>Issues</h2>
-<ul>
-<li><a href="/notes/Not able to connect to Redis">Not able to connect to Redis</a></li>
-<li><a href="/notes/Not able to connect to Postgres">Not able to connect to Postgres</a></li>
-</ul>
-<h2>Cost Management</h2>
-<ul>
-<li>[[]]</li>
-</ul>
-<h2>config for Elastic search</h2>
-<pre><code class="language-javascript">{
-  &quot;Version&quot;: &quot;2012-10-17&quot;,
-  &quot;Statement&quot;: [
-    {
-      &quot;Effect&quot;: &quot;Allow&quot;,
-      &quot;Principal&quot;: {
-        &quot;AWS&quot;: [
-          &quot;arn:aws:iam::411068173358:user/programatic_access&quot;,
-          &quot;arn:aws:iam::411068173358:user/pa_mralbert&quot;,
-          &quot;arn:aws:sts::411068173358:assumed-role/Cognito_cashflowyInternalsoftwareAuth_Role/CognitoIdentityCredentials&quot;
-        ]
-      },
-      &quot;Action&quot;: &quot;*&quot;,
-      &quot;Resource&quot;: &quot;arn:aws:es:us-east-1:411068173358:domain/asyncauto-prod/*&quot;
-    }
-  ]
-}
-</code></pre>
+				<p><code>eb list</code> : Lists all the active environments</p>
+<p><code>eb use &lt;env name&gt;</code> : changes the env selected</p>
+<p><code>eb clone</code> : clones the selected environment</p>
+<p><code>eb deploy</code>: deploys the local code to env</p>
 
 			</div>
 		</div>
