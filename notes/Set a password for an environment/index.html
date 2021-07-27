@@ -184,37 +184,12 @@
 		</div>
 		<div class='ten wide large screen twelve wide computer forteen wide tablet column'>
 			<div class='ui basic segment' style="font-size: 18px;line-height: 1.5em">
-				<h1>Nginx</h1>
-<h2>Notes related to Nginx</h2>
-<ul>
-<li><a href="/notes/How to change file upload size limit in Nginx">How to change file upload size limit in Nginx</a></li>
-<li><a href="/notes/How to redirect a specific url to a page in different domain with nginx">How to redirect a specific url to a page in different domain with nginx</a></li>
-<li><a href="/notes/Run multiple apps locally with their own DNS map">Run multiple apps locally with their own DNS map</a></li>
-<li><a href="/notes/Set a password for an environment">Set a password for an environment</a></li>
-</ul>
-<h2>Common debug</h2>
-<h3>Check if Nginx config is error free</h3>
-<pre><code>sudo nginx -t
-</code></pre>
-<p>When it has errors</p>
-<pre><code>nginx: [emerg] unknown directive &quot;server\_name&quot; in /usr/local/etc/nginx/servers/my.config:3
-
-nginx: configuration file /usr/local/etc/nginx/nginx.conf test failed
-</code></pre>
-<p>When it is all ok</p>
-<pre><code>nginx: the configuration file /usr/local/etc/nginx/nginx.conf syntax is ok
-nginx: configuration file /usr/local/etc/nginx/nginx.conf test is successful
-</code></pre>
-<h3>brew service does start nginx properly</h3>
-<p>When you try to run nginx using brew it does not work</p>
-<pre><code class="language-shell">brew services start nginx
-</code></pre>
-<p>But when you try to start nginx using brew in sudo mode, it works</p>
-<pre><code class="language-shell">brew services start nginx
-</code></pre>
-<h4>Solution</h4>
-<pre><code class="language-shell">sudo chown -R alex /usr/local/var/log/nginx/
-</code></pre>
+				<pre><code>/etc/nginx/conf.d/htpasswd:
+    mode: &quot;000644&quot;
+    owner: root
+    group: root
+    content: |
+      admin:$apr1$UWXKeKo.$TWivkIRoY4reXP8JbCxGL0```</code></pre>
 
 			</div>
 		</div>
