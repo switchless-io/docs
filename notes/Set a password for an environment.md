@@ -5,4 +5,5 @@
     owner: root
     group: root
     content: |
-      admin:$apr1$UWXKeKo.$TWivkIRoY4reXP8JbCxGL0```
+      admin:$apr1$UWXKeKo.$TWivkIRoY4reXP8JbCxGL0
+	  ```
