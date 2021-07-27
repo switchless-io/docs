@@ -4,7 +4,7 @@
 - [[How to change file upload size limit in Nginx]]
 - [[How to redirect a specific url to a page in different domain with nginx]]
 - [[Run multiple apps locally with their own DNS map]]
-
+- [[Set a password for an environment]]
 
 ## Common debug
 
