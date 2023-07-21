@@ -1,7 +1,7 @@
 # Lifting sails in terminal using launch.json from VS code
 
 sails is installed globally here - 
-`/usr/local/lib/node\_modules/sails`
+`$(npm root -g)/sails`
 
 Add this to the top of `/bin/sails.js`
 
